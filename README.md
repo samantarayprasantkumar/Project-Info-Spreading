@@ -6,7 +6,8 @@
 
 ## General Introduction
 
-How do Informations spread in a given network? 
+How do informations spread in a given network? Our goal is to analize the spreading of information using statistical modell, where the unkown parameter are 
+are going to be estimated by the input network.
 
 
 
