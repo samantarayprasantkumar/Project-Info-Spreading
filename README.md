@@ -1,4 +1,4 @@
-# MATLAB HS13 – Research Plan (Template)
+# Project Information Spreading
 (text between brackets to be removed)
 
 > * Group Name: (be creative!)
