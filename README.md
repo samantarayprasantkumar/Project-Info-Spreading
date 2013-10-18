@@ -56,7 +56,6 @@ Our modell will be based on data we'll collect on facebook. So our dataset consi
 
 - What is the behavior of the information flow under given conditions. (e.g. tatletales)
 - What are the conditions the informations stops before everone received it. 
-- 
 
 
 (At the end of the project you want to find the answer to these questions)
