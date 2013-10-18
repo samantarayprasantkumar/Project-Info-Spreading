@@ -20,6 +20,8 @@ We want to implement a modell on how personals informations about a person X spr
 Our modell is based on probability theory and de data given from the network one uses. We're going to consider paramenters like:
 
 
+Probability theory:
+
 
 Let X be the person of interest. Y_i are his friends, Zyi the friends of Yi.
 
@@ -37,19 +39,43 @@ We want to modell the prob that B tells C an Informations about A. Which is depe
 Which means, the probability of forwarding a message decays with time (e.g. Let p=P(forwarding message). lim (t->t_0) p = c, with c in R+
 
 
+Network:
+
+Our modell will be based on data we'll collect on facebook. So our dataset consist of a list of all friends Yi of X (person of interest), and for each friend Yi, there is another list of all friends Zyi of Yi.
+
 
 
 
 (Define dependent and independent variables you want to study. Say how you want to measure them.) (Why is your model a good abtraction of the problem you want to study?) (Are you capturing all the relevant aspects of the problem?)
 
 
+
+
 ## Fundamental Questions
+
+
+- What is the behavior of the information flow under given conditions. (e.g. tatletales)
+- What are the conditions the informations stops before everone received it. 
+- 
+
 
 (At the end of the project you want to find the answer to these questions)
 (Formulate a few, clear questions. Articulate them in sub-questions, from the more general to the more specific. )
 
 
 ## Expected Results
+
+
+Theoretical Goal:
+
+We'd liek to show that the spreading stongly depends on only a few people (concepts of bottlenecks, tatletates)
+
+
+Pracitcal Goal: 
+
+Our goal is to implement the model graphically. So that one can watch the information spread in the network.
+
+
 
 (What are the answers to the above questions that you expect to find before starting your research?)
 
