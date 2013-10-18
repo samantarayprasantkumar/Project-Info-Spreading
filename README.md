@@ -1,4 +1,4 @@
-# Project: Information Spreading
+﻿# Project: Information Spreading
 
 > * Group Name: becreative
 > * Group participants names: Urs Lustenberger, Nino Wili, Patrick Zöchbauer
@@ -88,6 +88,8 @@ Bettencourt, L.; The power of a good idea: Quantitative modeling of the spread o
 (Add the bibliographic references you intend to use)
 (Explain possible extension to the above models)
 (Code / Projects Reports of the previous year)
+
+plus ninos test
 
 
 ## Research Methods
