@@ -1,0 +1,38 @@
+clc;clear;close all;
+
+%Test to represent a network, 
+
+
+%% define network
+
+global N; %total number of persons involved
+N=0;
+
+global person;
+person=struct;
+
+newperson('Alex',{'Berta' 'Max'});
+newperson('Berta',{});
+newperson('Max',{});
+newperson('Karl',{});
+newperson('Anna',{});
+
+%% extract connection matrix from data
+
+connect=eye(N);
+
+
+for i=1:N %loop over
+    for j=1:N
+        if(strcmp(person(j).name,person(i).friends))
+        
+            
+            
+        end
+    end
+end
+
+
+
+
+

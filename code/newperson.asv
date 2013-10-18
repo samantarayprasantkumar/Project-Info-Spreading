@@ -1,0 +1,18 @@
+function y=newperson(name);
+%function to create a new person in the global variable person
+
+global N;
+N=N+1; %total Number of persons is one more
+
+global person;
+person(N).name=name;
+
+person(N).id=N;
+
+person(N).friends
+
+
+
+
+
+end
