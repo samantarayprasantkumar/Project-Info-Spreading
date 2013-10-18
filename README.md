@@ -14,7 +14,7 @@ How do Informations spread in a given network?
 (Add real-world examples, if any)
 (Put the problem into a historical context, from what does it originate? Are there already some proposed solutions?)
 
-## The Model
+## The Modell
 
 We want to implement a modell on how personals informations about a person X spreads in a given network (e.g. facebook)
 Our modell is based on probability theory and de data given from the network one uses. We're going to consider paramenters like:
@@ -26,7 +26,6 @@ Let X be the person of interest. Y_i are his friends, Zyi the friends of Yi.
 
 
 - Probability of meeting:
-
 How likely is it to meet a person, that is in the intersection of Y_i and Zyi. In oder words, what the probability to meet someone, how also knows X. So that you could tell him the news about X.
 
 
