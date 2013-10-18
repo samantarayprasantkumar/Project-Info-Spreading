@@ -11,16 +11,16 @@ N=0;
 global person;
 person=struct;
 
-newperson('Alex',{'Berta' 'Max'});
-newperson('Berta',{'Alex' 'Max' 'Karl' 'Anna' });
+newperson('Alex',{ 'Max'});
+newperson('Berta',{ 'Max' 'Karl' 'Anna' });
 newperson('Max',{'Alex' 'Berta' 'Anna'});
-newperson('Karl',{'Berta' 'Anna'});
-newperson('Anna',{'Berta' 'Max' 'Karl'});
+newperson('Karl',{'Berta'});
+newperson('Anna',{ 'Max' 'Karl'});
 
 %% extract connection matrix from data
 %1: know each other, 0:dont know each other 
 
-connect=eye(N);
+connect=zeros(N);
 
 
 for i=1:N 
@@ -36,6 +36,12 @@ end
 
 %% extract Matrix with common friends
 
+common=zeros(N,N);
 
+for i=1:N
+    for j=1:N
 
+        common(i,j)=sum(connect(i,:)==connect(j,:) & connect(i,:)==1);
 
+    end
+end
