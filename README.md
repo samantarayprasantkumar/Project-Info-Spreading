@@ -81,6 +81,10 @@ Our goal is to implement the model graphically. So that one can watch the inform
 
 ## References 
 
+
+Bettencourt, L.; The power of a good idea: Quantitative modeling of the spread of ideas from epidemiological models
+
+
 (Add the bibliographic references you intend to use)
 (Explain possible extension to the above models)
 (Code / Projects Reports of the previous year)
