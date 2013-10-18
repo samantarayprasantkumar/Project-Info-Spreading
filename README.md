@@ -1,17 +1,45 @@
-# Project Information Spreading
-(text between brackets to be removed)
+# Project: Information Spreading
 
-> * Group Name: (be creative!)
-> * Group participants names: (alphabetically sorted by last name)
-> * Project Title: (can be changed)
+> * Group Name: becreative
+> * Group participants names: Urs Lustenberger, Nino Wili, Patrick Zöchbauer
+> * Project Title: Information Spreading
 
 ## General Introduction
+
+How do Informations spread in a given network? 
+
+
 
 (States your motivation clearly: why is it important / interesting to solve this problem?)
 (Add real-world examples, if any)
 (Put the problem into a historical context, from what does it originate? Are there already some proposed solutions?)
 
 ## The Model
+
+We want to implement a modell on how personals informations about a person X spreads in a given network (e.g. facebook)
+Our modell is based on probability theory and de data given from the network one uses. We're going to consider paramenters like:
+
+
+
+Let X be the person of interest. Y_i are his friends, Zyi the friends of Yi.
+
+
+
+- Probability of meeting:
+
+How likely is it to meet a person, that is in the intersection of Y_i and Zyi. In oder words, what the probability to meet someone, how also knows X. So that you could tell him the news about X.
+
+
+- Probability of forwarding a message:
+We want to modell the prob that B tells C an Informations about A. Which is dependent on three factor: Connectednes (A,B), (A,C) and (B,C)
+
+
+- Decay of Importance:
+Which means, the probability of forwarding a message decays with time (e.g. Let p=P(forwarding message). lim (t->t_0) p = c, with c in R+
+
+
+
+
 
 (Define dependent and independent variables you want to study. Say how you want to measure them.) (Why is your model a good abtraction of the problem you want to study?) (Are you capturing all the relevant aspects of the problem?)
 
