@@ -94,6 +94,6 @@ Bettencourt, L.; The power of a good idea: Quantitative modeling of the spread o
 (mention datasets you are going to us
 
 
-![equation](http://www.codecogs.com/eqnedit.php?latex=\lim_{t&space;\to&space;&plus;\infty}&space;\mathbb{P}&space;\left&space;(&space;\left&space;A&space;\right&space;)&space;=&space;0)
+![equation](http://latex.codecogs.com/gif.latex?\lim_{t&space;\to&space;&plus;\infty}&space;\mathbb{P}&space;\left&space;(&space;\left&space;A&space;\right&space;)&space;=&space;0)
 
 
