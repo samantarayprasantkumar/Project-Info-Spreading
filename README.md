@@ -7,8 +7,8 @@
 ## General Introduction
 
 How does information spread in a network? Our goal is to analize the spreading of information using a self-developed statistical modell, where the unkown parameter are 
-are going to be estimated by the input network. 
-Since nowadays almost everybody of is part of social network, we thinks it's important to visualize how much we say about ourselves and enviroments.
+going to be estimated by the input network. 
+Since nowadays almost everybody is part of a social network, we thinks it's important to visualize how much we say about ourselves and enviroments.
 
 
 ## The Modell
