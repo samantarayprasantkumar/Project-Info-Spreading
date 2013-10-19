@@ -25,7 +25,7 @@ Let X be the person of interest. Y<sub>i</sub> are his friends, Z<sub>y<sub>i</s
 
 
 - Probability of meeting:
-How likely is it to meet a person, that is in the intersection of Y<sub>i</sub> and Z<sub>y<sub>i</sub></sub>. In oder words, what is the probability to meet someone, how also knows X. So that you could tell him the news about X.
+How likely is it to meet a person, that is in the intersection of Y<sub>i</sub> and Z<sub>y<sub>i</sub></sub>. In other words, what is the probability to meet someone, how also knows X. So that you could tell him the news about X.
 
 
 - Probability of forwarding a message:
