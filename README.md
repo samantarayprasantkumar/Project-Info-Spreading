@@ -20,12 +20,12 @@ Our modell is based on statistical methods on hand, and data given from a networ
 Statistical parameter:
 
 
-Let X be the person of interest. Y<sub>i</sub> are his friends, Z<sub>y<sub>i</sub></sub> the friends of Yi.
+Let X be the person of interest. Y<sub>i</sub> are his friends, Z<sub>y<sub>i</sub></sub> the friends of Y<sub>i</sub>.
 
 
 
 - Probability of meeting:
-How likely is it to meet a person, that is in the intersection of Y_i and Zyi. In oder words, what is the probability to meet someone, how also knows X. So that you could tell him the news about X.
+How likely is it to meet a person, that is in the intersection of Y<sub>i</sub> and Z<sub>y<sub>i</sub></sub>. In oder words, what is the probability to meet someone, how also knows X. So that you could tell him the news about X.
 
 
 - Probability of forwarding a message:
@@ -91,4 +91,9 @@ Bettencourt, L.; The power of a good idea: Quantitative modeling of the spread o
 
 ## Other
 
-(mention datasets you are going to use)
+(mention datasets you are going to us
+
+
+![equation](http://latex.codecogs.com/gif.latex?\lim_{t&space;\to&space;&plus;\infty}&space;\mathbb{P}&space;\left&space;(&space;\left&space;A&space;\right&space;)&space;=&space;0)
+
+
