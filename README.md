@@ -33,12 +33,12 @@ We want to modell the prob that B tells C an Informations about A. Which is depe
 
 
 - Decay of Importance:
-Which means, the probability of forwarding a message decays with time (e.g. Let p=P(forwarding message). lim (t->t_0) p = c, with c in R+
+Which means, the probability of forwarding a message decays with time.
 
 
 Network:
 
-Our modell will be based on data we'll collect on facebook (using facebook graph api). So our dataset consist of a list of all friends Yi of X (person of interest), and for each friend Yi, there is another list of all friends Zyi of Yi.
+Our modell will be based on data we'll collect on facebook (using facebook graph api). So our dataset consist of a list of all friends Yi of X (person of interest), and for each friend Yi, there is another list of all friends Z<sub>y<sub>i</sub></sub> of Y<sub>i</sub>.
 
 
 
@@ -47,11 +47,8 @@ Our modell will be based on data we'll collect on facebook (using facebook graph
 
 
 - What is the behavior of the information flow under given conditions. (e.g. tatletales)
-- What are the conditions the informations stops before everone received it. 
+- What are the conditions that the information flow stops before everone received it. 
 
-
-(At the end of the project you want to find the answer to these questions)
-(Formulate a few, clear questions. Articulate them in sub-questions, from the more general to the more specific. )
 
 
 ## Expected Results
@@ -59,7 +56,7 @@ Our modell will be based on data we'll collect on facebook (using facebook graph
 
 Theoretical Goal:
 
-We'd liek to show that the spreading stongly depends on only a few people (concepts of bottlenecks, tatletates)
+We'd like to show that the spreading stongly depends on only a few people (concepts of bottlenecks, tatletates)
 
 
 Pracitcal Goal: 
@@ -68,32 +65,8 @@ Our goal is to implement the model graphically. So that one can watch the inform
 
 
 
-(What are the answers to the above questions that you expect to find before starting your research?)
-
-
 ## References 
 
 
 Bettencourt, L.; The power of a good idea: Quantitative modeling of the spread of ideas from epidemiological models
-
-
-(Add the bibliographic references you intend to use)
-(Explain possible extension to the above models)
-(Code / Projects Reports of the previous year)
-
-
-
-
-## Research Methods
-
-(Cellular Automata, Agent-Based Model, Continuous Modeling...) (If you are not sure here: 1. Consult your colleagues, 2. ask the teachers, 3. remember that you can change it afterwards)
-
-
-## Other
-
-(mention datasets you are going to us
-
-
-![equation](http://latex.codecogs.com/gif.latex?\lim_{t&space;\to&space;&plus;\infty}&space;\mathbb{P}&space;\left&space;(&space;\left&space;A&space;\right&space;)&space;=&space;0)
-
 
