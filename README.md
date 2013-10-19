@@ -29,7 +29,7 @@ How likely is it to meet a person, that is in the intersection of Y<sub>i</sub> 
 
 
 - Probability of forwarding a message:
-We want to modell the prob that B tells C an Informations about A. Which is dependent on three factor: Connectednes (A,B), (A,C) and (B,C).(
+We want to estimate the probability that B tells C an Informations about A. Which is dependent on three factor: Connectednes (A,B), (A,C) and (B,C).(
 
 
 - Decay of Importance:
