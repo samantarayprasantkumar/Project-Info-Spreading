@@ -20,7 +20,7 @@ Our modell is based on statistical methods on hand, and data given from a networ
 Statistical parameter:
 
 
-Let X be the person of interest. Y_i are his friends, Zyi the friends of Yi.
+Let X be the person of interest. Y<sup>i<\sub> are his friends, Zyi the friends of Yi.
 
 
 
