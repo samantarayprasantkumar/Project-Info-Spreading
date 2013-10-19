@@ -6,22 +6,18 @@
 
 ## General Introduction
 
-How do informations spread in a given network? Our goal is to analize the spreading of information using statistical modell, where the unkown parameter are 
-are going to be estimated by the input network.
+How does information spread in a network? Our goal is to analize the spreading of information using a self-developed statistical modell, where the unkown parameter are 
+are going to be estimated by the input network. 
+Since nowadays almost everybody of is part of social network, we thinks it's important to visualize how much we say about ourselves and enviroments.
 
-
-
-(States your motivation clearly: why is it important / interesting to solve this problem?)
-(Add real-world examples, if any)
-(Put the problem into a historical context, from what does it originate? Are there already some proposed solutions?)
 
 ## The Modell
 
-We want to implement a modell on how personals informations about a person X spreads in a given network (e.g. facebook)
-Our modell is based on probability theory and de data given from the network one uses. We're going to consider paramenters like:
+We want to implement a modell on how a (personal) information about a person X spreads in our social enviroment. 
+Our modell is based on statistical methods on hand, and data given from a network (e.g. facebook) on the other. We're going to consider paramenters like:
 
 
-Probability theory:
+Statistical parameter:
 
 
 Let X be the person of interest. Y_i are his friends, Zyi the friends of Yi.
@@ -29,11 +25,11 @@ Let X be the person of interest. Y_i are his friends, Zyi the friends of Yi.
 
 
 - Probability of meeting:
-How likely is it to meet a person, that is in the intersection of Y_i and Zyi. In oder words, what the probability to meet someone, how also knows X. So that you could tell him the news about X.
+How likely is it to meet a person, that is in the intersection of Y_i and Zyi. In oder words, what is the probability to meet someone, how also knows X. So that you could tell him the news about X.
 
 
 - Probability of forwarding a message:
-We want to modell the prob that B tells C an Informations about A. Which is dependent on three factor: Connectednes (A,B), (A,C) and (B,C)
+We want to modell the prob that B tells C an Informations about A. Which is dependent on three factor: Connectednes (A,B), (A,C) and (B,C).(
 
 
 - Decay of Importance:
@@ -42,12 +38,7 @@ Which means, the probability of forwarding a message decays with time (e.g. Let 
 
 Network:
 
-Our modell will be based on data we'll collect on facebook. So our dataset consist of a list of all friends Yi of X (person of interest), and for each friend Yi, there is another list of all friends Zyi of Yi.
-
-
-
-
-(Define dependent and independent variables you want to study. Say how you want to measure them.) (Why is your model a good abtraction of the problem you want to study?) (Are you capturing all the relevant aspects of the problem?)
+Our modell will be based on data we'll collect on facebook (using facebook graph api). So our dataset consist of a list of all friends Yi of X (person of interest), and for each friend Yi, there is another list of all friends Zyi of Yi.
 
 
 
