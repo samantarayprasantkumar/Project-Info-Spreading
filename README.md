@@ -13,8 +13,8 @@ Since nowadays almost everybody of is part of social network, we thinks it's imp
 
 ## The Modell
 
-We want to implement a modell on how a (personal) information about a person X spreads in our social enviroment. 
-Our modell is based on statistical methods on hand, and data given from a network (e.g. facebook) on the other. We're going to consider paramenters like:
+We want to implement a modell on how a (personal) information about a person X spreads in a social enviroment. 
+Our modell is based on statistical methods on one hand, and data given from a network (e.g. facebook) on the other. We're going to consider paramenters like:
 
 
 Statistical parameter:
