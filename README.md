@@ -29,7 +29,7 @@ How likely is it to meet a person, that is in the intersection of Y<sub>i</sub> 
 
 
 - Probability of forwarding a message:
-We want to estimate the probability that B tells C an Informations about A. Which is dependent on three factor: Connectednes (A,B), (A,C) and (B,C).(
+We want to estimate the probability that B tells C an Informations about A. Which is dependent on three factor: Connectednes (A,B), (A,C) and (B,C).
 
 
 - Decay of Importance:
@@ -38,7 +38,7 @@ Which means, the probability of forwarding a message decays with time.
 
 Network:
 
-Our modell will be based on data we'll collect on facebook (using facebook graph api). So our dataset consist of a list of all friends Yi of X (person of interest), and for each friend Yi, there is another list of all friends Z<sub>y<sub>i</sub></sub> of Y<sub>i</sub>.
+Our modell will be based on data we'll collect on facebook (using facebook graph api). So our dataset consist of a list of all friends Y<sub>i</sub> of X (person of interest), and for each friend Yi, there is another list of all friends Z<sub>y<sub>i</sub></sub> of Y<sub>i</sub>.
 
 
 
