@@ -14,7 +14,7 @@ person(N).id=N;
 
 person(N).friends=friends;
 
-
+person(N).status=0; %0: ignorant, 1:spreader, 2:stifler
 
 
 
