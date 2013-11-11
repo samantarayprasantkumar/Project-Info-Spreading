@@ -1,7 +1,7 @@
 import facebook
 import os
 
-token = ''
+token = 'CAACEdEose0cBABZAF58rEbVQqQNZBpcDZCBWOlmR65A5U12NmLaS9HXyF5o43xhr93tpJA4rFaH0ZCRw4U7dnkJ1vkiCY3C7KhZCqargPfwfqfmbZAqwDE9EkZCmv4QK7aL2TjhVc2c6saKWfY3zZBnUNytgQOlQHZBWu3y5Kc8QC1UAVaSSFfffKWcWgXmZAn5YEvffk4GQMnCwZDZD'
 
 graph = facebook.GraphAPI(token)
 profile = graph.get_object("me")
