@@ -43,7 +43,7 @@ To make sure the models are comparable, we use the same states as in A). But the
 		both were spreaders or one spreader and one stifler, both become stiflers after talking with a probability p2. (otherwise both stay spreaders)
 		
 		
-p1 and p2 take into account, how good the people meeting each other know each other(common friends).
+p1 and p2 take into account, how good the people meeting each other know (number of common friends).
 this is obviously very simplifying.
 
 also, we want to investigate what happens with a personal information, because the spreading will
@@ -58,7 +58,7 @@ model B) might have to be adapated to make it comparable to model A)
 
 - How good is the SIR model for small, clusterd networks (as facebook-friends) (taking model B) as refrence)
 - are there "influentials"? or is the info spreading more or less homogeneous?
-- is it possible to determine influentials by there cluster coefficient?
+- is it possible to determine influentials by their cluster coefficient?
 
 
 
