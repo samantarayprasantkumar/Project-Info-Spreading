@@ -6,26 +6,34 @@
 %0: free, k: already meeting person k, i:not meeting anybody
 meeting=zeros(1,N);
 
+%random vector, so it doesnt start at node 1 always
+rand=randperm(N);
 
-for i=1:N
+
+for k=1:N
     
-    if(meeting(i)==0)
-        if(rand<pmeet)
+    i=rand
+    
+    if(meeting(i)==0)%check if i already meets somebody
+        if(rand>pmeet) 
             meeting(i)=i; %doesnt meet anybody
         else
-            who=0;
-            
-            for i=1:1000 %not more than 1000 attempts to find someone
-            if(who==0);
-                who=round(rand*N+0.5);
+            who=0; %who: meeting partner of i
+            attempt=1; %dont check forever, maybe no partner available
+            while(who==0);
+                who=round(rand*N+0.5); %random partner
+               
+                attempt=attempt+1;
+                
+                %check if who is not meeting, and who and i know each other
                 if(meeting(who)==0 && connect(i,who))
-                    meeting(i)=who;
+                    meeting(i)=who; 
                     meeting(who)=i;
                 else
-                    who=0;
+                    if(attempt<100)who=0; 
+                    else who=1; %just not 0
+                    end
                 end
-                
-            else meeting(i)
             end
         end
     end
