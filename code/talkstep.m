@@ -32,7 +32,8 @@ for k=1:N
                     meeting(i)=who; 
                     meeting(who)=i;
                 else
-                    if(attempt<100)who=0; 
+                    if(attempt<100)
+                        who=0; 
                     else who=1; %just not 0
                     end
                 end
@@ -49,6 +50,53 @@ end
 
 
 
-%% 
+%% change status for each meeting
+
+check=zeros(1,N); %vector to check if status was updated, otherwise
+%multiple updates in one round are possible
+
+
+for i=1:N
+    
+    p1=i;                   %person1
+    p2=meeting(i);          %person2
+    
+    
+    %check if status wasnt updated yet and if i is actually meeting sombody
+    if (check(p1)==0 && check(p2)==0 && p1~=p2)
+        
+        %if both are ignorant or both are stiflers nothing happens...
+        
+        %if one is ignorant and the other is a spreader, both become
+        %spreaders
+        if((status(p1)+status(p2))==1)
+            if(rand<pinform) %probability that they talk about this info
+            status(p1)=1;
+            status(p2)=1;
+            end
+        
+        
+        %if both are spreaders, one becomes a stifler
+        elseif(status(p1)==1 && status(p2)==1)
+            if(rand<pforget) %probability that they forget
+                if(rand<0.5)%only one of them forgets(randomly chosen)
+                    status(p1)=2;
+                else
+                    stauts(p2)=2;
+                end
+            end
+        
+        %if one is a stifler and one a spreader, both become stiflers
+        elseif((status(p1)+status(p2))==3)
+            if(rand<pforget)  %only by a certain probability
+                status(p1)=2;
+                status(p2)=2;
+            end
+        end
+    end
+    %remember that you updated the status
+       check(p1)=1;
+       check(p2)=1;
+end
 
 
