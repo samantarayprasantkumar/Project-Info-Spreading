@@ -5,32 +5,24 @@
 
 %% define network
 
-global N; %total number of persons involved
-N=0;
-
-global person;
-person=struct;
-
-newperson('Alex',{ 'Max'});
-newperson('Berta',{ 'Max' 'Karl' 'Anna' });
-newperson('Max',{'Alex' 'Berta' 'Anna'});
-newperson('Karl',{'Berta'});
-newperson('Anna',{ 'Max' 'Karl'});
+%%execute loaddata
 
 %% extract connection matrix from data
 %1: know each other, 0:dont know each other 
+
+N=length(person);
 
 connect=zeros(N);
 
 
 for i=1:N 
+    M=length(person(i).friends);
     for j=1:N
-        
-        temp=strcmp(person(j).name,person(i).friends);
-        if(find(temp==1))
-            connect(i,j)=1;
+        for k=1:M
+            if(person(j).id==person(i).friends(k))
+                connect(i,j)=1;
+            end
         end
-        
     end
 end
 
