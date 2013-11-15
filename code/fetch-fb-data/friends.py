@@ -1,7 +1,7 @@
 import facebook
 import os
 
-token = 'CAACEdEose0cBABZAF58rEbVQqQNZBpcDZCBWOlmR65A5U12NmLaS9HXyF5o43xhr93tpJA4rFaH0ZCRw4U7dnkJ1vkiCY3C7KhZCqargPfwfqfmbZAqwDE9EkZCmv4QK7aL2TjhVc2c6saKWfY3zZBnUNytgQOlQHZBWu3y5Kc8QC1UAVaSSFfffKWcWgXmZAn5YEvffk4GQMnCwZDZD'
+token = 'CAACEdEose0cBAERgrzh7fZAdnvg8RgzGI86WKupTo9CWGHmEihSseqFl70km1Prp835ngZALuzS4zgUVl5yYzFjzF6xtGZBwaK10ZB4f7tlC5BzZAzFhleCu35QuJnxzTv009wjTHZCCB2i4YPLZATmVzTab8GCcZBt8cqhTqqRdh6DWqZCk3Um1ECXYZC9ZCKBURzBWUOVufvSJwZDZD'
 
 graph = facebook.GraphAPI(token)
 profile = graph.get_object("me")
@@ -12,20 +12,16 @@ friend_list = [friend['id'] for friend in friends['data']]
 os.mkdir('dataset')
 
 
-f = open('dataset/Freunde', 'w')
+f = open('dataset/Freunde.txt', 'w')
 for k in friend_list:
 	f.write('%s' % str(k))
 	f.write('\n')
 
-counter = 1
 
 for i in range(len(friend_list)):
 
-	print counter
-	counter=counter+1
-
 	testfriend = str(friend_list[i])
-	f = open('dataset/ %s' % testfriend, 'w')
+	f = open('dataset/%s.txt' % testfriend, 'w')
 	newprof = graph.get_object(testfriend)
 	mutualfriends = graph.get_connections(testfriend, "mutualfriends")
 	mutualfriends_list = [friend['id'] for friend in mutualfriends['data']]
