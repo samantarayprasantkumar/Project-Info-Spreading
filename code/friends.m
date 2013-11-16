@@ -1,11 +1,10 @@
-
-
 %Test to represent a network, 
 
 
 %% define network
 
 person=loaddata;
+
 
 %% extract connection matrix from data
 %1: know each other, 0:dont know each other 

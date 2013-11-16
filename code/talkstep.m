@@ -82,7 +82,7 @@ for i=1:N
                 if(rand<0.5)%only one of them forgets(randomly chosen)
                     status(p1)=2;
                 else
-                    stauts(p2)=2;
+                    status(p2)=2;
                 end
             end
         
