@@ -11,7 +11,11 @@ parameters;
 N=50;
 
 %create network
-connect=full(small_world(N,4,0.5));
+%connect=full(small_world(N,4,0.5));
+
+%with facebook network:
+friends
+
 
 %set status of all nodes 
 %0:ignorant, 1:spreader, 2:stifler
