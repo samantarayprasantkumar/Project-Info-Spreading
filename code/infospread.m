@@ -8,8 +8,8 @@ folder='test';
 parameters;
 
 %number of Persons involved
-N=50;
-
+%N=50;
+%global N;
 %create network
 %connect=full(small_world(N,4,0.5));
 
@@ -17,9 +17,10 @@ N=50;
 friends
 
 
-%set status of all nodes 
+%set status of all nodes
 %0:ignorant, 1:spreader, 2:stifler
 status=zeros(1,N);
+
 status(1)=1; %one knows
 
 
