@@ -1,6 +1,5 @@
 figure(1);
-plot(ignorants);
-hold on
-plot(spreaders,'r')
-plot(stiflers,'k')
-hold off
+plot(time,ignorants,'r',time,spreaders,'g',time,stiflers,'b');
+legend('Ignorants','Spreaders','Stiflers')
+xlabel('Step')
+ylabel('Population')

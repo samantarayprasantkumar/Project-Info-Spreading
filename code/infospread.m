@@ -26,8 +26,8 @@ status(1)=1; %one knows
 %% Actual Simulation
 
 Nsteps=100; %number of meeting steps
-
-for t=1:Nsteps
+time=linspace(0,100,Nsteps);
+for t=1:length(time)
     
     %let meet and exchange info
     talkstep;
@@ -45,9 +45,6 @@ present_info_spreading;
 
 %% create a folder with parameters, "graphs"(=numbers),and so on
 %
-
-
-
 %make folder
 mkdir(folder);
 
