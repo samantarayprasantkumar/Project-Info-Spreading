@@ -71,7 +71,6 @@ token = raw_input('Enter your Access Token: ')
 
 anonym = input('Do you want to anonymize your Data? Yes (1) or No (0)? ')
 
-token = 'CAACEdEose0cBAALC8vZAccVh4eUnXZCy6oMhhL98I2cE8CFEkQEO1r83brNxSh2dQYTrZCMmDfTJtPpeMASmYnVW1FaT7OEG4t7vqmUKAj8K09Nir3vsrlPDmRlz9B3ZCeoGQ0bAM2k8csLoQkz7lpd9bgY4hlFZBxIvmDCZCQEv4YHBVbnxsv1U9bPEClyj22drm90fx3aAZDZD'
 
 graph = facebook.GraphAPI(token)
 profile = graph.get_object("me")
