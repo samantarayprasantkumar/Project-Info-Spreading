@@ -8,8 +8,8 @@ folder='test';
 parameters;
 
 %number of Persons involved
-N=50;
-
+%N=50;
+%global N;
 %create network
 %connect=full(small_world(N,4,0.5));
 
@@ -17,17 +17,18 @@ N=50;
 friends
 
 
-%set status of all nodes 
+%set status of all nodes
 %0:ignorant, 1:spreader, 2:stifler
 status=zeros(1,N);
+
 status(1)=1; %one knows
 
 
 %% Actual Simulation
 
 Nsteps=100; %number of meeting steps
-
-for t=1:Nsteps
+time=linspace(0,100,Nsteps);
+for t=1:length(time)
     
     %let meet and exchange info
     talkstep;
@@ -45,9 +46,6 @@ present_info_spreading;
 
 %% create a folder with parameters, "graphs"(=numbers),and so on
 %
-
-
-
 %make folder
 mkdir(folder);
 
