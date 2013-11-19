@@ -13,18 +13,15 @@ N=0;
 global person;
 person=struct;
 
+
 for i=1:M
 
   name=num2str(Freunde(i)); %%strings verbinden
   Freundi=cat(2,name,'.txt');
     
-  try
-    tempfriends=dlmread(Freundi);
-    CATCH ME %%Avoiding error if no commen friends! (needs to be improved!)
-    tempfriends=0;
-  end
+  data=dlmread(Freundi);  
   
-  newperson(Freunde(i), tempfriends);
+  newperson(Freunde(i), data);
     
 end
 

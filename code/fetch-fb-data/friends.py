@@ -1,5 +1,13 @@
 import facebook
 import os
+import datetime
+import dateutil.parser
+import pytz
+
+utc=pytz.UTC
+
+a = datetime.datetime.now()
+a = utc.localize(a)
 
 ##Anynomized 
 
@@ -19,18 +27,40 @@ def outputanonym(graph, profile, friends, friend_list):
 	g = open('dataset/gephi.csv', 'w')
 	g.write('Source;Target\n')
 
-	for i in range(len(friend_list)):
+	for i in range(1,len(friend_list)):
 
 		testfriend = str(friend_list[i])
+		tfriend = str(friend_list[i-1])
+
 		f = open('dataset/%s.txt' %str(i), 'w')
+
+		profile = graph.get_object(tfriend)
+		statuses = graph.get_connections(tfriend, "statuses", fields="updated_time", limit="100")
+
+		status_list = [status['updated_time'] for status in statuses['data']]
+
+		n=len(status_list)
+
+		if(n!=0):
+
+			t = dateutil.parser.parse(status_list[n-1])
+			d=a-t
+
+			f.write('%s' %str(n/float(d.days)))
+			f.write('\n')
+
+		else:
+			f.write('0')
+			f.write('\n')
+
 		newprof = graph.get_object(testfriend)
 		mutualfriends = graph.get_connections(testfriend, "mutualfriends")
 		mutualfriends_list = [friend['id'] for friend in mutualfriends['data']]
-		for k in range(len(mutualfriends_list)):
-			for l in range(len(friend_list)):
+		for k in range(1,len(mutualfriends_list)):
+			for l in range(1,len(friend_list)):
 				if (mutualfriends_list[k]==friend_list[l]):
 					f.write('%s\n' %str(l))	
-					g.write('%s;' %str(k))
+					g.write('%s;' %str(i))
 					g.write('%s\n' %str(l))
 
 
@@ -43,7 +73,6 @@ def outputnotanonym(graph, profile, friends, friend_list):
 	f = open('dataset/Freunde.txt', 'w')
 	for k in friend_list:
 		f.write('%s' % str(k))
-		f.write(';%s' % str(counter))
 		f.write('\n')
 
 
@@ -55,15 +84,40 @@ def outputnotanonym(graph, profile, friends, friend_list):
 	for i in range(len(friend_list)):
 
 		testfriend = str(friend_list[i])
+		tfriend = str(friend_list[i-1])
+
+
 		f = open('dataset/%s.txt' % testfriend, 'w')
+
+
+
+		profile = graph.get_object(tfriend)
+		statuses = graph.get_connections(tfriend, "statuses", fields="updated_time", limit="100")
+
+		status_list = [status['updated_time'] for status in statuses['data']]
+
+		n=len(status_list)
+
+		if(n!=0):
+
+			t = dateutil.parser.parse(status_list[n-1])
+			d=a-t
+
+			f.write('%s' %str(n/float(d.days)))
+			f.write('\n')
+
+		else:
+			f.write('0')
+			f.write('\n')
+
+
 		newprof = graph.get_object(testfriend)
 		mutualfriends = graph.get_connections(testfriend, "mutualfriends")
 		mutualfriends_list = [friend['id'] for friend in mutualfriends['data']]
-		print "id:", testfriend, "\n"
 		for j in mutualfriends_list:
 			g.write('%s;' %str(i))			#Gephi
-			g.wirte('%s\n' %str(j))			#Gephi
-			f.write('%s' % str(j))
+			g.write('%s\n' %str(j))			#Gephi
+			f.write('%s' %str(j))
 			f.write('\n')
 
 
