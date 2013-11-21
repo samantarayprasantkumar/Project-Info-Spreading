@@ -52,3 +52,6 @@ for j=1:382
     end
   end  
 end
+
+
+edges=dlmread('edges.csv');

@@ -21,7 +21,7 @@ friends
 %0:ignorant, 1:spreader, 2:stifler
 status=zeros(1,N);
 
-status(1)=1; %one knows
+status(floor((N+1)*rand))=1; %one knows
 
 
 %% Actual Simulation
@@ -64,11 +64,8 @@ dlmwrite([folder '/parameters.txt'],title,'delimiter','');
 dlmwrite([folder '/parameters.txt'],values,'delimiter','\t','-append');
 
 %%
-close all;
-figure(12)
+figure(2)
 hold on
-
-edges=dlmread('edges.csv');
 
 for i = 1:length(edges(:,1))
 a=[person(edges(i,1)).x; person(edges(i,2)).x];
@@ -76,8 +73,8 @@ b=[person(edges(i,1)).y; person(edges(i,2)).y];
 plot(a,b,'-b','LineWidth',0.1)
 end
 
-
 for i = 1:382
   plot(person(i).x,person(i).y,'ok','MarkerSize',2)
 end
 hold off
+

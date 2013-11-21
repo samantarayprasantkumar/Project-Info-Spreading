@@ -55,6 +55,14 @@ end
 check=zeros(1,N); %vector to check if status was updated, otherwise
 %multiple updates in one round are possible
 
+%%Number of meetings at the beginning
+z=0;
+
+figure(3)
+hold on
+for i = 1:382
+  plot(person(i).x,person(i).y,'ok','MarkerSize',2)
+end
 
 for i=1:N
     
@@ -73,6 +81,7 @@ for i=1:N
             if(rand<pinform) %probability that they talk about this info
             status(p1)=1;
             status(p2)=1;
+            SaveMeeting;
             end
         
         
@@ -83,7 +92,7 @@ for i=1:N
                     status(p1)=2;
                 else
                     status(p2)=2;
-                end
+                end  
             end
         
         %if one is a stifler and one a spreader, both become stiflers
@@ -97,6 +106,6 @@ for i=1:N
     %remember that you updated the status
        check(p1)=1;
        check(p2)=1;
+    
 end
-
-
+hold off
