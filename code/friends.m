@@ -37,3 +37,18 @@ for i=1:N
     end
 end
 
+Position=dlmread('positions.gdf');
+[Y,I]=sort(Position(:,1));
+Position=Position(I,:); 
+length(Position(:,1));
+k=0;
+for j=1:382
+  person(j).x=0;
+  person(j).y=0;
+  for i=1:length(Position(:,1))
+    if Position(i,1)==person(j).id
+      person(j).x = Position(i,5); 
+      person(j).y = Position(i,6);
+    end
+  end  
+end
