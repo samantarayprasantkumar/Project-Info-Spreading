@@ -1,16 +1,10 @@
 %Test to represent a network, 
 
 
-addpath('../dataset');
 %% define network
-<<<<<<< HEAD
 
-person=loaddata;
-
-
-=======
 person=loaddata();
->>>>>>> c06f70b0703a225aedaafb48af7ca224fb08b9d2
+
 %% extract connection matrix from data
 %1: know each other, 0:dont know each other 
 

@@ -17,7 +17,7 @@ for k=1:N
     i=choose(k);
     
     if(meeting(i)==0)%check if i already meets somebody
-        if(rand>pmeet) 
+        if(rand>4*person(k).activity+0.1) 
             meeting(i)=i; %doesnt meet anybody
         else
             who=0; %who: meeting partner of i
