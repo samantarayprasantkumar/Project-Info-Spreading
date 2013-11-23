@@ -11,13 +11,19 @@ meeting=zeros(1,N);
 %random vector, so it doesnt start at node 1 always
 choose=randperm(N);
 
+maxakt = 0;
+for i=1:N
+if person(i).activity>maxakt
+maxakt=person(i).activity;
+end
+end
 
 for k=1:N
     
     i=choose(k);
     
     if(meeting(i)==0)%check if i already meets somebody
-        if(rand>4*person(k).activity+0.1) 
+        if(rand>(0.9/maxakt*person(k).activity+0.1)) 
             meeting(i)=i; %doesnt meet anybody
         else
             who=0; %who: meeting partner of i
@@ -79,6 +85,17 @@ for i=1:N
         %spreaders
         if((status(p1)+status(p2))==1)
             if(rand<pinform) %probability that they talk about this info
+              if status(p1)==1
+              person(p1).activity=person(p1).activity*1.1
+              elseif status(p2)==1
+              person(p2).activity=person(p2).activity*1.1;
+              end
+              if person(p1).activity > 1
+                person(p1).activity = 1;
+              end
+              if person(p2).activity > 1
+                person(p2).activity = 1;
+              end           
             status(p1)=1;
             status(p2)=1;
             SaveMeeting;

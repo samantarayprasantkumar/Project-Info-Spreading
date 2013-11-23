@@ -2,6 +2,8 @@
 
 
 %% define network
+addpath('fetch-fb-data')
+addpath('fetch-fb-data/dataset')
 
 person=loaddata();
 
