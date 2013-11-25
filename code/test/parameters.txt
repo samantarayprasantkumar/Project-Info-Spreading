@@ -1,2 +1,2 @@
 pmeet pinform pforget
-0.8	1	0.2
+0.8	0.41101	0.2

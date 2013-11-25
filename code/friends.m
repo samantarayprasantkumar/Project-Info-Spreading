@@ -27,7 +27,7 @@ for i=1:N
 end
 
 %% extract Matrix with common friends
-%by the way, tiagonal contains number of friends
+%by the way, diagonal contains number of friends
 
 common=zeros(N,N);
 

@@ -18,10 +18,7 @@ status=zeros(1,N);
 
 status(floor((N+1)*rand))=1; %one knows
 
-%% "Tools" for analyzing the spreading
 infections=zeros(1,N);
-
-
 %% Actual Simulation
 
 
@@ -39,8 +36,8 @@ for t=1:Nsteps
    
     %indicating progress
     figure(1)
-    bla=[int2str(t/Nsteps*100) '%'];
-    progress=text(0.9,0.9,bla);
+    bla=int2str(t)/Nsteps*100+'%';
+    progress=text(0.9,0.9,);
     
     %let meet and exchange info
     talkstep;
@@ -69,21 +66,21 @@ present_info_spreading;
 %% create a folder with parameters, "graphs"(=numbers),and so on
 %
 %make folder
-% mkdir(folder);
-% 
-% %save time evolution
-% evolution=[ignorants', spreaders', stiflers'];
-% dlmwrite([folder '/evolution.txt'],evolution,'delimiter',',');
-% 
-% %save network
-% A=adj2arclist(connect);
-% cell2csv([folder '/network.csv'],A);
-% 
-% %save parameters
-% title=['pmeet ' 'pinform ' 'pforget'];
-% values=[pmeet pinform pforget];
-% dlmwrite([folder '/parameters.txt'],title,'delimiter','');
-% dlmwrite([folder '/parameters.txt'],values,'delimiter','\t','-append');
+mkdir(folder);
+
+%save time evolution
+evolution=[ignorants', spreaders', stiflers'];
+dlmwrite([folder '/evolution.txt'],evolution,'delimiter',',');
+
+%save network
+A=adj2arclist(connect);
+cell2csv([folder '/network.csv'],A);
+
+%save parameters
+title=['pmeet ' 'pinform ' 'pforget'];
+values=[pmeet pinform pforget];
+dlmwrite([folder '/parameters.txt'],title,'delimiter','');
+dlmwrite([folder '/parameters.txt'],values,'delimiter','\t','-append');
 
 % %%
 % figure(2)
