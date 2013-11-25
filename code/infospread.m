@@ -20,9 +20,12 @@ status(floor((N+1)*rand))=1; %one knows
 
 %% "Tools" for analyzing the spreading
 infections=zeros(1,N); %number of infectios caused by i
+cum_infections=zeros(1,N);%infections plus "infection-subtree"
 nummeetings=zeros(1,N); %total number of meetings
-%%Number of meetings at the beginning(for SaveMeeting)
-z=0;
+z=0;   %%Number of meetings at the beginning(for SaveMeeting)
+infectpath=[0,0];%path (edges) of infections
+Nfriends=diag(common);
+
 
 %% Actual Simulation
 
@@ -68,6 +71,63 @@ end
 
 %% Presenting Data
 present_info_spreading;
+
+%% Do tests if model made sense
+
+%get "cumulative infections", i.e. the whole tree one infected
+%do recursively!
+% for i=1:N
+%     
+%     
+%     
+%     %cum_infections
+%     
+% end
+
+
+
+figure(4)
+subplot(2,2,1);
+plot(Nfriends,nummeetings,'o','markersize',2);
+xlabel('Number of Friends');
+ylabel('Number of Meetings');
+
+
+subplot(2,2,2);
+plot(Nfriends,infections,'o','markersize',2);
+xlabel('Number of Friends');
+ylabel('Number of Infections');
+
+subplot(2,2,3);
+plot(nummeetings,infections,'o','markersize',2);
+xlabel('Number of Meetings');
+ylabel('Number of Infections');
+
+%check if nobody was infected twice
+
+for i=1:(length(infectpath(:,1))-1)
+    for j=(i+1):length(infectpath(:,1))
+    
+        if(infectpath(i,2)==infectpath(j,2))
+            warning('The path of infections makes no sense')
+        end
+        
+    end
+end
+
+
+%check if nobody infected before he was infected
+for i=2:length(infectpath(:,1))
+    
+    check=sum(infectpath(i,1)==infectpath(1:(i-1),2));
+    check=check+(infectpath(i,1)==infectpath(1,1));%could also be the first one...
+    if (check==0)
+       warning('The path of infections makes no sense')
+       warning(int2str(i))
+    end
+    
+    
+end
 
 %% create a folder with parameters, "graphs"(=numbers),and so on
 %
