@@ -23,7 +23,7 @@ for k=1:N
     i=choose(k);
     
     if(meeting(i)==0)%check if i already meets somebody
-        if(rand>(0.9/maxakt*person(k).activity+0.1)) 
+        if(rand>(1/maxakt*person(k).activity)) 
             meeting(i)=i; %doesnt meet anybody
         else
             who=0; %who: meeting partner of i
@@ -38,7 +38,7 @@ for k=1:N
                     meeting(i)=who; 
                     meeting(who)=i;
                 else
-                    if(attempt<100)
+                    if(attempt<100) %change this!
                         who=0; 
                     else who=1; %just not 0
                     end
@@ -84,20 +84,26 @@ for i=1:N
         %if one is ignorant and the other is a spreader, both become
         %spreaders
         if((status(p1)+status(p2))==1)
+            %make pinform a function of p1 and p2
+            pinform=1;
+            
             if(rand<pinform) %probability that they talk about this info
-              if status(p1)==1
-              person(p1).activity=person(p1).activity*1.1
-              elseif status(p2)==1
-              person(p2).activity=person(p2).activity*1.1;
-              end
-              if person(p1).activity > 1
-                person(p1).activity = 1;
-              end
-              if person(p2).activity > 1
-                person(p2).activity = 1;
-              end           
+%               if status(p1)==1
+%               infections(p1)=infections(p1)+1;
+%               elseif status(p2)==1
+%               infections(p2)=infections(p2)+1;
+%               end
+%               if person(p1).activity > 1
+%                 person(p1).activity = 1;
+%               end
+%               if person(p2).activity > 1
+%                 person(p2).activity = 1;
+%               end     
+
+
             status(p1)=1;
             status(p2)=1;
+            
             SaveMeeting;
             end
         

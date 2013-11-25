@@ -15,6 +15,7 @@ person(N).status=0; %0: ignorant, 1:spreader, 2:stifler
 
 person(N).activity=data(1);
 
+
 if(length(data)>1)
     person(N).friends=data(2:end);
     

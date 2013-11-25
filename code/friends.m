@@ -39,6 +39,8 @@ for i=1:N
     end
 end
 
+maxcommon=max(max(common));
+
 Position=dlmread('positions.gdf');
 [Y,I]=sort(Position(:,1));
 Position=Position(I,:); 

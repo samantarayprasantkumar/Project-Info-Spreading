@@ -26,6 +26,8 @@ status(floor((N+1)*rand))=1; %one knows
 
 %% Actual Simulation
 
+infections=zeros(1,N);
+
 Nsteps=100; %number of meeting steps
 time=linspace(0,100,Nsteps);
 for t=1:length(time)
@@ -63,7 +65,7 @@ values=[pmeet pinform pforget];
 dlmwrite([folder '/parameters.txt'],title,'delimiter','');
 dlmwrite([folder '/parameters.txt'],values,'delimiter','\t','-append');
 
-%%
+% %%
 % figure(2)
 % hold on
 % 
