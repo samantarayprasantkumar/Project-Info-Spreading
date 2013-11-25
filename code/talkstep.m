@@ -37,8 +37,11 @@ for k=1:N
                 if(meeting(who)==0 && connect(i,who))
                     meeting(i)=who; 
                     meeting(who)=i;
+                    
+                    nummeetings(i)=nummeetings(i)+1;
+                    nummeetings(who)=nummeetings(who)+1;
                 else
-                    if(attempt<10) %change this!
+                    if(attempt<30) %change this!
                         who=0; 
                     else who=1; %just not 0
                     end
@@ -61,8 +64,6 @@ end
 check=zeros(1,N); %vector to check if status was updated, otherwise
 %multiple updates in one round are possible
 
-%%Number of meetings at the beginning(for SaveMeeting)
-z=0;
 
 
 for i=1:N
@@ -79,27 +80,23 @@ for i=1:N
         %if one is ignorant and the other is a spreader, both become
         %spreaders
         if((status(p1)+status(p2))==1)
+            %make p1 the one whos already infected
+             if status(p2)==1
+                dummy=p2;
+                p2=p1;
+                p1=dummy;
+             end
+            
             %make pinform a function of p1 and p2
             pinform=0.6*common(p1,p2)/maxcommon+0.4;
             
             if(rand<pinform) %probability that they talk about this info
-%               if status(p1)==1
-%               infections(p1)=infections(p1)+1;
-%               elseif status(p2)==1
-%               infections(p2)=infections(p2)+1;
-%               end
-%               if person(p1).activity > 1
-%                 person(p1).activity = 1;
-%               end
-%               if person(p2).activity > 1
-%                 person(p2).activity = 1;
-%               end     
-
-
-            status(p1)=1;
-            status(p2)=1;
-            
-            SaveMeeting;
+                
+                infections(p1)=infections(p1)+1;
+                
+                status(p2)=1;
+                
+                SaveMeeting;
             end
         
         

@@ -19,8 +19,10 @@ status=zeros(1,N);
 status(floor((N+1)*rand))=1; %one knows
 
 %% "Tools" for analyzing the spreading
-infections=zeros(1,N);
-
+infections=zeros(1,N); %number of infectios caused by i
+nummeetings=zeros(1,N); %total number of meetings
+%%Number of meetings at the beginning(for SaveMeeting)
+z=0;
 
 %% Actual Simulation
 
@@ -31,6 +33,7 @@ hold on
 for i = 1:N
   plot(person(i).x,person(i).y,'ok','MarkerSize',2)
 end
+
 
 Nsteps=1000; %number of meeting steps
 time=linspace(0,Nsteps-1,Nsteps);
