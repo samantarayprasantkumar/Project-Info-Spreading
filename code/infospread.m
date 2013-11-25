@@ -74,15 +74,23 @@ present_info_spreading;
 
 %% Do tests if model made sense
 
-%get "cumulative infections", i.e. the whole tree one infected
-%do recursively!
-% for i=1:N
-%     
-%     
-%     
-%     %cum_infections
-%     
-% end
+% get "cumulative infections", i.e. the whole tree one infected
+% do recursively!
+
+  L=length(infectpath(:,1));
+  p1=infectpath(L,1);
+  p2=infectpath(L,2);
+    
+  cum_infections(p1)=1;
+
+for i=1:L-1
+    
+    p1=infectpath(L-i,1);
+    p2=infectpath(L-i,2);
+    
+    cum_infections(p1)=1+cum_infections(p1)+cum_infections(p1);
+    
+end
 
 
 
@@ -102,6 +110,11 @@ subplot(2,2,3);
 plot(nummeetings,infections,'o','markersize',2);
 xlabel('Number of Meetings');
 ylabel('Number of Infections');
+
+subplot(2,2,4);
+plot(cum_infections);
+xlabel('id');
+ylabel('Number of Cumulative Infections');
 
 %check if nobody was infected twice
 
