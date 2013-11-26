@@ -20,16 +20,18 @@ ov_nummeetings=zeros(1,N);
 
 
 
-Nexperiments=50; %number of experiments
+Nexperiments=10; %number of experiments
 
 for experiment=1:Nexperiments
-
+tic
 
 %set status of all nodes
 %0:ignorant, 1:spreader, 2:stifler
 status=zeros(1,N);
 
+
 status(floor(N*rand+0.5))=1; %one knows
+
 
 %% "Tools" for analyzing the spreading
 infections=zeros(1,N); %number of infectios caused by i
@@ -51,7 +53,7 @@ for i = 1:N
 end
 
 
-Nsteps=100; %number of meeting steps
+Nsteps=500; %number of meeting steps
 time=linspace(0,Nsteps-1,Nsteps);
 
 for t=1:Nsteps
@@ -102,7 +104,19 @@ for i=1:L-1
     
 end
 
-
+%%%
+%%%
+%test
+%%%
+%%%
+cum_infections(find(cum_infections==max(cum_infections)))=0;
+cum_infections(find(cum_infections==max(cum_infections)))=0;
+cum_infections(find(cum_infections==max(cum_infections)))=0;
+%%%
+%%%
+%test
+%%%
+%%%
 
 figure(3)
 subplot(2,2,1);
@@ -165,6 +179,8 @@ ov_nummeetings=ov_nummeetings+nummeetings;
 figure(4)
 plot(ov_cum_infections)
 
+
+toc
 end %End of whole Experiment
 
 

@@ -88,7 +88,7 @@ for i=1:N
              end
             
             %make pinform a function of p1 and p2
-            pinform=0.6*common(p1,p2)/maxcommon+0.4;
+            pinform=0.5*common(p1,p2)/maxcommon+0.5;
             
             if(rand<pinform) %probability that they talk about this info
                 

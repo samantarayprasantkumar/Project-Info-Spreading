@@ -26,6 +26,12 @@ for i=1:N
     end
 end
 
+%% clustering coefficient
+
+clustercoef=clustering(connect, 'undirected');
+
+
+
 %% extract Matrix with common friends
 %by the way, diagonal contains number of friends
 
