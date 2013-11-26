@@ -20,7 +20,7 @@ ov_nummeetings=zeros(1,N);
 
 
 
-Nexperiments=50; %number of experiments
+Nexperiments=10; %number of experiments
 
 for experiment=1:Nexperiments
 
@@ -51,7 +51,7 @@ for i = 1:N
 end
 
 
-Nsteps=100; %number of meeting steps
+Nsteps=1000; %number of meeting steps
 time=linspace(0,Nsteps-1,Nsteps);
 
 for t=1:Nsteps
@@ -157,7 +157,7 @@ end
 close figure 1;
 
 %overall output (sum over individual simulations)
-ov_infections=ov_infections+infections; 
+ov_infections(experi)=ov_infections+infections; 
 ov_cum_infections=ov_cum_infections+cum_infections;
 ov_nummeetings=ov_nummeetings+nummeetings;
 
