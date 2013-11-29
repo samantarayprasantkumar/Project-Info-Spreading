@@ -16,7 +16,7 @@ def outputanonym(graph, profile, friends, friend_list):
 
 	f = open('dataset/Freunde.txt', 'w')
 	counter=0
-	for k in friend_list:
+	for k in range(1,len(friend_list)+1):
 		counter = counter+1
 		f.write('%s' % str(counter))
 		f.write('\n')
