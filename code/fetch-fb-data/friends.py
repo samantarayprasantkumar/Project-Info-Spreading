@@ -29,7 +29,6 @@ def outputanonym(graph, profile, friends, friend_list):
 
 	for i in range(1,len(friend_list)):
 
-		testfriend = str(friend_list[i])
 		tfriend = str(friend_list[i-1])
 
 		f = open('dataset/%s.txt' %str(i), 'w')
@@ -53,12 +52,11 @@ def outputanonym(graph, profile, friends, friend_list):
 			f.write('0')
 			f.write('\n')
 
-		newprof = graph.get_object(testfriend)
-		mutualfriends = graph.get_connections(testfriend, "mutualfriends")
+		mutualfriends = graph.get_connections(tfriend, "mutualfriends")
 		mutualfriends_list = [friend['id'] for friend in mutualfriends['data']]
-		for k in range(1,len(mutualfriends_list)):
-			for l in range(1,len(friend_list)):
-				if (mutualfriends_list[k]==friend_list[l]):
+		for k in range(1,len(mutualfriends_list)+1):
+			for l in range(1,len(friend_list)+1):
+				if (mutualfriends_list[k-1]==friend_list[l-1]):
 					f.write('%s\n' %str(l))	
 					g.write('%s;' %str(i))
 					g.write('%s\n' %str(l))
