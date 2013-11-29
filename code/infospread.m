@@ -53,15 +53,14 @@ for i = 1:N
 end
 
 
-Nsteps=1000; %number of meeting steps
-time=linspace(0,Nsteps-1,Nsteps);
+
 
 t=1;
 breakout=0;
+Nsteps=5000;
 
-while(breakout==0 && t<10000)
+while(breakout==0 && t<Nsteps)
    
-    
     
     %indicating progress
     figure(1)
@@ -80,7 +79,7 @@ while(breakout==0 && t<10000)
     pause(0.001)
     delete(progress);
     
-    if (spreaders==0)
+    if (spreaders(t)==0)
         breakout=1;
     end
     
