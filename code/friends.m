@@ -26,6 +26,19 @@ for i=1:N
     end
 end
 
+%make symmetric
+for i=1:N
+   for j=1:N
+      if((connect(i,j)+connect(j,i))==1)
+       
+          connect(i,j)=1;
+          connect(j,i)=1;
+      end
+   end
+end
+
+
+
 %% clustering coefficient
 
 clustercoef=clustering(connect, 'undirected');
@@ -44,6 +57,8 @@ for i=1:N
 
     end
 end
+
+
 
 maxcommon=max(max(common));
 
