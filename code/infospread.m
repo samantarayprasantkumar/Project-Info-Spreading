@@ -1,4 +1,4 @@
-clc;clear;close all;
+clc; clear all;close all;
 %% prepare system
 
 %declare where result is saved
@@ -10,6 +10,20 @@ parameters;
 
 %with facebook network:
 friends;
+
+%% Determine maximal acitivity
+maxakt = 0;
+for i=1:N
+  if person(i).activity>maxakt
+    maxakt=person(i).activity;
+    maxaktperson=i;
+  end
+end
+% Normalise all activities 
+for i=1:N
+  person(i).activity=person(i).activity/maxakt ; 
+end
+
 %% Do the experiment (several simulation rounds)
 
 %overall output (sum over individual simulations)
@@ -20,7 +34,7 @@ ov_nummeetings=zeros(1,N);
 
 
 
-Nexperiments=10; %number of experiments
+Nexperiments=9; %number of experiments
 
 for experiment=1:Nexperiments
 tic
@@ -29,9 +43,10 @@ tic
 %0:ignorant, 1:spreader, 2:stifler
 status=zeros(1,N);
 
-
-status(floor(N*rand+0.5))=1; %one knows
-
+%Startperson=round(N*rand+0.5);
+Startperson=1;
+status(Startperson)=1; %one knows
+initial_activity=person(Startperson).activity
 
 %% "Tools" for analyzing the spreading
 infections=zeros(1,N); %number of infectios caused by i
@@ -44,15 +59,12 @@ Nfriends=diag(common);
 
 %% Actual Simulation
 
-
-
 figure(1)
 hold on
 for i = 1:N
   plot(person(i).x,person(i).y,'ok','MarkerSize',2)
 end
-
-
+plot(person(Startperson).x,person(Startperson).y,'ob','MarkerSize',2)
 
 
 t=1;
@@ -75,14 +87,42 @@ while(breakout==0 && t<Nsteps)
     ignorants(t)=sum(status==0);
     spreaders(t)=sum(status==1);
     stiflers(t)=sum(status==2);
-    
+
     pause(0.001)
     delete(progress);
+
     
-    if (spreaders(t)==0)
+    
+%% Breakout method1: Is there an active spreader?
+%     total_activity(t) = 0;
+%     breakout=1;
+%     for c_act=1:N
+%       if status(c_act)==1 &&  person(c_act).activity>0
+%         breakout=0; 
+%         break      
+%       end
+%     end
+
+     
+%% Breakout method2: Is sum of activities of spreaders > 0?
+%   Save this total activity an plot it in figure(5) (present infospreading)
+%   Do not forgett to clear the it together with ignorants, spreaders, stiflers
+    total_activity(t)=0;
+    for c_act=1:N
+      if status(c_act)==1 
+        total_activity(t) = total_activity(t)+person(c_act).activity;  
+      end
+    end
+    
+    if (total_activity(t)==0)
         breakout=1;
     end
     
+%% Breakout method2: Is there any spreader?
+%     if (spreaders(t)==0)
+%         breakout=1;
+%     end
+
     t=t+1;
     
 end
@@ -91,6 +131,11 @@ end
 %% Presenting Data
 present_info_spreading;
 
+
+clear ignorants;
+clear spreaders;
+clear stiflers;
+clear total_activity;    
 %% Do tests if model made sense
 
 % get "cumulative infections", i.e. the whole tree one infected
@@ -107,14 +152,11 @@ for i=1:L-1
     
 end
 
-
-
 figure(3)
 subplot(2,2,1);
 plot(Nfriends,nummeetings,'o','markersize',2);
 xlabel('Number of Friends');
 ylabel('Number of Meetings');
-
 
 subplot(2,2,2);
 plot(Nfriends,infections,'o','markersize',2);
@@ -142,7 +184,6 @@ for i=1:(length(infectpath(:,1))-1)
         
     end
 end
-
 
 %check if nobody infected before he was infected
 for i=2:length(infectpath(:,1))

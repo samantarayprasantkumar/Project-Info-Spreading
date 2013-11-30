@@ -11,19 +11,12 @@ meeting=zeros(1,N);
 %random vector, so it doesnt start at node 1 always
 choose=randperm(N);
 
-maxakt = 0;
-for i=1:N
-if person(i).activity>maxakt
-maxakt=person(i).activity;
-end
-end
-
 for k=1:N
     
     i=choose(k);
     
     if(meeting(i)==0)%check if i already meets somebody
-        if(rand>(1/maxakt*person(k).activity)) 
+        if(rand>(person(k).activity)) 
             meeting(i)=i; %doesnt meet anybody
         else
             who=0; %who: meeting partner of i

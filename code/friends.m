@@ -13,8 +13,9 @@ person=loaddata();
 N=length(person);
 
 connect=zeros(N);
+        
 
-
+%%
 for i=1:N 
     M=length(person(i).friends);
     for j=1:N
