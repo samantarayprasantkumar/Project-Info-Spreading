@@ -45,6 +45,19 @@ end
 clustercoef=clustering(connect, 'undirected');
 
 
+%% Determine maximal acitivity
+maxakt = 0;
+for i=1:N
+  if person(i).activity>maxakt
+    maxakt=person(i).activity;
+    maxaktperson=i;
+  end
+end
+% Normalise all activities 
+for i=1:N
+  person(i).activity=person(i).activity/maxakt ; 
+end
+
 
 %% extract Matrix with common friends
 %by the way, diagonal contains number of friends
@@ -62,6 +75,7 @@ end
 
 
 maxcommon=max(max(common));
+%% set position(from gephi file)
 
 Position=dlmread('positions.gdf');
 [Y,I]=sort(Position(:,1));

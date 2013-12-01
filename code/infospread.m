@@ -11,18 +11,6 @@ parameters;
 %with facebook network:
 friends;
 
-%% Determine maximal acitivity
-maxakt = 0;
-for i=1:N
-  if person(i).activity>maxakt
-    maxakt=person(i).activity;
-    maxaktperson=i;
-  end
-end
-% Normalise all activities 
-for i=1:N
-  person(i).activity=person(i).activity/maxakt ; 
-end
 
 %% Do the experiment (several simulation rounds)
 
@@ -34,7 +22,7 @@ ov_nummeetings=zeros(1,N);
 
 
 
-Nexperiments=9; %number of experiments
+Nexperiments=10; %number of experiments
 
 for experiment=1:Nexperiments
 tic
@@ -43,10 +31,9 @@ tic
 %0:ignorant, 1:spreader, 2:stifler
 status=zeros(1,N);
 
-%Startperson=round(N*rand+0.5);
-Startperson=1;
+Startperson=round(N*rand+0.5);
 status(Startperson)=1; %one knows
-initial_activity=person(Startperson).activity
+initial_activity=person(Startperson).activity;
 
 %% "Tools" for analyzing the spreading
 infections=zeros(1,N); %number of infectios caused by i
@@ -69,7 +56,7 @@ plot(person(Startperson).x,person(Startperson).y,'ob','MarkerSize',2)
 
 t=1;
 breakout=0;
-Nsteps=5000;
+Nsteps=3000;
 
 while(breakout==0 && t<Nsteps)
    
@@ -92,37 +79,24 @@ while(breakout==0 && t<Nsteps)
     delete(progress);
 
     
-    
-%% Breakout method1: Is there an active spreader?
-%     total_activity(t) = 0;
-%     breakout=1;
-%     for c_act=1:N
-%       if status(c_act)==1 &&  person(c_act).activity>0
-%         breakout=0; 
-%         break      
-%       end
-%     end
 
-     
-%% Breakout method2: Is sum of activities of spreaders > 0?
-%   Save this total activity an plot it in figure(5) (present infospreading)
-%   Do not forgett to clear the it together with ignorants, spreaders, stiflers
-    total_activity(t)=0;
-    for c_act=1:N
-      if status(c_act)==1 
-        total_activity(t) = total_activity(t)+person(c_act).activity;  
-      end
-    end
     
-    if (total_activity(t)==0)
+%test if evolution is possible
+    if (spreaders(t)==0)
+        breakout=1;
+    end
+
+    if( Nfriends(Startperson)==0)
         breakout=1;
     end
     
-%% Breakout method2: Is there any spreader?
-%     if (spreaders(t)==0)
-%         breakout=1;
-%     end
-
+    if (person(Startperson).activity==0) 
+        breakout=1;
+    end
+     
+    
+    
+    
     t=t+1;
     
 end
@@ -136,81 +110,6 @@ clear ignorants;
 clear spreaders;
 clear stiflers;
 clear total_activity;    
-%% Do tests if model made sense
-
-% get "cumulative infections", i.e. the whole tree one infected
-% do recursively!
-
-  L=length(infectpath(:,1));
- 
-for i=1:L-1
-    
-    p1=infectpath(L-i,1);
-    p2=infectpath(L-i,2);
-    
-    cum_infections(p1)=1+cum_infections(p1)+cum_infections(p1);
-    
-end
-
-figure(3)
-subplot(2,2,1);
-plot(Nfriends,nummeetings,'o','markersize',2);
-xlabel('Number of Friends');
-ylabel('Number of Meetings');
-
-subplot(2,2,2);
-plot(Nfriends,infections,'o','markersize',2);
-xlabel('Number of Friends');
-ylabel('Number of Infections');
-
-subplot(2,2,3);
-plot(nummeetings,infections,'o','markersize',2);
-xlabel('Number of Meetings');
-ylabel('Number of Infections');
-
-subplot(2,2,4);
-plot(cum_infections);
-xlabel('id');
-ylabel('Number of Cumulative Infections');
-
-%check if nobody was infected twice
-
-for i=1:(length(infectpath(:,1))-1)
-    for j=(i+1):length(infectpath(:,1))
-    
-        if(infectpath(i,2)==infectpath(j,2))
-            warning('The path of infections makes no sense')
-        end
-        
-    end
-end
-
-%check if nobody infected before he was infected
-for i=2:length(infectpath(:,1))
-    
-    check=sum(infectpath(i,1)==infectpath(1:(i-1),2));
-    check=check+(infectpath(i,1)==infectpath(1,1));%could also be the first one...
-    if (check==0)
-       warning('The path of infections makes no sense')
-       warning(int2str(i))
-    end
-    
-    
-end
-
-
-
-close figure 1;
-
-%overall output (sum over individual simulations)
-ov_infections=ov_infections+infections; 
-ov_cum_infections=ov_cum_infections+cum_infections;
-ov_nummeetings=ov_nummeetings+nummeetings;
-
-
-figure(4)
-plot(ov_cum_infections)
-
 
 toc
 end %End of whole Experiment

@@ -16,7 +16,7 @@ for k=1:N
     i=choose(k);
     
     if(meeting(i)==0)%check if i already meets somebody
-        if(rand>(person(k).activity)) 
+        if(rand>(person(i).activity)) 
             meeting(i)=i; %doesnt meet anybody
         else
             who=0; %who: meeting partner of i
@@ -34,7 +34,7 @@ for k=1:N
                     nummeetings(i)=nummeetings(i)+1;
                     nummeetings(who)=nummeetings(who)+1;
                 else
-                    if(attempt<30) %change this!
+                    if(attempt<50) %change this!
                         who=0; 
                     else who=1; %just not 0
                     end
