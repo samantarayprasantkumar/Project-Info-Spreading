@@ -82,7 +82,7 @@ Position=dlmread('positions.gdf');
 Position=Position(I,:); 
 length(Position(:,1));
 k=0;
-for j=1:382
+for j=1:N
   person(j).x=0;
   person(j).y=0;
   for i=1:length(Position(:,1))

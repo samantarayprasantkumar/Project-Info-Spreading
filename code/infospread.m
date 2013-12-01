@@ -2,7 +2,9 @@ clc; clear all;close all;
 %% prepare system
 
 %declare where result is saved
-folder='test';
+folder='test2_20131201';
+%make folder
+mkdir(folder);
 
 %load parameters, e.g. probability for meeting
 parameters;
@@ -22,7 +24,7 @@ ov_nummeetings=zeros(1,N);
 
 
 
-Nexperiments=10; %number of experiments
+Nexperiments=100; %number of experiments
 
 for experiment=1:Nexperiments
 tic
@@ -85,18 +87,7 @@ while(breakout==0 && t<Nsteps)
     if (spreaders(t)==0)
         breakout=1;
     end
-
-    if( Nfriends(Startperson)==0)
-        breakout=1;
-    end
-    
-    if (person(Startperson).activity==0) 
-        breakout=1;
-    end
      
-    
-    
-    
     t=t+1;
     
 end
@@ -116,36 +107,12 @@ end %End of whole Experiment
 
 
 
-%% create a folder with parameters, "graphs"(=numbers),and so on
-%
-%make folder
-% mkdir(folder);
-% 
-% %save time evolution
-% evolution=[ignorants', spreaders', stiflers'];
-% dlmwrite([folder '/evolution.txt'],evolution,'delimiter',',');
-% 
-% %save network
-% A=adj2arclist(connect);
-% cell2csv([folder '/network.csv'],A);
-% 
-% %save parameters
-% title=['pmeet ' 'pinform ' 'pforget'];
-% values=[pmeet pinform pforget];
-% dlmwrite([folder '/parameters.txt'],title,'delimiter','');
-% dlmwrite([folder '/parameters.txt'],values,'delimiter','\t','-append');
 
-% %%
-% figure(2)
-% hold on
-% 
-% for i = 1:length(edges(:,1))
-% a=[person(edges(i,1)).x; person(edges(i,2)).x];
-% b=[person(edges(i,1)).y; person(edges(i,2)).y];
-% plot(a,b,'-b','LineWidth',0.1)
-% end
-% 
-% for i = 1:382
-%   plot(person(i).x,person(i).y,'ok','MarkerSize',2)
-% end
-% hold off
+warning('dont forget to write a description in the experiment-folder')
+
+dlmwrite([folder '/Nfriends.txt'], Nfriends,'delimiter',' ');
+dlmwrite([folder '/clustercoef.txt'], clustercoef,'delimiter',' ');
+dlmwrite([folder '/connect.txt'], connect,'delimiter',' ');
+dlmwrite([folder '/common.txt'], common,'delimiter',' ');
+
+

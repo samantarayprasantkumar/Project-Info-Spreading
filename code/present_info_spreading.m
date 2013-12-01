@@ -1,12 +1,12 @@
 clear time;
 
-figure(2);
-  time=1:length(ignorants);
-  plot(time,ignorants,'r',time,spreaders,'g',time,stiflers,'b');
-  %legend('Ignorants','Spreaders','Stiflers')
-  xlabel('Step')
-  ylabel('Population')
-  axis([time(1) time(end)+1 0 400])
+% figure(2);
+%   time=1:length(ignorants);
+%   plot(time,ignorants,'r',time,spreaders,'g',time,stiflers,'b');
+%   %legend('Ignorants','Spreaders','Stiflers')
+%   xlabel('Step')
+%   ylabel('Population')
+%   axis([time(1) time(end)+1 0 400])
 
   %% Do tests if model made sense
 
@@ -24,26 +24,36 @@ for i=1:L-1
     
 end
 
-figure(3)
-subplot(2,2,1);
-plot(Nfriends,nummeetings,'o','markersize',2);
-xlabel('Number of Friends');
-ylabel('Number of Meetings');
 
-subplot(2,2,2);
-plot(Nfriends,infections,'o','markersize',2);
-xlabel('Number of Friends');
-ylabel('Number of Infections');
+for i=1:N
+  act(i)=person(i).activity;  
+end
 
-subplot(2,2,3);
-plot(nummeetings,infections,'o','markersize',2);
-xlabel('Number of Meetings');
-ylabel('Number of Infections');
 
-subplot(2,2,4);
-plot(cum_infections);
-xlabel('id');
-ylabel('Number of Cumulative Infections');
+% figure(3)
+% subplot(2,2,1);
+% plot(Nfriends.*act',nummeetings,'o','markersize',2);
+% xlabel('Number of Friends');
+% ylabel('Number of Meetings');
+% 
+% subplot(2,2,2);
+% plot(Nfriends,infections,'o','markersize',2);
+% xlabel('Number of Friends');
+% ylabel('Number of Infections');
+% 
+% subplot(2,2,3);
+% plot(nummeetings,infections,'o','markersize',2);
+% xlabel('Number of Meetings');
+% ylabel('Number of Infections');
+% 
+% subplot(2,2,4);
+% plot(cum_infections);
+% xlabel('id');
+% ylabel('Number of Cumulative Infections');
+
+
+% figure(4)
+% plot(ov_cum_infections)
 
 %check if nobody was infected twice
 
@@ -75,13 +85,20 @@ end
 close figure 1;
 
 %overall output (sum over individual simulations)
-ov_infections=ov_infections+infections; 
-ov_cum_infections=ov_cum_infections+cum_infections;
-ov_nummeetings=ov_nummeetings+nummeetings;
+% ov_infections=ov_infections+infections; 
+% ov_cum_infections=ov_cum_infections+cum_infections;
+% ov_nummeetings=ov_nummeetings+nummeetings;
 
 
-figure(4)
-plot(ov_cum_infections)
+
+%% create a folder with relevant variables
+
+
+
+dlmwrite([folder '/infections.txt'],infections,'delimiter',' ','-append');
+dlmwrite([folder '/Startperson.txt'],Startperson,'delimiter',' ','-append');
+dlmwrite([folder '/cum_infections.txt'],cum_infections,'delimiter',' ','-append');
+dlmwrite([folder '/nummeetings.txt'],nummeetings,'delimiter',' ','-append');
 
 
    
