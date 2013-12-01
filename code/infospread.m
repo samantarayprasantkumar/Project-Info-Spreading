@@ -2,7 +2,7 @@ clc; clear all;close all;
 %% prepare system
 
 %declare where result is saved
-folder='test2_20131201';
+folder='blub';
 %make folder
 mkdir(folder);
 
@@ -107,12 +107,13 @@ end %End of whole Experiment
 
 
 
-
-warning('dont forget to write a description in the experiment-folder')
+warning('change foldername now!')
+warning('dont forget to write a description in the experiment-folder!')
 
 dlmwrite([folder '/Nfriends.txt'], Nfriends,'delimiter',' ');
 dlmwrite([folder '/clustercoef.txt'], clustercoef,'delimiter',' ');
 dlmwrite([folder '/connect.txt'], connect,'delimiter',' ');
 dlmwrite([folder '/common.txt'], common,'delimiter',' ');
+dlmwrite([folder '/activity.txt'], act,'delimiter',' ');
 
 

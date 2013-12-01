@@ -58,6 +58,9 @@ for i=1:N
   person(i).activity=person(i).activity/maxakt ; 
 end
 
+for i=1:N
+  act(i)=person(i).activity;  
+end
 
 %% extract Matrix with common friends
 %by the way, diagonal contains number of friends

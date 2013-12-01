@@ -25,11 +25,6 @@ for i=1:L-1
 end
 
 
-for i=1:N
-  act(i)=person(i).activity;  
-end
-
-
 % figure(3)
 % subplot(2,2,1);
 % plot(Nfriends.*act',nummeetings,'o','markersize',2);
