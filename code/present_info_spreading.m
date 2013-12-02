@@ -28,30 +28,30 @@ for i=1:L-1
 end
 
 
-% figure(3)
-% subplot(2,2,1);
-% plot(Nfriends.*act',nummeetings,'o','markersize',2);
-% xlabel('Number of Friends');
-% ylabel('Number of Meetings');
-% 
-% subplot(2,2,2);
-% plot(Nfriends,infections,'o','markersize',2);
-% xlabel('Number of Friends');
-% ylabel('Number of Infections');
-% 
-% subplot(2,2,3);
-% plot(nummeetings,infections,'o','markersize',2);
-% xlabel('Number of Meetings');
-% ylabel('Number of Infections');
-% 
-% subplot(2,2,4);
-% plot(cum_infections);
-% xlabel('id');
-% ylabel('Number of Cumulative Infections');
-
-
-% figure(4)
-% plot(ov_cum_infections)
+% % figure(3)
+% % subplot(2,2,1);
+% % plot(Nfriends.*act',nummeetings,'o','markersize',2);
+% % xlabel('Number of Friends');
+% % ylabel('Number of Meetings');
+% % 
+% % subplot(2,2,2);
+% % plot(Nfriends,infections,'o','markersize',2);
+% % xlabel('Number of Friends');
+% % ylabel('Number of Infections');
+% % 
+% % subplot(2,2,3);
+% % plot(nummeetings,infections,'o','markersize',2);
+% % xlabel('Number of Meetings');
+% % ylabel('Number of Infections');
+% % 
+% % subplot(2,2,4);
+% % plot(cum_infections);
+% % xlabel('id');
+% % ylabel('Number of Cumulative Infections');
+% % 
+% % 
+% % figure(4)
+% % plot(ov_cum_infections)
 
 %check if nobody was infected twice
 
@@ -81,11 +81,11 @@ end
 
 
 % % close figure 1;
-
-%overall output (sum over individual simulations)
-% ov_infections=ov_infections+infections; 
-% ov_cum_infections=ov_cum_infections+cum_infections;
-% ov_nummeetings=ov_nummeetings+nummeetings;
+% % 
+% % %overall output (sum over individual simulations)
+% % ov_infections=ov_infections+infections; 
+% % ov_cum_infections=ov_cum_infections+cum_infections;
+% % ov_nummeetings=ov_nummeetings+nummeetings;
 
 
 

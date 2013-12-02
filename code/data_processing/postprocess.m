@@ -1,7 +1,7 @@
 %%script to process and present data of a sereies of simulations
 clc; clear; close all;
 
-experiment='test1_20131201';
+experiment='blub2';
 addpath(['../' experiment]);
 
 %load data
