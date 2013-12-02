@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.11.25)  25 NOV 2013 10:59
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.11.25)  2 DEC 2013 14:20
 entering extended mode
 **infospreading.tex
 
@@ -210,6 +210,50 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\mh\empheq.sty"
+Package: empheq 2007/12/03 v2.12 Emphasizing equations (MH)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\mh\mhsetup.sty"
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\mh\mathtools.sty"
+Package: mathtools 2011/02/12 v1.10 mathematical typesetting tools
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count104
+\calc@Bcount=\count105
+\calc@Adimen=\dimen122
+\calc@Bdimen=\dimen123
+\calc@Askip=\skip48
+\calc@Bskip=\skip49
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count106
+\calc@Cskip=\skip50
+)
+\g_MT_multlinerow_int=\count107
+\l_MT_multwidth_dim=\dimen124
+\origjot=\skip51
+\l_MT_shortvdotswithinadjustabove_dim=\dimen125
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen126
+)
+\l_EQ_equationtype_int=\count108
+\l_EQ_alignmentmode_int=\count109
+\l_EQ_totalwidth_dim=\dimen127
+\l_EQ_displaywidth_dim=\dimen128
+\l_EQ_temp_linewidth_dim=\dimen129
+\EmphEqdelimitershortfall=\dimen130
+\EmphEqdelimiterfactor=\count110
+\g_EQ_toptag_height_dim=\dimen131
+\g_EQ_bottomtag_depth_dim=\dimen132
+\g_EQ_toprow_height_dim=\dimen133
+\g_EQ_bottomrow_depth_dim=\dimen134
+\g_EQ_widesttag_dim=\dimen135
+\EQ_mathdisplay_box=\box28
+\EQ_tag_box=\box29
+\g_EQ_temprow_int=\count111
+)
 (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\infospreading.
 aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -261,17 +305,19 @@ LaTeX Font Info:    ... okay on input line 16.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count104
-\scratchdimen=\dimen122
-\scratchbox=\box28
-\nofMPsegments=\count105
-\nofMParguments=\count106
+\scratchcounter=\count112
+\scratchdimen=\dimen136
+\scratchbox=\box30
+\nofMPsegments=\count113
+\nofMParguments=\count114
 \everyMPshowfont=\toks22
-\MPscratchCnt=\count107
-\MPscratchDim=\dimen123
-\MPnumerator=\count108
+\MPscratchCnt=\count115
+\MPscratchDim=\dimen137
+\MPnumerator=\count116
 \everyMPtoPDFconversion=\toks23
-) (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\cover.tex
+)
+\Hy@linkcounter=\count117
+ (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\cover.tex
 Package epstopdf Info: Source file: <ETHlogo.eps>
 (epstopdf)                    date: 2013-11-21 17:22:52
 (epstopdf)                    size: 179075 bytes
@@ -301,43 +347,48 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )) [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/User/Documents/G
-itHub/Project-Info-Spreading/doc/latex/ETHlogo-eps-converted-to.pdf>]
-Overfull \hbox (5.3226pt too wide) in paragraph at lines 42--60
- [] 
- []
-
-[2]
+itHub/Project-Info-Spreading/doc/latex/ETHlogo-eps-converted-to.pdf>] [2]
 (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\infospreading.
 toc)
 \tf@toc=\write3
  [3]
-Underfull \hbox (badness 10000) in paragraph at lines 89--92
+(C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\introduction.t
+ex
+Underfull \hbox (badness 10000) in paragraph at lines 1--4
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+) (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\model.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--5
 
  []
 
-[4]
+[4]) (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\bib.tex
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no © in font cmr12!
+)
+[5]
 (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\infospreading.
 aux) ) 
 Here is how much of TeX's memory you used:
- 3168 strings out of 494049
- 42317 string characters out of 3148485
- 103508 words of memory out of 3000000
- 6407 multiletter control sequences out of 15000+200000
+ 3928 strings out of 494049
+ 55731 string characters out of 3148485
+ 126087 words of memory out of 3000000
+ 7144 multiletter control sequences out of 15000+200000
  12110 words of font info for 47 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 42i,10n,24p,326b,254s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,20n,28p,747b,293s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on infospreading.pdf (4 pages, 76556 bytes).
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmsy10.pfb>
+Output written on infospreading.pdf (5 pages, 119630 bytes).
 PDF statistics:
- 34 PDF objects out of 1000 (max. 8388607)
+ 53 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

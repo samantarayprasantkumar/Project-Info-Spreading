@@ -5,8 +5,8 @@
 \usepackage{graphicx}
 \usepackage{amssymb}
 \usepackage{epstopdf}
-\usepackage{natbib}
-\usepackage{amssymb, amsmath}
+\usepackage[numbers]{natbib}
+\usepackage{amssymb, amsmath ,empheq}
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 
 %\title{Title}
@@ -39,21 +39,27 @@
 \bigskip
 
 
-\begin{tabular}{@{}p{3.3cm}@{}p{6cm}@{}@{}p{6cm}@{}}
-\begin{minipage}{3cm}
+\begin{tabular}{@{}p{4cm}@{}p{4cm}@{}@{}p{4cm}@{}}
+
+\begin{minipage}{4cm}
+\vspace{2cm}
+\large Urs Lustenberger
+\end{minipage}
+
+&
+
+\begin{minipage}{4cm}
+
+\vspace{2cm}
+ \large \hspace{4mm} Nino Wili
 
 \end{minipage}
+
 &
-\begin{minipage}{6cm}
-\vspace{2mm} \large Name 1
 
- \vspace{\baselineskip}
-
-\end{minipage}
-&
-\begin{minipage}{6cm}
-
-\large Name 2
+\begin{minipage}{4cm}
+\vspace{2cm}
+\large Patric Z\"ochbauer
 
 \end{minipage}
 \end{tabular}
@@ -86,23 +92,16 @@
 
 \section{Introduction and Motivations}
 
-Everyone is on facebook\\
-Commercials are personalized, the flow of info is interesting for companies\\
-Are there "more important" persons in typical facebook network?\\
-
-important questions (does the inhomogeneity of the real network influence the "total" evolution? are there  "influentials"?)
-
+\input{introduction.tex}
 
 \section{Description of the Model}
-two models, SIR and ?...\\
 
-SIR, coming from (dynamic process in complex networks)
-
-Description of other model, also using flow diagram and explanation of all the parameters and influences
-
+\input{model.tex}
 
 
 \section{Implementation}
+
+\subsection{The Network}
 how did we get the network?
 
 how did we get the coordinates with gephi?
@@ -115,8 +114,9 @@ most important question!
 
 \section{Summary and Outlook}
 
-\section{References}
+%%%%%%%%%%%
 
+\input{bib.tex}
 
 
 

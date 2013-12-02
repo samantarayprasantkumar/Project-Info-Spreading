@@ -1,0 +1,36 @@
+The process of information spreading has many similarities with epidemiology, so the well known SIR-model was adapted\cite{complexsystems}.  The ``susceptibles'', are not aware of the information and are called ``ignorants'' within this work. ``Infected'' individuals know about the information and are willing to share it with other people, in other words they spread it and are therefore called ``spreaders''. The adaptation of the epidemiological term ``recovered'' is not that straightforward because it is not entirely clear, what that means in this context but they can be looked at persons that are aware of the information but don't want to tell it others. They are called "stiflers".
+\newline
+\newline
+In the SIR-model as well as in the Agent-based model, the following set of ``reaction equations'' was used(I: Ignorant, S: Spreader, R: Stifler):
+
+
+\begin{empheq}[left=\empheqlbrace]{align}
+& I + S \xrightarrow{\lambda} 2 S \\
+& S + R \xrightarrow{\alpha} 2 R \\
+& S + S \xrightarrow{\alpha} S + R 
+\end{empheq}
+\newline
+The main difference to the standard SIR-model is that spreaders don't become stiflers spontaneously but this this change is only induced by meeting an other spreader or stifler. Also it can be shown that for $\frac{\lambda}{\alpha}>0$, i.e. for any positive rate, the number of stiflers is non-zero for large times. That means that there is no epidemic threshold as in the standard SIR-model.
+
+\subsection{Homogeneous SIR model}
+
+In the mathematical treatment of the model in a homogeneous system, the set of differential equations is expressed in terms of the densities $i(t)=I(t)/N$, $s(t)=S(t)/N$ and $r(t)=R(t)/N$.
+
+\begin{empheq}[left=\empheqlbrace]{align}
+& \frac{\text{d}i(t)}{\text{d}t} = -\lambda \cdot s(t)i(t) \\
+& \frac{\text{d}s(t)}{\text{d}t} = \lambda \cdot s(t)i(t) - \alpha \cdot s(t)[s(t)+r(t)] \\
+& \frac{\text{d}r(t)}{\text{d}t} = \alpha \cdot s(t)[s(t)+r(t)]
+\end{empheq}
+
+
+
+\subsection{Agent-based model}
+
+To convert the reaction equations into an agent-based model, time was discretized
+and each time step
+
+
+
+
+
+
