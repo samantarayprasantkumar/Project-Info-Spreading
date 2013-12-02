@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.11.25)  2 DEC 2013 14:44
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.11.25)  2 DEC 2013 16:10
 entering extended mode
 **infospreading.tex
 
@@ -396,42 +396,66 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--34
 
 )
 (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\implementation
-.tex)
-(C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\results.tex)
+.tex [5]
+Underfull \hbox (badness 10000) in paragraph at lines 18--22
+
+ []
+
+) (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\results.tex)
 (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\summary.tex)
-[5] (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\code.tex
+[6] (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\code.tex
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
+(C:\Users\User\Documents\GitHub\Project-Info-Spreading\code\talkstep.m
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 19.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+File: omlcmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <9> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 19.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 25.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 25.
+ [7] [8])
 (C:\Users\User\Documents\GitHub\Project-Info-Spreading\code\parameters.m))
 (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\bib.tex
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no © in font cmr12!
 )
-[6]
+[9]
 (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\infospreading.
 aux) ) 
 Here is how much of TeX's memory you used:
- 5741 strings out of 494049
- 81092 string characters out of 3148485
- 202630 words of memory out of 3000000
- 8918 multiletter control sequences out of 15000+200000
- 14000 words of font info for 54 fonts, out of 3000000 for 9000
+ 5806 strings out of 494049
+ 82126 string characters out of 3148485
+ 263260 words of memory out of 3000000
+ 8972 multiletter control sequences out of 15000+200000
+ 14785 words of font info for 57 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 42i,20n,43p,747b,1567s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on infospreading.pdf (6 pages, 158024 bytes).
+ 42i,20n,43p,976b,2061s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+r12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmtt12.pfb>
+Output written on infospreading.pdf (9 pages, 214401 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
+ 95 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

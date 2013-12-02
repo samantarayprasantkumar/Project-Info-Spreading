@@ -3,4 +3,23 @@ how did we get the network?
 
 how did we get the coordinates with gephi?
 
-how was the code implemented? (how detailed does this have to be? references to matlab files?)
+\subsection{Homogeneous SIR-model}
+
+Urs
+
+\subsection{Agent-based model}
+
+\subsubsection{Initial condition}
+
+At the beginning of each simulation, all agents are ignorant but one, which is a spreader. This agent was determined pseudo-randomly.
+
+\subsubsection{Determine the meetings}
+
+(See \texttt{talkstep.m} for details.)
+\newline
+\newline
+In order to determine who meets who, the program goes through the vector of agents (1:N) randomly (line 14-16). With a probability corresponding to the activity of that agent, he may meet somebody (line 19). The person he meets is determined randomly and must be one he knows and one which is not already meeting another agent in this time step (line 30 ). In order to be able to implement that agents with more friends meet more people and to keep the simple data structure first a random person is chosen out of all the persons in the network and after that, the program checks whether they know. Like that, lot of "finding attempts" land on pairs which are not connected, that's why more than one attempt is performed each round (line 22-39). \texttt{attempt} is basically just a scaling factor. Tests show that the number of meetings is still proportional to the product \texttt{activity * number of friends}.
+
+\subsection{Status changes in meetings}
+
+

@@ -58,7 +58,7 @@ plot(person(Startperson).x,person(Startperson).y,'ob','MarkerSize',2)
 
 t=1;
 breakout=0;
-Nsteps=3000;
+Nsteps=2000;
 
 while(breakout==0 && t<Nsteps)
    

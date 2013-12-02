@@ -3,6 +3,7 @@ clear time;
 figure(2);
   time=1:length(ignorants);
   plot(time,ignorants,'r'); 
+  hold on
   plot(time,spreaders,'g');
   plot(time,stiflers,'b');
 %   %legend('Ignorants','Spreaders','Stiflers')
