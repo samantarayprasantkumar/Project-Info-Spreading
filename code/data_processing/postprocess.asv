@@ -67,7 +67,7 @@ plot(influence,sum(infections),'o','markersize',3);
 xlabel('friends*activity');
 ylabel('infections');
  
-%cumulative infections
+%c
  
  
 subplot(3,3,7)
@@ -75,18 +75,12 @@ plot(Nfriends,sum(cum_infections),'o','markersize',3);
 xlabel('friends');
 ylabel('cumulative infections');
 
-subplot(3,3,8)
-plot(activity,sum(cum_infections),'o','markersize',3);
-xlabel('activity');
-ylabel('cumulative infections');
 
-subplot(3,3,9)
-plot(influence,sum(cum_infections),'o','markersize',3);
+
+subplot(3,3,8)
+plot(influence,sum(cum_inf_processed),'o','markersize',3);
 xlabel('friends*activity');
 ylabel('cumulative infections');
-
-
-
 
 
 

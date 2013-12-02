@@ -1,12 +1,14 @@
 clear time;
 
-% figure(2);
-%   time=1:length(ignorants);
-%   plot(time,ignorants,'r',time,spreaders,'g',time,stiflers,'b');
+figure(2);
+  time=1:length(ignorants);
+  plot(time,ignorants,'r'); 
+  plot(time,spreaders,'g');
+  plot(time,stiflers,'b');
 %   %legend('Ignorants','Spreaders','Stiflers')
-%   xlabel('Step')
-%   ylabel('Population')
-%   axis([time(1) time(end)+1 0 400])
+  xlabel('Step')
+  ylabel('Population')
+  axis([time(1) time(end)+1 0 400])
 
   %% Do tests if model made sense
 

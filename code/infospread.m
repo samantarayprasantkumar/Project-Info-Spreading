@@ -24,7 +24,7 @@ ov_nummeetings=zeros(1,N);
 
 
 
-Nexperiments=100; %number of experiments
+Nexperiments=1; %number of experiments
 
 for experiment=1:Nexperiments
 tic
@@ -100,7 +100,7 @@ present_info_spreading;
 clear ignorants;
 clear spreaders;
 clear stiflers;
-clear total_activity;    
+    
 
 toc
 end %End of whole Experiment
