@@ -9,6 +9,16 @@
 \usepackage{amssymb, amsmath ,empheq}
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 
+\usepackage{listings}
+\lstset{
+basicstyle=\footnotesize,  
+ keywordstyle=\color{blue},       		
+  title=\lstname,  				
+ numbers=left,                    			
+ breakatwhitespace=false,
+ breaklines=true
+}
+
 %\title{Title}
 %\author{Name 1, Name 2}
 %\date{date} 
@@ -101,20 +111,21 @@
 
 \section{Implementation}
 
-\subsection{The Network}
-how did we get the network?
-
-how did we get the coordinates with gephi?
-
-how was the code implemented? (how detailed does this have to be? references to matlab files?)
+\input{implementation.tex}
 
 \section{Simulation Results and Discussion}
 
-most important question!
+\input{results.tex}
 
 \section{Summary and Outlook}
 
+\input{summary.tex}
+
 %%%%%%%%%%%
+
+\section{Appendix}
+
+\input{code.tex}
 
 \input{bib.tex}
 
