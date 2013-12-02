@@ -2,7 +2,7 @@ clc; clear all;close all;
 %% prepare system
 
 %declare where result is saved
-folder='blub';
+folder='blub2';
 %make folder
 mkdir(folder);
 
@@ -12,7 +12,7 @@ parameters;
 
 %with facebook network:
 friends;
-
+Nfriends=diag(common);
 
 %% Do the experiment (several simulation rounds)
 
@@ -27,6 +27,7 @@ ov_nummeetings=zeros(1,N);
 Nexperiments=1; %number of experiments
 
 for experiment=1:Nexperiments
+experiment
 tic
 
 %set status of all nodes
@@ -43,31 +44,34 @@ cum_infections=zeros(1,N);%infections plus "infection-subtree"
 nummeetings=zeros(1,N); %total number of meetings
 z=0;   %%Number of meetings at the beginning(for SaveMeeting)
 infectpath=[0,0];%path (edges) of infections
-Nfriends=diag(common);
 
+clear ignorants;
+clear spreaders;
+clear stiflers;
+    
 
 %% Actual Simulation
 
-figure(1)
-hold on
-for i = 1:N
-  plot(person(i).x,person(i).y,'ok','MarkerSize',2)
-end
-plot(person(Startperson).x,person(Startperson).y,'ob','MarkerSize',2)
+% % figure(1)
+% % hold on
+% % for i = 1:N
+% %   plot(person(i).x,person(i).y,'ok','MarkerSize',2)
+% % end
+% % plot(person(Startperson).x,person(Startperson).y,'ob','MarkerSize',2)
 
 
 t=1;
 breakout=0;
-Nsteps=2000;
+Nsteps=3000;
 
 while(breakout==0 && t<Nsteps)
    
     
-    %indicating progress
-    figure(1)
-    bla=['Exp' int2str(experiment) '/' int2str(Nexperiments)...
-        '\newline' int2str(t/Nsteps*100) '%'  ];
-    progress=text(0.8,0.9,bla);
+% %     %indicating progress
+% %     figure(1)
+% %     bla=['Exp' int2str(experiment) '/' int2str(Nexperiments)...
+% %         '\newline' int2str(t/Nsteps*100) '%'  ];
+% %     progress=text(0.8,0.9,bla);
     
     %let meet and exchange info
     talkstep;
@@ -77,8 +81,8 @@ while(breakout==0 && t<Nsteps)
     spreaders(t)=sum(status==1);
     stiflers(t)=sum(status==2);
 
-    pause(0.001)
-    delete(progress);
+% %     pause(0.001)
+% %     delete(progress);
 
     
 
@@ -96,16 +100,10 @@ end
 %% Presenting Data
 present_info_spreading;
 
-
-clear ignorants;
-clear spreaders;
-clear stiflers;
-    
-
 toc
 end %End of whole Experiment
 
-
+SEED=RandStream.getGlobalStream.State;
 
 warning('change foldername now!')
 warning('dont forget to write a description in the experiment-folder!')
@@ -115,5 +113,5 @@ dlmwrite([folder '/clustercoef.txt'], clustercoef,'delimiter',' ');
 dlmwrite([folder '/connect.txt'], connect,'delimiter',' ');
 dlmwrite([folder '/common.txt'], common,'delimiter',' ');
 dlmwrite([folder '/activity.txt'], act,'delimiter',' ');
-
+dlmwrite([folder '/seed'], SEED,'delimiter',' ');
 

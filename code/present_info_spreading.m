@@ -1,15 +1,15 @@
 clear time;
 
-figure(2);
-  time=1:length(ignorants);
-  plot(time,ignorants,'r'); 
-  hold on
-  plot(time,spreaders,'g');
-  plot(time,stiflers,'b');
-%   %legend('Ignorants','Spreaders','Stiflers')
-  xlabel('Step')
-  ylabel('Population')
-  axis([time(1) time(end)+1 0 400])
+% % figure(2);
+% %   time=1:length(ignorants);
+% %   plot(time,ignorants,'r'); 
+% %   hold on
+% %   plot(time,spreaders,'g');
+% %   plot(time,stiflers,'b');
+% %   legend('Ignorants','Spreaders','Stiflers')
+% %   xlabel('Step')
+% %   ylabel('Population')
+% %   axis([time(1) time(end)+1 0 400])
 
   %% Do tests if model made sense
 
@@ -80,7 +80,7 @@ end
 
 
 
-close figure 1;
+% % close figure 1;
 
 %overall output (sum over individual simulations)
 % ov_infections=ov_infections+infections; 

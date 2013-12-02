@@ -6,4 +6,4 @@
               infectpath(z,2)=p2;    
 a=[person(infectpath(z,1)).x; person(infectpath(z,2)).x];
 b=[person(infectpath(z,1)).y; person(infectpath(z,2)).y];
-plot(a,b,'-r','LineWidth',0.1)
+%% plot(a,b,'-r','LineWidth',0.1)
