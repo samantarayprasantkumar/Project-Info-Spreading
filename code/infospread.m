@@ -2,15 +2,19 @@ clc; clear all;close all;
 %% prepare system
 
 %declare where result is saved
-folder='20131202_Patrick';
+folder='20131202_Patrickasfdsf';
 %make folder
 mkdir(folder);
 
 %load parameters, e.g. probability for meeting
 parameters;
 
-
-%with facebook network:
+%%
+addpath('matlab_networks_routines')
+addpath('matlab_networks_routines/code')
+addpath('8_Additional_Material')
+%% 
+% with facebook network:
 friends;
 Nfriends=diag(common);
 
