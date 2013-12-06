@@ -14,35 +14,28 @@ choose=randperm(N);
 for k=1:N
     
     i=choose(k);
-    
+        
     if(meeting(i)==0)%check if i already meets somebody
         if(rand>(person(i).activity)) 
             meeting(i)=i; %doesnt meet anybody
         else
-            who=0; %who: meeting partner of i
-            attempt=1; %dont check forever, maybe no partner available
-            while(who==0);
-                who=round(rand*N+0.5); %random partner
-               
-                attempt=attempt+1;
-                
-                %check if who is not meeting, and who and i know each other
-                if(meeting(who)==0 && connect(i,who))
+          who=0; %who: meeting partner of i
+          clear vec
+          vec=randperm(Nfriends(i));
+          for j=1:Nfriends(i)
+              who=person(i).friends(vec(j));
+              if meeting(who)==0
                     meeting(i)=who; 
                     meeting(who)=i;
                     
                     nummeetings(i)=nummeetings(i)+1;
                     nummeetings(who)=nummeetings(who)+1;
-                else
-                    if(attempt<50) %change this!
-                        who=0; 
-                    else who=1; %just not 0
-                    end
-                end
-            end
+              break
+              end
+          end
         end
     end
-    
+                        
     %some can be 0, not cool for further programming
     if(meeting(i)==0) 
         meeting(i)=i;

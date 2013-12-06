@@ -38,6 +38,17 @@ for i=1:N
    end
 end
 
+%person.friend update
+
+for i=1:N
+    k=0;
+  for j=1:N
+    if connect(i,j)==1
+      k=k+1;  
+      person(i).friends(k)=j;
+    end
+  end
+end
 
 
 %% clustering coefficient

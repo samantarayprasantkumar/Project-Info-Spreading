@@ -14,23 +14,25 @@ clear time;
   %% Do tests if model made sense
 
 % get "cumulative infections", i.e. the whole tree one infected
-% do recursively!
+% do recursively
+      cum_infections=zeros(1,N);
+try
+      L=length(infectpath(:,1));
+    for i=L:-1:1
 
-  L=length(infectpath(:,1));
-  cum_infections=zeros(1,N);
-for i=L:-1:1
-    
-    p1=infectpath(i,1);
-    p2=infectpath(i,2);
-    
-    cum_infections(p1)=1+cum_infections(p1)+cum_infections(p2);
-    
-end
+        p1=infectpath(i,1);
+        p2=infectpath(i,2);
 
-if(max(cum_infections)>N || find(cum_infections==max(cum_infections))~=Startperson)
-    warning('this is shit')
-    
+        cum_infections(p1)=1+cum_infections(p1)+cum_infections(p2);
+
+    end
+
+    if(max(cum_infections)>N || find(cum_infections==max(cum_infections))~=Startperson)
+        warning('this is shit')
+    end
 end
+        
+    
     
     %%
 % % figure(3)

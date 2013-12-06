@@ -65,12 +65,12 @@ for experiment=1:Nexperiments
 
     %% Actual Simulation
 
-% %     figure(1)
-% %     hold on
-% %     for i = 1:N
-% %       plot(person(i).x,person(i).y,'ok','MarkerSize',2)
-% %     end
-% %     plot(person(Startperson).x,person(Startperson).y,'ob','MarkerSize',2)
+%    figure(1)
+%    hold on
+%    for i = 1:N
+%      plot(person(i).x,person(i).y,'ok','MarkerSize',2)
+%    end
+%    plot(person(Startperson).x,person(Startperson).y,'ob','MarkerSize',2)
 
     t=1;
     breakout=0;
@@ -86,11 +86,11 @@ for experiment=1:Nexperiments
     
     while(breakout==0 && t<Nsteps)
 
-% %         %indicating progress
-% %         figure(1)
-% %         bla=['Exp' int2str(experiment) '/' int2str(Nexperiments)...
-% %             '\newline' int2str(t/Nsteps*100) '%'  ];
-% %         progress=text(0.8,0.9,bla);
+        %indicating progress
+%        figure(1)
+%        bla=['Exp' int2str(experiment) '/' int2str(Nexperiments)...
+%            '\newline' int2str(t/Nsteps*100) '%'  ];
+%        progress=text(0.8,0.9,bla);
 
         %let meet and exchange info
         talkstep;
@@ -100,8 +100,8 @@ for experiment=1:Nexperiments
         spreaders(t)=sum(status==1);
         stiflers(t)=sum(status==2);
 
-% %         pause(0.001)
-% %         delete(progress);
+%        pause(0.001)
+%        delete(progress);
 
     %test if evolution is possible
         if (spreaders(t)==0)
