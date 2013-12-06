@@ -17,17 +17,22 @@ clear time;
 % do recursively!
 
   L=length(infectpath(:,1));
- 
-for i=1:L-1
+  cum_infections=zeros(1,N);
+for i=L:-1:1
     
-    p1=infectpath(L-i,1);
-    p2=infectpath(L-i,2);
+    p1=infectpath(i,1);
+    p2=infectpath(i,2);
     
-    cum_infections(p1)=1+cum_infections(p1)+cum_infections(p1);
+    cum_infections(p1)=1+cum_infections(p1)+cum_infections(p2);
     
 end
 
-
+if(max(cum_infections)>N || find(cum_infections==max(cum_infections))~=Startperson)
+    warning('this is shit')
+    
+end
+    
+    %%
 % % figure(3)
 % % subplot(2,2,1);
 % % plot(Nfriends.*act',nummeetings,'o','markersize',2);

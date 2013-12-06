@@ -134,3 +134,16 @@ ylabel('cumulative infections');
 %  plot(mdl)
 % % 
  
+for i=1:N
+    
+        
+    common(i,i)=0;    
+        
+   
+end
+
+maxcommon=max(max(common));
+% 
+% figure(3)
+% plot(sum(common),sum(cum_infections),'o')
+
