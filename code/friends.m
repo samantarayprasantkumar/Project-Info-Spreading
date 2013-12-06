@@ -77,7 +77,8 @@ end
 
 
 
-maxcommon=max(max(common));
+maxcommon=56; %determined "by hand" 
+
 %% set position(from gephi file)
 
 Position=dlmread('positions.gdf');

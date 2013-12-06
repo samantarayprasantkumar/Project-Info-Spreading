@@ -2,7 +2,7 @@ clc; clear all;close all;
 %% prepare system
 
 %declare where result is saved
-folder='20131202_Patrickasfdsf';
+folder='20131206_test1';
 %make folder
 mkdir(folder);
 
@@ -35,7 +35,7 @@ ov_infections=zeros(1,N);
 ov_cum_infections=zeros(1,N);
 ov_nummeetings=zeros(1,N); 
 
-Nexperiments=10; %number of experiments
+Nexperiments=1; %number of experiments
 
 for experiment=1:Nexperiments
   for Startperson=1:N
@@ -56,8 +56,8 @@ for experiment=1:Nexperiments
     cum_infections=zeros(1,N);%infections plus "infection-subtree"
     nummeetings=zeros(1,N); %total number of meetings
     z=0;   %%Number of meetings at the beginning(for SaveMeeting)
-    infectpath=[0,0];%path (edges) of infections
-
+    
+    clear infectpath;
     clear ignorants;
     clear spreaders;
     clear stiflers;

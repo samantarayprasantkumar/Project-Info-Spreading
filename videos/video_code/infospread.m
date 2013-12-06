@@ -116,4 +116,4 @@ for experiment=1:Nexperiments
 
 end %End of whole Experiment
 
-movie2avi(film, 'video_infospread.avi','compression','cinepak');
+movie2avi(film, 'video_infospread.avi','compression','indeo3');
