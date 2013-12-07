@@ -1,122 +1,129 @@
 clc; clear all;close all;
 %% prepare system
 
-%declare where result is saved
-folder='20131206_test1';
-%make folder
-mkdir(folder);
-
-%load parameters, e.g. probability for meeting
-parameters;
-
-%%
+% Add paths of packages
 addpath('matlab_networks_routines')
 addpath('matlab_networks_routines/code')
 addpath('8_Additional_Material')
-%% 
-% with facebook network:
+
+% Load data and carry out first node characteisations 
 friends;
-Nfriends=diag(common);
 
-%% Calculate activity of Startperson and its friends 
-TIA=zeros(N,1);
-for i=1:N
-  TIA(i)=person(i).activity;
-  for j=1:N
-    TIA(i)=TIA(i)+connect(j,i)*person(j).activity;    
-  end
-end  
+% Declare and create folder where results are saved
+folder='20131206_Urs';
+mkdir(folder);
 
-%% Do the experiment (several simulation rounds)
+% Set parameters
+parameters;
 
-%overall output (sum over individual simulations)
 
+%% Carry out the experiment (several simulation rounds)
+
+% Initialize output (sum over individual simulations)
 ov_infections=zeros(1,N); 
 ov_cum_infections=zeros(1,N);
 ov_nummeetings=zeros(1,N); 
 
+% Set number of experiments which is carried out for each person
 Nexperiments=1; %number of experiments
 
+% Set maximum number of loops to be carried out
+Nsteps=5000;
+
+
+%%
+
 for experiment=1:Nexperiments
-  for Startperson=1:N
-    tic
+   for Startperson=1:3
+      tic
     
-    experiment
-    Startperson
+      % Show progress in command window as vector
+      info=[experiment Startperson; Nfriends(Startperson) TIA(Startperson); betweenness(Startperson) clustercoef(Startperson)]
+      
+     
+      % Set initial status of all nodes
+      % 0:ignorant, 1:spreader, 2:stifler   
+      status=zeros(1,N);  
+      status(Startperson)=1;     %Startperson knows
+
+      % Initialise "tools" for spreading analysis   
+      infections=zeros(1,N);     %number of infectios caused by i
+      cum_infections=zeros(1,N); %infections plus "infection-subtree"
+      nummeetings=zeros(1,N);    %total number of meetings
+      z=0;                       %Number of meetings at the beginning(for SaveMeeting)
+ 
+      % Clear data from previous loop
+      clear infectpath;
+      clear ignorants;
+      clear spreaders;
+      clear stiflers;
+  
     
-    %set status of all nodes
-    %0:ignorant, 1:spreader, 2:stifler
-    status=zeros(1,N);
-
-    %  Startperson=round(N*rand+0.5);
-    status(Startperson)=1; %one knows
+      %% Actual Simulation
+ 
+      % Create visualisation of the network without edges    
+% %       figure(1)
+% %       hold on
+% %       for i = 1:N
+% %          plot(person(i).x,person(i).y,'ok','MarkerSize',2)
+% %       end
+% %     
+% %       % Highlight startperson    
+% %       plot(person(Startperson).x,person(Startperson).y,'ob','MarkerSize',2)
+ 
+      % initialise breakout parameters
+      t=1;
+      breakout=0;    
+      nostart=0;
     
-    %% "Tools" for analyzing the spreading
-    infections=zeros(1,N); %number of infectios caused by i
-    cum_infections=zeros(1,N);%infections plus "infection-subtree"
-    nummeetings=zeros(1,N); %total number of meetings
-    z=0;   %%Number of meetings at the beginning(for SaveMeeting)
+      % Does it make sense to enter while loop? 
+      if(Nfriends(Startperson)==0) || (TIA(Startperson)==0)
+        
+         ignorants(t)=sum(status==0);
+         spreaders(t)=sum(status==1);
+         stiflers(t)=sum(status==2);
+         t=2;
+         breakout=1;
+         nostart=1;
+      end
     
-    clear infectpath;
-    clear ignorants;
-    clear spreaders;
-    clear stiflers;
-    
+      % Enter while loop
+      while(breakout==0 && t<Nsteps)
+  
+% %          % Indicating progress 1
+% %          figure(1)
+% %          bla=['Exp' int2str(experiment) '/' int2str(Nexperiments)...
+% %               '\newline' int2str(t/Nsteps*100) '%'  ];
+% %          progress=text(0.8,0.9,bla);
+ 
+         % Let meet and exchange info    
+         talkstep;
+         
+         % Get numbers of ignorant, spreaders and stiflers
+         ignorants(t)=sum(status==0);
+         spreaders(t)=sum(status==1);
+         stiflers(t)=sum(status==2);
+        
+% %          % Indicating progress 2
+% %          pause(0.001)
+% %          delete(progress);
 
-    %% Actual Simulation
-
-%    figure(1)
-%    hold on
-%    for i = 1:N
-%      plot(person(i).x,person(i).y,'ok','MarkerSize',2)
-%    end
-%    plot(person(Startperson).x,person(Startperson).y,'ob','MarkerSize',2)
-
-    t=1;
-    breakout=0;
-    Nsteps=5000;
-    
-    if (Nfriends(Startperson)==0) || (TIA(Startperson)==0)
-      t=2;
-      breakout=1;
-      ignorants(1) =N-1;
-      spreaders(1) =1;
-      stiflers(1)  =0;
-    end
-    
-    while(breakout==0 && t<Nsteps)
-
-        %indicating progress
-%        figure(1)
-%        bla=['Exp' int2str(experiment) '/' int2str(Nexperiments)...
-%            '\newline' int2str(t/Nsteps*100) '%'  ];
-%        progress=text(0.8,0.9,bla);
-
-        %let meet and exchange info
-        talkstep;
-
-        %get numbers of ignorant, spreaders and stiflers
-        ignorants(t)=sum(status==0);
-        spreaders(t)=sum(status==1);
-        stiflers(t)=sum(status==2);
-
-%        pause(0.001)
-%        delete(progress);
-
-    %test if evolution is possible
-        if (spreaders(t)==0)
+         % Test if further evolution is possible
+         if(spreaders(t)==0)
+       
             breakout=1;
-        end
+         end
 
-        t=t+1;
-
-    end
-    %% Presenting Data
-    present_info_spreading;
+         t=t+1;
+      end
     
-    toc    
-  end
-
+    
+    
+      %% Presenting and process data
+      present_info_spreading;
+    
+      toc    
+   end
 end %End of whole Experiment
 
 SEED=RandStream.getGlobalStream.State;
@@ -130,3 +137,7 @@ dlmwrite([folder '/connect.txt'], connect,'delimiter',' ');
 dlmwrite([folder '/common.txt'], common,'delimiter',' ');
 dlmwrite([folder '/activity.txt'], act,'delimiter',' ');
 dlmwrite([folder '/seed.txt'], SEED,'delimiter',' ');
+dlmwrite([folder '/betweenness.txt'], betweenness,'delimiter',' ');
+dlmwrite([folder '/ov_infections.txt'], ov_infections,'delimiter',' ');
+dlmwrite([folder '/ov_cum_infections.txt'], ov_cum_infections,'delimiter',' ');
+dlmwrite([folder '/ov_nummeetings.txt'], ov_nummeetings,'delimiter',' ');
