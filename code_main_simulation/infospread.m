@@ -8,7 +8,9 @@ addpath('8_Additional_Material')
 
 % Load data and carry out first node characteisations 
 friends;
-
+%%
+folder='cccccc';
+mkdir(folder)
 % Declare and create folder where results are saved
 folder='20131206_Urs';
 mkdir(folder);
@@ -141,3 +143,4 @@ dlmwrite([folder '/betweenness.txt'], betweenness,'delimiter',' ');
 dlmwrite([folder '/ov_infections.txt'], ov_infections,'delimiter',' ');
 dlmwrite([folder '/ov_cum_infections.txt'], ov_cum_infections,'delimiter',' ');
 dlmwrite([folder '/ov_nummeetings.txt'], ov_nummeetings,'delimiter',' ');
+dlmwrite([folder '/TIA.txt'], TIA,'delimiter',' ');
