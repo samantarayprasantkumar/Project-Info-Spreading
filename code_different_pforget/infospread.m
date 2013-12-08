@@ -30,7 +30,7 @@ ov_cum_infections=zeros(1,N);
 ov_nummeetings=zeros(1,N); 
 
 % Set number of experiments which is carried out for each person
-Nexperiments=5; % Number of experiments
+Nexperiments=25; % Number of experiments
 
 % Set maximum number of loops to be carried out
 % % Nsteps=5000; % Normal simulation
