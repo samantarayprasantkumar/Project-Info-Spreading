@@ -32,7 +32,9 @@ ov_nummeetings=ov_nummeetings';
 %%
 close all;
 %Define influence
-influence=(Nfriends)./activity;
+influence=(Nfriends).*(activity);
+
+format='jpg';
 
 figure(1)
 var=ov_nummeetings;
@@ -60,6 +62,7 @@ subplot(2,3,6)
 plot(TIA,var,'o')
 xlabel('TIA')
 ylabel('ov nummeetings')
+saveas(figure(1),'ov_nummeetingsVSall',format)
 
 
 figure(2)
@@ -88,6 +91,7 @@ subplot(2,3,6)
 plot(TIA,var,'o')
 xlabel('TIA')
 ylabel('ov infections')
+saveas(figure(2),'ov_infectionsVSall',format)
 
 figure(3)
 var=ov_cum_infections;
@@ -115,6 +119,7 @@ subplot(2,3,6)
 plot(TIA,var,'o')
 xlabel('TIA')
 ylabel('ov cum infections')
+saveas(figure(3),'ov_cum_infectionsVSall',format)
 
 figure(4)
 subplot(2,3,1)
@@ -129,6 +134,7 @@ subplot(2,3,3)
 plot(ov_nummeetings,ov_infections,'o')
 xlabel('ov nummeetings')
 ylabel('ov infections')
+saveas(figure(4),'ovVSeach other',format)
 
 figure(5)
 var=Nfriends;
@@ -156,6 +162,7 @@ subplot(2,3,6)
 plot(TIA,var,'o')
 xlabel('TIA')
 ylabel('Nfriends')
+saveas(figure(5),'NfriendsVSall',format)
 
 figure(6)
 var=activity;
@@ -183,6 +190,7 @@ subplot(2,3,6)
 plot(TIA,var,'o')
 xlabel('TIA')
 ylabel('Activity')
+saveas(figure(6),'ActivityVSall',format)
 
 figure(7)
 var=betweenness;
@@ -210,6 +218,7 @@ subplot(2,3,6)
 plot(TIA,var,'o')
 xlabel('TIA')
 ylabel('Betweenness')
+saveas(figure(7),'BetweennessVSall',format)
 
 figure(8)
 var=clustercoef;
@@ -237,6 +246,35 @@ subplot(2,3,6)
 plot(TIA,var,'o')
 xlabel('TIA')
 ylabel('Clustercoef')
+saveas(figure(8),'ClustercoefVSall',format)
+
+figure(9)
+var=influence;
+subplot(2,3,1)
+plot(Nfriends,var,'o')
+xlabel('Nfriends')
+ylabel('Influence')
+subplot(2,3,2)
+plot(activity,var,'o')
+xlabel('Activity')
+ylabel('Influence')
+subplot(2,3,3)
+plot(betweenness,var,'o')
+xlabel('Betweenness')
+ylabel('Influence')
+subplot(2,3,4)
+plot(clustercoef,var,'o')
+xlabel('Clustercoef')
+ylabel('Influence')
+subplot(2,3,5)
+plot(influence,var,'o')
+xlabel('Influence')
+ylabel('Influence')
+subplot(2,3,6)
+plot(TIA,var,'o')
+xlabel('TIA')
+ylabel('Influence')
+saveas(figure(9),'InfluenceVSall',format)
 
 figure(10)
 var=TIA;
@@ -264,6 +302,7 @@ subplot(2,3,6)
 plot(TIA,var,'o')
 xlabel('TIA')
 ylabel('TIA')
+saveas(figure(10),'TIAVSall',format)
 
 
 % % %% process data

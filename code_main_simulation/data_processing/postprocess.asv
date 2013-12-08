@@ -32,7 +32,7 @@ ov_nummeetings=ov_nummeetings';
 %%
 close all;
 %Define influence
-influence=(Nfriends).*(activity).*(activity);
+influence=(Nfriends).*(activity);
 
 format='jpg';
 
