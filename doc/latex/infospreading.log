@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.11.25)  10 DEC 2013 09:47
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.11.25)  11 DEC 2013 15:05
 entering extended mode
 **infospreading.tex
 
@@ -380,11 +380,18 @@ toc)
  [3]
 (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\introduction.t
 ex
-Underfull \hbox (badness 10000) in paragraph at lines 1--4
+Underfull \hbox (badness 10000) in paragraph at lines 3--9
 
  []
 
-) (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\model.tex
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 11.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 11.
+)
+(C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\model.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--5
 
  []
@@ -394,8 +401,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--34
 
  []
 
-) (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\python.tex
-[5] [6])
+[5])
+(C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\python.tex
+[6])
 (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\implementation
 .tex
 Underfull \hbox (badness 10000) in paragraph at lines 13--17
@@ -408,18 +416,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--17
 (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\bib.tex
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no © in font cmr12!
-)
-[8]
+
+[8]) [9]
 (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\infospreading.
 aux) ) 
 Here is how much of TeX's memory you used:
- 5141 strings out of 494049
- 73989 string characters out of 3148485
- 168098 words of memory out of 3000000
- 8328 multiletter control sequences out of 15000+200000
+ 5158 strings out of 494049
+ 74277 string characters out of 3148485
+ 158098 words of memory out of 3000000
+ 8342 multiletter control sequences out of 15000+200000
  14132 words of font info for 55 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 42i,20n,32p,747b,906s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,20n,32p,747b,908s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/
@@ -431,10 +439,11 @@ nts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 r6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on infospreading.pdf (8 pages, 186201 bytes).
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on infospreading.pdf (9 pages, 198165 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
+ 91 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
