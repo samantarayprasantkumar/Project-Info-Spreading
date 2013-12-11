@@ -21,7 +21,7 @@ After the meetings are determined, the status of each agent has to change accord
 
 \subsubsection{cumulative infections}
 
-With a given \texttt{infecpath}, with the directed edges of infections, it is obviously easy to obtain the number of direct infections of every node and also relatively easy to get the number of "cumulative infections", which is the whole subtree of infections of each node. The ladder was obtained in a recursive manner in the following way:
+With a given \texttt{infecpath}, with the directed edges of infections, it is obviously easy to obtain the number of direct infections of every node and also relatively easy to get the number of "cumulative infections", which is the whole subtree of infections of each node (see Details later). The ladder was obtained in a recursive manner in the following way:
 
 \begin{lstlisting} 
    L=length(infectpath(:,1));
@@ -33,6 +33,20 @@ With a given \texttt{infecpath}, with the directed edges of infections, it is ob
    end
 
 \end{lstlisting}
+
+
+\subsubsection{Exit condition}
+
+The  was terminated if further spreading was not possible. This is the case when all current spreaders and all their friends have an activity of zero, including the obvious case that the number of spreaders is zero. For stability, not more than 5000 steps of meeting and status updates were performed in each initiated round.
+
+\subsubsection{Running the simulation}
+3840 rounds were initiated. For every round the first infected person, the number of meetings, the number of direct infections and the number of cumulative infections were saved for further analysis.
+
+\subsection{Defining relevant output variables}
+
+\subsubsection{Importance of an individual}
+
+One of our main questions was, if there are persons which are more important to the spreading of the information. The definition of importance in this context isn't trivial. The nearest quantitative variable which might indicate the importance is the number of direct infections, which means the sum of all meetings of an infected person which resulted in the infection of his meeting partner.
 
 
 
