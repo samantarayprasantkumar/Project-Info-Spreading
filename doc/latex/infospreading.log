@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.11.25)  11 DEC 2013 19:33
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.11.25)  11 DEC 2013 20:17
 entering extended mode
 **infospreading.tex
 
@@ -416,18 +416,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--17
 (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\bib.tex
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no © in font cmr12!
-)
-[10]
+
+[10]) [11]
 (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\infospreading.
 aux) ) 
 Here is how much of TeX's memory you used:
- 5158 strings out of 494049
- 74277 string characters out of 3148485
- 177098 words of memory out of 3000000
- 8342 multiletter control sequences out of 15000+200000
- 14132 words of font info for 55 fonts, out of 3000000 for 9000
+ 5163 strings out of 494049
+ 74358 string characters out of 3148485
+ 177113 words of memory out of 3000000
+ 8346 multiletter control sequences out of 15000+200000
+ 14479 words of font info for 56 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 42i,20n,32p,747b,1451s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,20n,32p,1136b,1451s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/
@@ -440,10 +440,11 @@ r6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on infospreading.pdf (10 pages, 204348 bytes).
+onts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmtt12.pfb>
+Output written on infospreading.pdf (11 pages, 218363 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
+ 101 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

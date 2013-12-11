@@ -34,7 +34,7 @@ for experiment=1:Nexperiments
     %0:ignorant, 1:spreader, 2:stifler
     status=zeros(1,N);
 
-    Startperson=108;
+    Startperson=91;
     status(Startperson)=1; %one knows
     
     %% "Tools" for analyzing the spreading
@@ -62,7 +62,7 @@ for experiment=1:Nexperiments
     
     t=1;
     breakout=0;
-    Nsteps=5000;
+    Nsteps=500;
     
     if (Nfriends(Startperson)==0) || (TIA(Startperson)==0)
       t=2;
@@ -116,4 +116,4 @@ for experiment=1:Nexperiments
 
 end %End of whole Experiment
 
-movie2avi(film, 'video_infospread.avi','compression','indeo3');
+movie2avi(film, 'video_infospread.avi','compression','cinepak','quality',10);
