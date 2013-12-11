@@ -51,18 +51,18 @@ for experiment=1:Nexperiments
 
     %% Actual Simulation
 
-   figure(1);
-    hold on
-    for i = 1:N
-      plot(person(i).x,person(i).y,'ok','MarkerSize',2)
-    end
-    plot(person(Startperson).x,person(Startperson).y,'ob','MarkerSize',2)
+%    figure(1);
+%     hold on
+%     for i = 1:N
+%       plot(person(i).x,person(i).y,'ok','MarkerSize',2)
+%     end
+%     plot(person(Startperson).x,person(Startperson).y,'ob','MarkerSize',2)
 
         
     
     t=1;
     breakout=0;
-    Nsteps=5000;
+    Nsteps=1500;
     
     if (Nfriends(Startperson)==0) || (TIA(Startperson)==0)
       t=2;
@@ -90,7 +90,10 @@ for experiment=1:Nexperiments
         stiflers(t)=sum(status==2);
         
         
-       film(t)=getframe();
+        plot(spreaders)
+        pause(0.01);
+        
+%       film(t)=getframe();
         
        
    
@@ -107,13 +110,13 @@ for experiment=1:Nexperiments
         end
 
         t=t+1;
-
+ 
     end
     %% Presenting Data
     present_info_spreading;
     
-    
+  
 
 end %End of whole Experiment
 
-movie2avi(film, 'video_infospread.avi','compression','indeo3');
+%movie2avi(film, 'video_infospread.avi','compression','cinepak','quality',10);
