@@ -22,6 +22,6 @@
 \contentsline {section}{\numberline {6}Simulation Results and Discussion}{9}
 \contentsline {subsection}{\numberline {6.1}Influentials}{9}
 \contentsline {subsubsection}{\numberline {6.1.1}Existance and importance of influentials}{9}
-\contentsline {subsubsection}{\numberline {6.1.2}Determine influentials}{9}
-\contentsline {section}{\numberline {7}Summary and Outlook}{9}
-\contentsline {section}{\numberline {8}Appendix}{9}
+\contentsline {subsubsection}{\numberline {6.1.2}Determine influentials}{11}
+\contentsline {section}{\numberline {7}Summary and Outlook}{11}
+\contentsline {section}{\numberline {8}Appendix}{11}
