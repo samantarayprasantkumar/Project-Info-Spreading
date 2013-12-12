@@ -3,7 +3,7 @@
 \subsubsection{Existance and importance of influentials}
 
 
-To analyise the existence of influentials, we first need to define its meaning. We will use de definiton given in Paper Cascade\cite{Influentials}, which simply says that a person's importance is determined by the number of its cumulative infection (called casced).
+To analyise the existence of influentials, we first need to define its meaning. We will use de definiton given by Watts \cite{influentials}, which simply says that a person's importance is determined by the number of its \text{cumulative infections} (called casced).
 
 \begin{figure}
 \includegraphics[width=7cm]{influ2}
@@ -17,7 +17,7 @@ To analyise the existence of influentials, we first need to define its meaning. 
 \label{Sorted}
 \end{figure}
 
-Figure \ref{Histo} is a simple histogramm, that shows that the vast majority of people has only a small cumulative infection value. Whereas we see in Figure \ref{sorted} (which again plots the cumultative infection, sorted from small to large), that there are only a few with a very large cumultative infection value. \\
+Figure \ref{Histo} is a simple histogramm, that shows that the vast majority of people has only a small cumulative infection value. Whereas we see in Figure \ref{sorted} (which again plots the cumultative infection, sorted from small to large), that there are some (eventough only a few) with a very large cumultative infection value. \\
 
 We can even go one step further and try to estimate the importance of those influentials on all infections that occur in total. In order to do so, we sort the people after their importance (defined as above). We then calculate the amout of infections conditioned that only the m least important person have been involved in the spreading process (1 $\le$ m $\le$ 384).\\
 For instance, $m=384$ implies all infections that occured, when only the last (therefore most important) person has been excluded.\\
@@ -27,8 +27,31 @@ Given these results, we get that 94\% of all infections, happen in the runs wher
 \includegraphics[width=7cm]{influ3}
 
 
-According to the paper "Talk of the Network: A Complex Systems Look at the Underlying Process of Word-of-Mouth" the importance of influential often over-estimated. Our simulation contradicts this statement. 
+According to the Goldenberg \cite{word2mouth} the importance of influential is often over-estimated. Our simulation strongly contradicts this statement. 
 
-Reasons might be, that our networt is a) of relative small size, b) we kinda cut the network. We only look at mutualfriends ,but not all friends of friends. So we might underestimated some people. 
+Reasons might be, that our networt is a) of relative small size and b) due to its construction we might overwighted some individuals, that have high number of mutualfriends.
+
 
 \subsubsection{Determine influentials}
+
+Obviously the next question that comes up, is the following. If we have influetials, how can we determine these in our network. Do they have properties that differs them from the other individuals? \\ 
+\\
+To find these mentioned, we have two possible aproaches: 
+\\
+
+1) Since our network is indeed a real world example of a Facebook Graph (the one of Patrick's Facebook Account). We can actually identify our, say top two, influetials. Then using this knowledge, we tried to narrow down the properties that might be of interest. 
+It acutally turned out, that the two above mentioned induviduals indeed share very interessting propertiy. Namely, they are linkers of two or more cluster of our graph. 
+
+2) Taking the results of 1) into consideration, it lead us to a more graph theroretical analysis of our data. Since we were interessted connectivity properties, we calculated the \textit{betweenness coefficent} for every node in our graph. 
+It turns out that our top two influenctials indeed have the highest betweenness values. 
+
+\begin{figure}
+\includegraphics[width=7cm]{influ4}
+\caption{sdlhfa}
+\label{Betweenness}
+\end{figure}
+
+Figure \ref{Betweenness} shows, that high cumulative infection value implies high betweenness. But as we can also see in figure 3, it doesn't really imply the other direction.
+
+
+
