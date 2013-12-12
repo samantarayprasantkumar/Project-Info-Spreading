@@ -97,9 +97,9 @@ betweenness=dlmread('betweenness.txt');
 %  network. The other times load the saved data to
 %  save computing time
 
-calc_constraint; %%works only for patricks network
+%  calc_constraint; %%works only for patricks network
 
-%constraint=dlmread('constraint.txt');
+constraint=dlmread('constraint.txt');
 
 %% Determine maximal acitivity
 
