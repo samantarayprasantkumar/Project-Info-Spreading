@@ -61,14 +61,14 @@ for experiment=1:Nexperiments
       %% Actual Simulation
  
       % Create visualisation of the network without edges    
-% %       figure(1)
-% %       hold on
-% %       for i = 1:N
-% %          plot(person(i).x,person(i).y,'ok','MarkerSize',2)
-% %       end
-% %     
-% %       % Highlight startperson    
-% %       plot(person(Startperson).x,person(Startperson).y,'ob','MarkerSize',2)
+      figure(1)
+      hold on
+      for i = 1:N
+         plot(person(i).x,person(i).y,'ok','MarkerSize',2)
+      end
+    
+      % Highlight startperson    
+      plot(person(Startperson).x,person(Startperson).y,'ob','MarkerSize',2)
  
       % initialise breakout parameters
       t=1;
@@ -89,11 +89,11 @@ for experiment=1:Nexperiments
       % Enter while loop
       while(breakout==0 && t<Nsteps)
   
-% %          % Indicating progress 1
-% %          figure(1)
-% %          bla=['Exp' int2str(experiment) '/' int2str(Nexperiments)...
-% %               '\newline' int2str(t/Nsteps*100) '%'  ];
-% %          progress=text(0.8,0.9,bla);
+         % Indicating progress 1
+         figure(1)
+         bla=['Exp' int2str(experiment) '/' int2str(Nexperiments)...
+              '\newline' int2str(t/Nsteps*100) '%'  ];
+         progress=text(0.8,0.9,bla);
  
          % Let meet and exchange info    
          talkstep;
@@ -103,9 +103,9 @@ for experiment=1:Nexperiments
          spreaders(t)=sum(status==1);
          stiflers(t)=sum(status==2);
         
-% %          % Indicating progress 2
-% %          pause(0.001)
-% %          delete(progress);
+         % Indicating progress 2
+         pause(0.001)
+         delete(progress);
 
          % Test if further evolution is possible
          if(spreaders(t)==0)
