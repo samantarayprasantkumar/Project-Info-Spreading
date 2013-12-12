@@ -1,4 +1,9 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: infospreading.aux
+Case mismatch error between cite keys Influentials and influentials
+---line 33 of file infospreading.aux
+ : \citation{Influentials
+ :                       }
+I'm skipping whatever remains of this command
 I found no \bibdata command---while reading file infospreading.aux
 I found no \bibstyle command---while reading file infospreading.aux
-(There were 2 error messages)
+(There were 3 error messages)
