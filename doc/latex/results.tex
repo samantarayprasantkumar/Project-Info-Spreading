@@ -1,17 +1,44 @@
+\subsection{Characteristics of the network}
+
+The network we used consists of 384 nodes. The distribution of the number of friends and the local clustering coefficients are shown in Figure \ref{hist1}.
+
+
+\begin{minipage}{0.5\textwidth}[H!]
+\includegraphics[scale=0.4]{network_degreehist.png}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\includegraphics[scale=0.4]{network_clusterhist.png}
+\end{minipage}
+\captionof{figure}{Distribution of the number of friends (left) and the local clustering coefficient (right).}
+\label{hist1}
+
+
+\begin{figure}[H!]
+\includegraphics[scale=0.4]{network_centralityhist.png}
+\caption{The distribution of in betweenness centrality values.}
+\label{centrality}
+\end{figure}
+
+%\begin{minipage}{0.33\textwidth}
+%\includegraphics[scale=0.3]{network_centralityhist.png}
+%\end{minipage}
+
+
 \subsection{Influentials}
+
 
 \subsubsection{Existance and importance of influentials}
 
 
 To analyise the existence of influentials, we first need to define its meaning. We will use de definiton given by Watts \cite{influentials}, which simply says that a person's importance is determined by the number of its \text{cumulative infections} (called casced).
 
-\begin{figure}
+\begin{figure}[H!]
 \includegraphics[width=7cm]{influ2}
 \caption{sdlhfa}
 \label{Histo}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H!]
 \includegraphics[width=7cm]{influ1}
 \caption{sdlhfa}
 \label{Sorted}
