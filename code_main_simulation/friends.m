@@ -88,9 +88,18 @@ clustercoef=clustering(connect, 'undirected');
 %  network. The other times load the saved data to
 %  save a lot of computing time
 
-%  create_betweenness %%works only for patricks network
+%  calc_betweenness %%works only for patricks network
 
 betweenness=dlmread('betweenness.txt');
+
+%% Determine constraint 
+%  Do it only the first time you work with the
+%  network. The other times load the saved data to
+%  save computing time
+
+calc_constraint; %%works only for patricks network
+
+%constraint=dlmread('constraint.txt');
 
 %% Determine maximal acitivity
 
@@ -127,6 +136,11 @@ for i=1:N
 end
 
 
+%% Calculate Eigencentrality
+
+eig=eigencentrality(connect);
+
+
 %% Give every person a position for the plot later on
 %  therefore first use gephi to calculate nice coordinates
 
@@ -151,6 +165,23 @@ for j=1:N
     end
   end  
 end
-% % 
-% % 
-% % edges=dlmread('edges.csv');
+
+%% Plot the whole network
+% figure(100)
+% hold on
+% for i=1:N-1
+%    for j=i+1:N
+%       if connect(i,j)==1
+%       plot([person(i).x;person(j).x],[person(i).y;person(j).y])
+%       end
+%    end
+% end
+% for i=1:N
+%   plot(person(i).x,person(i).y,'ok','MarkerSize',2)    
+% end
+% %  plot(person(91).x,person(91).y,'or','MarkerSize',5)
+% %  plot(person(120).x,person(120).y,'og','MarkerSize',5)
+% hold off
+% axis('off')
+% saveas(figure(100),'Network.png');
+% close(figure(100));

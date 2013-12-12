@@ -8,11 +8,8 @@ addpath('8_Additional_Material')
 
 % Load data and carry out first node characteisations 
 friends;
-%%
-folder='cccccc';
-mkdir(folder)
-% Declare and create folder where results are saved
-folder='20131206_Urs';
+%% Declare and create folder where results are saved
+folder='20131212_Urs';
 mkdir(folder);
 
 % Set parameters
@@ -36,7 +33,7 @@ Nsteps=5000;
 %%
 
 for experiment=1:Nexperiments
-   for Startperson=1:3
+   for Startperson=1:1
       tic
     
       % Show progress in command window as vector
@@ -140,6 +137,8 @@ dlmwrite([folder '/common.txt'], common,'delimiter',' ');
 dlmwrite([folder '/activity.txt'], act,'delimiter',' ');
 dlmwrite([folder '/seed.txt'], SEED,'delimiter',' ');
 dlmwrite([folder '/betweenness.txt'], betweenness,'delimiter',' ');
+dlmwrite([folder '/eigencentrality.txt'], eig,'delimiter',' '); 
+dlmwrite([folder '/constraint.txt'], constraint,'delimiter',' ');
 dlmwrite([folder '/ov_infections.txt'], ov_infections,'delimiter',' ');
 dlmwrite([folder '/ov_cum_infections.txt'], ov_cum_infections,'delimiter',' ');
 dlmwrite([folder '/ov_nummeetings.txt'], ov_nummeetings,'delimiter',' ');
