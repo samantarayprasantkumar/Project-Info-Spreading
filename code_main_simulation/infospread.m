@@ -8,7 +8,7 @@ addpath('8_Additional_Material')
 
 % Load data and carry out first node characteisations 
 friends;
-%% Declare and create folder where results are saved
+% Declare and create folder where results are saved
 folder='20131212_Urs';
 mkdir(folder);
 

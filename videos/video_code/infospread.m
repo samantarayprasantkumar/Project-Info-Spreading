@@ -34,7 +34,7 @@ for experiment=1:Nexperiments
     %0:ignorant, 1:spreader, 2:stifler
     status=zeros(1,N);
 
-    Startperson=108;
+    Startperson=round(rand*N+0.5);
     status(Startperson)=1; %one knows
     
     %% "Tools" for analyzing the spreading

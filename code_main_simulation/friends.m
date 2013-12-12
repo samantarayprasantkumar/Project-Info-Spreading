@@ -97,9 +97,9 @@ betweenness=dlmread('betweenness.txt');
 %  network. The other times load the saved data to
 %  save computing time
 
-calc_constraint; %%works only for patricks network
+%  calc_constraint; %%works only for patricks network
 
-%constraint=dlmread('constraint.txt');
+constraint=dlmread('constraint.txt');
 
 %% Determine maximal acitivity
 
@@ -146,7 +146,7 @@ eig=eigencentrality(connect);
 
 % Load data and sort it
 
-position=dlmread('positions.gdf');
+position=dlmread('coordiantes.gdf');
 
 [Y,I]=sort(position(:,1));
 position=position(I,:); 
@@ -166,7 +166,7 @@ for j=1:N
   end  
 end
 
-%% Plot the whole network
+% %% Plot the whole network
 % figure(100)
 % hold on
 % for i=1:N-1
@@ -183,5 +183,5 @@ end
 % %  plot(person(120).x,person(120).y,'og','MarkerSize',5)
 % hold off
 % axis('off')
-% saveas(figure(100),'Network.png');
+% saveas(figure(100),'Network-Graph.png');
 % close(figure(100));

@@ -18,3 +18,7 @@ figure(3);
 hist(betweenness,20)
 xlabel('Inbetweenness Centrality')
 ylabel('Absolute Frequency')
+
+saveas(figure(1),'network_degreehist.png')
+saveas(figure(2),'network_clusterhist.png')
+saveas(figure(3),'network_centralityhist.png')

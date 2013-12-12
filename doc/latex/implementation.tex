@@ -1,6 +1,6 @@
 \subsection{Homogeneous SIR-model}
 
-Urs
+The system of ordinary differential equations described in section ..... was solved in MatLab using ode45. The simulation was carried four times using $\alpha$ to $\lambda$ ratios between 0.1 and 10. The starting conditions were always S = 383, I = 1 and R = 0.
 
 \subsection{Agent-based model}
 
@@ -19,7 +19,7 @@ In order to determine who meets who, the program goes through the vector of agen
 
 After the meetings are determined, the status of each agent has to change according to the model. In order to be able to determine who infected whom, and how many where infected, a list \texttt{infecpath} was created in each round containing the directed edges of infections.
 
-\subsubsection{cumulative infections}
+\subsubsection{Cumulative infections}
 
 With a given \texttt{infecpath}, with the directed edges of infections, it is obviously easy to obtain the number of direct infections of every node and also relatively easy to get the number of "cumulative infections", which is the whole subtree of infections of each node (see Details later). The ladder was obtained in a recursive manner in the following way:
 

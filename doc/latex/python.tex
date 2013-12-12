@@ -60,9 +60,7 @@ statuses = graph.get_connections(tfriend, "statuses", fields="updated_time", lim
 This objecct provides us, all information we need (a list of all posts incl. a time stamp when it's been posted) to calculate the above mentioned quotient.
 
 \subsubsection{Get coordinates}
-
-urs will tell you! 
-
+To visualise the network in MatLab, the software "Gephi" and a file containing all edges were used to determine the x- and y- coordinates of each person. Therefore, the file "gephi.csv", an edge list of the network, was imported. The nodes were then arranged in communities using the layout method "ForceAtlas 2". Finally, normalised node coordinates where exported to "coordinates.gdf". After deleting all headers and all edge data from this file, the coordinates could be imported to MatLab.
 \subsection{Anonymization}
 
 The anonymization is acutally only a pseudo-anonymization. First all id's get arranged in order of size. Secondly, we create a list from 1 to n (number of friends). We then define a bijection between the two sets, such that the i-th element of the first set, maps to the i-th element of the second set. 
