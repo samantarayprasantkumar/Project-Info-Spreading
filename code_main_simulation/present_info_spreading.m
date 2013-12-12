@@ -1,17 +1,17 @@
 clear time;
 time=1:length(ignorants);
 
-% % figure(2);
-% % time=1:length(ignorants);
-% % plot(time,ignorants,'r'); 
-% % hold on
-% % plot(time,spreaders,'g');
-% % plot(time,stiflers,'b');
-% % legend('Ignorants','Spreaders','Stiflers')
-% % xlabel('Step')
-% % ylabel('Population')
-% % axis([time(1) time(end)+1 0 400])
-% % hold off
+figure(2);
+time=1:length(ignorants);
+plot(time,ignorants,'r'); 
+hold on
+plot(time,spreaders,'g');
+plot(time,stiflers,'b');
+legend('Ignorants','Spreaders','Stiflers')
+xlabel('Step')
+ylabel('Population')
+axis([time(1) time(end)+1 0 400])
+hold off
 %% Do tests if model made sense
 
 cum_infections=zeros(1,N);

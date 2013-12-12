@@ -14,8 +14,6 @@ mkdir(folder);
 
 % Set parameters
 parameters;
-
-
 %% Carry out the experiment (several simulation rounds)
 
 % Initialize output (sum over individual simulations)

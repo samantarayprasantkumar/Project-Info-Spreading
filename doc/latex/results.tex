@@ -3,7 +3,7 @@
 The network we used consists of 384 nodes. The distribution of the number of friends and the local clustering coefficients are shown in Figure \ref{hist1}.
 
 
-\begin{minipage}{0.5\textwidth}[H!]
+\begin{minipage}{0.5\textwidth}
 \includegraphics[scale=0.4]{network_degreehist.png}
 \end{minipage}
 \begin{minipage}{0.5\textwidth}
@@ -23,7 +23,23 @@ The network we used consists of 384 nodes. The distribution of the number of fri
 %\includegraphics[scale=0.3]{network_centralityhist.png}
 %\end{minipage}
 
+\subsection{Influence of p$_{forget}$}
+As shown if figures \ref{SIR_ODE} and \ref{Analysis_pforget} the number of ignorants at the end of the simulation increases for higher p$_{forget}$ ($\alpha$)  if p$_{inform}$ ($\lambda$) is kept constant.
 
+SIR: max of spreaders and the number of ignorants at the end are lower for lower pfoerget (lamda always the same).
+
+\begin{figure}[H!]
+\includegraphics[width=7cm]{Analysis_pforget}
+\caption{sdlhfa}
+\label{Analysis_pforget}
+\end{figure}
+
+\begin{figure}[H!]
+\includegraphics[width=14cm]{SIR_ODE}
+\caption{sdlhfa}
+\label{SIR_ODE}
+\end{figure}
+\clearpage
 \subsection{Influentials}
 
 
@@ -80,5 +96,17 @@ It turns out that our top two influenctials indeed have the highest betweenness 
 
 Figure \ref{Betweenness} shows, that high cumulative infection value implies high betweenness. But as we can also see in figure 3, it doesn't really imply the other direction.
 
+\subsection{Difference between homogeous and agent based model}
 
+\begin{minipage}{0.5\textwidth}
+\includegraphics[width=7cm]{NICE_SIR}
+\caption{sdlhfa}
+\label{NICE_SIR}
+
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\includegraphics[width=7cm]{2-local-max}
+\caption{two local maxima, not continuous}
+\label{2-local-max}
+\end{minipage}
 

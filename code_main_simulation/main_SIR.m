@@ -9,14 +9,14 @@ t_span = linspace(0,0.2,1000)';
 [t_out_2,state_out_2]=ode45(@(t,state)ode_SIR(t,state,[k1,k2(2)]),t_span,[383;1;0]);
 [t_out_3,state_out_3]=ode45(@(t,state)ode_SIR(t,state,[k1,k2(3)]),t_span,[383;1;0]);
 [t_out_4,state_out_4]=ode45(@(t,state)ode_SIR(t,state,[k1,k2(4)]),t_span,[383;1;0]);
-
+%%
 figure(1)
 i=1;
 subplot(1,4,i)
 ph1=plot(t_out_1,state_out_1(:,i),'-k',t_out_2,state_out_2(:,i),'--k',...
      t_out_3,state_out_3(:,i),'-.k',t_out_4,state_out_4(:,i),':k');
-legend('k_{1}/k_{2}=10' ,'k_{1}/k_{2}=2.5',...
-          'k_{1}/k_{2}=0.4','k_{1}/k_{2}=0.1')
+legend('\lambda / \alpha=10'  ,'\lambda / \alpha=2.5',...
+          '\lambda / \alpha=0.4','\lambda / \alpha=0.1')
 axis([0 t_span(end) 0 384])
 xlabel('Time')
 ylabel('Nr. of ignorants')
@@ -44,3 +44,16 @@ axis(sh,'off');
 subplot(1,4,1)
 legend('off')
 saveas(figure(1),'SIR_ODE.png')
+
+
+[t_out_5,state_out_5]=ode45(@(t,state)ode_SIR(t,state,[0.475,1.275]),t_span,[383;1;0]);
+
+%%
+figure(2)
+t_out_5=t_out_5*10000;
+plot(t_out_5,state_out_5(:,1),'-k',t_out_5,state_out_5(:,2),'-.k',t_out_5,state_out_5(:,3),':k')
+legend('Ignorants','Spreaders','Stiflers')
+xlabel('Step')
+ylabel('Population')
+axis([t_out_5(1) 1000 0 400])
+saveas(figure(2),'NICE_SIR.png')
