@@ -384,48 +384,48 @@ ylabel('TIA')
 saveas(figure(10),'TIAVSall',format)
 
 %%
-ov_nummeetings_r=ov_nummeetings/3840;
-ov_cum_infections_r=ov_cum_infections/3840;
-ov_infections_r=ov_infections/3840;
+avg_nummeetings=ov_nummeetings/3840;
+avg_cum_infections=ov_cum_infections/3840;
+avg_infections=ov_infections/3840;
 
 figure(21)
 subplot(2,2,1)
-plot(activity,ov_nummeetings_r,'ok','MarkerSize',2)
+plot(activity,avg_nummeetings,'ok','MarkerSize',2)
 xlabel('activity')
-ylabel('ov nummeetings r')
+ylabel('avg nummeetings')
 lsline
-ds_21_1    = dataset(ov_nummeetings_r,activity);
-model_21_1 = 'ov_nummeetings_r ~ activity';
+ds_21_1    = dataset(avg_nummeetings,activity);
+model_21_1 = 'avg_nummeetings ~ activity';
 mdl_21_1   = LinearModel.fit(ds_21_1,model_21_1);
 disp(mdl_21_1)
 %%
 subplot(2,2,2)
-plot(influence,ov_infections_r,'ok','MarkerSize',2)
+plot(influence,avg_infections,'ok','MarkerSize',2)
 xlabel('Nfriends*activity')
-ylabel('ov infections r')
+ylabel('avg infections')
 lsline
-ds_21_2    = dataset(ov_infections_r,influence);
-model_21_2 = 'ov_infections_r ~ influence';
+ds_21_2    = dataset(avg_infections,influence);
+model_21_2 = 'avg_infections ~ influence';
 mdl_21_2   = LinearModel.fit(ds_21_2,model_21_2);
 disp(mdl_21_2)
 %%
 subplot(2,2,3)
-plot(influence,ov_cum_infections_r,'ok','MarkerSize',2)
+plot(influence,avg_cum_infections,'ok','MarkerSize',2)
 xlabel('Nfriends*activity')
-ylabel('ov cum infections r')
+ylabel('avg cum infections')
 lsline
-ds_21_3    = dataset(ov_cum_infections_r,influence);
-model_21_3 = 'ov_cum_infections_r ~ influence';
+ds_21_3    = dataset(avg_cum_infections,influence);
+model_21_3 = 'avg_cum_infections ~ influence';
 mdl_21_3   = LinearModel.fit(ds_21_3,model_21_3);
 disp(mdl_21_3)
 %%
 subplot(2,2,4)
-plot(ov_infections_r,ov_cum_infections_r,'ok','MarkerSize',2)
-xlabel('ov infections r')
-ylabel('ov cum infections r')
+plot(avg_infections,avg_cum_infections,'ok','MarkerSize',2)
+xlabel('avg infections')
+ylabel('avg cum infections')
 lsline
-ds_21_4    = dataset(ov_cum_infections,ov_infections);
-model_21_4 = 'ov_cum_infections ~ ov_infections';
+ds_21_4    = dataset(avg_cum_infections,avg_infections);
+model_21_4 = 'avg_cum_infections ~ avg_infections';
 mdl_21_4   = LinearModel.fit(ds_21_4,model_21_4);
 disp(mdl_21_4)
 
