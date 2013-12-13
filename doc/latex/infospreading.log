@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.11.25)  13 DEC 2013 13:26
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.11.25)  13 DEC 2013 14:24
 entering extended mode
 **infospreading.tex
 
@@ -294,7 +294,14 @@ File: listings.cfg 2007/02/22 1.4 listings configuration
 Package: listings 2007/02/22 1.4 (Carsten Heinz)
 
 (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\infospreading.
-aux)
+aux
+
+LaTeX Warning: Label `2peaks' multiply defined.
+
+
+LaTeX Warning: Label `Network-Graph' multiply defined.
+
+)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
@@ -413,11 +420,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--5
 
  []
 
-[4]
-
-LaTeX Warning: Reference `steps' on page 5 undefined on input line 33.
-
-)
+[4])
 Underfull \hbox (badness 10000) in paragraph at lines 29--111
 
  []
@@ -429,160 +432,172 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--17
 
  []
 
-[6] [7])
+[6])
 (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\python.tex
-[8])
+[7] [8] <Network-Graph.png, id=45, 578.6418pt x 434.1018pt>
+File: Network-Graph.png Graphic file (type png)
+
+<use Network-Graph.png>
+Package pdftex.def Info: Network-Graph.png used on input line 62.
+(pdftex.def)             Requested size: 199.16928pt x 149.42084pt.
+ [9 <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/latex/Network-Gr
+aph.png (PNG copy)>])
 (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\results.tex
-[9] <network_degreehist.png, id=48, 578.6418pt x 434.1018pt>
+<network_degreehist.png, id=49, 578.6418pt x 434.1018pt>
 File: network_degreehist.png Graphic file (type png)
 
 <use network_degreehist.png>
-Package pdftex.def Info: network_degreehist.png used on input line 7.
-(pdftex.def)             Requested size: 231.4526pt x 173.63765pt.
+Package pdftex.def Info: network_degreehist.png used on input line 25.
+(pdftex.def)             Requested size: 199.16928pt x 149.42084pt.
 
-Overfull \hbox (16.4503pt too wide) in paragraph at lines 7--8
-[][] 
- []
-
-<network_clusterhist.png, id=49, 578.6418pt x 434.1018pt>
+<network_clusterhist.png, id=50, 578.6418pt x 434.1018pt>
 File: network_clusterhist.png Graphic file (type png)
 
 <use network_clusterhist.png>
-Package pdftex.def Info: network_clusterhist.png used on input line 10.
-(pdftex.def)             Requested size: 231.4526pt x 173.63765pt.
-
-Overfull \hbox (16.4503pt too wide) in paragraph at lines 10--11
-[][] 
- []
+Package pdftex.def Info: network_clusterhist.png used on input line 28.
+(pdftex.def)             Requested size: 199.16928pt x 149.42084pt.
 
 
 Package caption Warning: \captionsetup{type*=...} or \captionof
-(caption)                outside box or environment on input line 12.
+(caption)                outside box or environment on input line 30.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (19.61107pt too wide) in paragraph at lines 6--12
+Overfull \hbox (19.61107pt too wide) in paragraph at lines 24--30
 []$[]$ $[]$ 
  []
 
-<network_centralityhist.png, id=50, 578.6418pt x 434.1018pt>
+<network_centralityhist.png, id=51, 578.6418pt x 434.1018pt>
 File: network_centralityhist.png Graphic file (type png)
 
 <use network_centralityhist.png>
-Package pdftex.def Info: network_centralityhist.png used on input line 17.
-(pdftex.def)             Requested size: 231.4526pt x 173.63765pt.
+Package pdftex.def Info: network_centralityhist.png used on input line 38.
+(pdftex.def)             Requested size: 199.16928pt x 149.42084pt.
 
-<Analysis_pforget.png, id=51, 578.6418pt x 434.1018pt>
+Overfull \hbox (19.61107pt too wide) in paragraph at lines 34--42
+[]$[]$ $[]$ 
+ []
+
+[10 <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/latex/network_de
+greehist.png (PNG copy)> <C:/Users/User/Documents/GitHub/Project-Info-Spreading
+/doc/latex/network_clusterhist.png (PNG copy)> <C:/Users/User/Documents/GitHub/
+Project-Info-Spreading/doc/latex/network_centralityhist.png (PNG copy)>]
+<NICE_SIR.png, id=55, 578.6418pt x 434.1018pt>
+File: NICE_SIR.png Graphic file (type png)
+ <use NICE_SIR.png>
+Package pdftex.def Info: NICE_SIR.png used on input line 54.
+(pdftex.def)             Requested size: 199.16928pt x 149.42084pt.
+
+<1-local-max.png, id=56, 578.6418pt x 434.1018pt>
+File: 1-local-max.png Graphic file (type png)
+ <use 1-local-max.png>
+Package pdftex.def Info: 1-local-max.png used on input line 57.
+(pdftex.def)             Requested size: 199.16928pt x 149.42084pt.
+
+Overfull \hbox (19.61107pt too wide) in paragraph at lines 53--59
+[]$[]$ $[]$ 
+ []
+
+<2-local-max.png, id=57, 578.6418pt x 434.1018pt>
+File: 2-local-max.png Graphic file (type png)
+ <use 2-local-max.png>
+Package pdftex.def Info: 2-local-max.png used on input line 67.
+(pdftex.def)             Requested size: 199.16928pt x 149.42084pt.
+
+Overfull \hbox (19.61107pt too wide) in paragraph at lines 63--71
+[]$[]$ $[]$ 
+ []
+
+<Analysis_pforget.png, id=58, 578.6418pt x 434.1018pt>
 File: Analysis_pforget.png Graphic file (type png)
 
 <use Analysis_pforget.png>
-Package pdftex.def Info: Analysis_pforget.png used on input line 32.
+Package pdftex.def Info: Analysis_pforget.png used on input line 81.
 (pdftex.def)             Requested size: 199.16928pt x 149.42084pt.
- <SIR_ODE.png, id=52, 578.6418pt x 434.1018pt>
+ [11 <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/latex/NICE_SIR.
+png (PNG copy)> <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/late
+x/1-local-max.png (PNG copy)> <C:/Users/User/Documents/GitHub/Project-Info-Spre
+ading/doc/latex/2-local-max.png (PNG copy)>]
+<SIR_ODE.png, id=62, 578.6418pt x 434.1018pt>
 File: SIR_ODE.png Graphic file (type png)
-
-<use SIR_ODE.png>
-Package pdftex.def Info: SIR_ODE.png used on input line 38.
+ <use SIR_ODE.png>
+Package pdftex.def Info: SIR_ODE.png used on input line 87.
 (pdftex.def)             Requested size: 398.33858pt x 298.84169pt.
- [10 <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/latex/network_d
-egreehist.png (PNG copy)> <C:/Users/User/Documents/GitHub/Project-Info-Spreadin
-g/doc/latex/network_clusterhist.png (PNG copy)>] [11 <C:/Users/User/Documents/G
-itHub/Project-Info-Spreading/doc/latex/network_centralityhist.png (PNG copy)> <
-C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/latex/Analysis_pforge
-t.png (PNG copy)>] [12 <C:/Users/User/Documents/GitHub/Project-Info-Spreading/d
-oc/latex/SIR_ODE.png (PNG copy)>]
-<influ2.png, id=62, 560.0925pt x 420.57124pt>
+ [12] [13 <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/latex/Anal
+ysis_pforget.png (PNG copy)> <C:/Users/User/Documents/GitHub/Project-Info-Sprea
+ding/doc/latex/SIR_ODE.png (PNG copy)>] <influ2.png, id=70, 560.0925pt x 420.57
+124pt>
 File: influ2.png Graphic file (type png)
- <use influ2.png>
-Package pdftex.def Info: influ2.png used on input line 52.
-(pdftex.def)             Requested size: 199.16928pt x 149.55731pt.
 
-<influ1.png, id=63, 560.0925pt x 420.57124pt>
+<use influ2.png>
+Package pdftex.def Info: influ2.png used on input line 101.
+(pdftex.def)             Requested size: 199.16928pt x 149.55731pt.
+ <influ1.png, id=71, 560.0925pt x 420.57124pt>
 File: influ1.png Graphic file (type png)
- <use influ1.png>
-Package pdftex.def Info: influ1.png used on input line 58.
+
+<use influ1.png>
+Package pdftex.def Info: influ1.png used on input line 107.
 (pdftex.def)             Requested size: 199.16928pt x 149.55731pt.
 
 
-LaTeX Warning: Reference `sorted' on page 13 undefined on input line 63.
+LaTeX Warning: Reference `sorted' on page 14 undefined on input line 112.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--64
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--69
+Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
 
-<influ3.png, id=64, 560.0925pt x 420.57124pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--118
+
+ []
+
+<influ3.png, id=72, 560.0925pt x 420.57124pt>
 File: influ3.png Graphic file (type png)
  <use influ3.png>
-Package pdftex.def Info: influ3.png used on input line 70.
+Package pdftex.def Info: influ3.png used on input line 119.
 (pdftex.def)             Requested size: 199.16928pt x 149.55731pt.
 
 
-Package natbib Warning: Citation `word2mouth' on page 13 undefined on input lin
-e 73.
+Package natbib Warning: Citation `word2mouth' on page 14 undefined on input lin
+e 122.
 
 
-Overfull \hbox (2.0379pt too wide) in paragraph at lines 73--74
+Overfull \hbox (2.0379pt too wide) in paragraph at lines 122--123
 []\OT1/cmr/m/n/12 According to Gold-en-berg [\OT1/cmr/bx/n/12 ? \OT1/cmr/m/n/12
  ], the im-por-tance of in-flu-en-tial is of-ten over-estimated.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--84
+Underfull \hbox (badness 10000) in paragraph at lines 129--133
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--84
+Underfull \hbox (badness 10000) in paragraph at lines 129--133
 
  []
 
-[13
+[14
 
  <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/latex/influ3.png (P
-NG copy)>] <influ4.png, id=69, 561.09625pt x 420.57124pt>
+NG copy)>] <influ4.png, id=76, 561.09625pt x 420.57124pt>
 File: influ4.png Graphic file (type png)
  <use influ4.png>
-Package pdftex.def Info: influ4.png used on input line 92.
+Package pdftex.def Info: influ4.png used on input line 141.
 (pdftex.def)             Requested size: 199.16928pt x 149.2878pt.
-
-<NICE_SIR.png, id=70, 578.6418pt x 434.1018pt>
-File: NICE_SIR.png Graphic file (type png)
- <use NICE_SIR.png>
-Package pdftex.def Info: NICE_SIR.png used on input line 102.
-(pdftex.def)             Requested size: 199.16928pt x 149.42084pt.
-
-<2-local-max.png, id=71, 578.6418pt x 434.1018pt>
-File: 2-local-max.png Graphic file (type png)
- <use 2-local-max.png>
-Package pdftex.def Info: 2-local-max.png used on input line 108.
-(pdftex.def)             Requested size: 199.16928pt x 149.42084pt.
-
-Overfull \hbox (2.61107pt too wide) in paragraph at lines 101--112
-$[]$ $[]$ 
- []
-
-) (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\summary.tex)
+)
+(C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\summary.tex)
 (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\bib.tex
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no © in font cmr12!
 
-[14 <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/latex/NICE_SIR.p
-ng (PNG copy)> <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/latex
-/2-local-max.png (PNG copy)>]
-<ImportantCorrelations.png, id=75, 578.6418pt x 434.1018pt>
+<ImportantCorrelations.png, id=77, 578.6418pt x 434.1018pt>
 File: ImportantCorrelations.png Graphic file (type png)
 
 <use ImportantCorrelations.png>
 Package pdftex.def Info: ImportantCorrelations.png used on input line 25.
 (pdftex.def)             Requested size: 199.16928pt x 149.42084pt.
-
-<Network-Graph.png, id=76, 578.6418pt x 434.1018pt>
 File: Network-Graph.png Graphic file (type png)
  <use Network-Graph.png>
 Package pdftex.def Info: Network-Graph.png used on input line 31.
@@ -595,23 +610,24 @@ Package natbib Warning: There were undefined citations.
 2.png (PNG copy)> <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/la
 tex/influ1.png (PNG copy)> <C:/Users/User/Documents/GitHub/Project-Info-Spreadi
 ng/doc/latex/influ4.png (PNG copy)>] [17 <C:/Users/User/Documents/GitHub/Projec
-t-Info-Spreading/doc/latex/ImportantCorrelations.png (PNG copy)> <C:/Users/User
-/Documents/GitHub/Project-Info-Spreading/doc/latex/Network-Graph.png (PNG copy)
->]
+t-Info-Spreading/doc/latex/ImportantCorrelations.png (PNG copy)>]
 (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\infospreading.
 aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 6173 strings out of 494049
- 92546 string characters out of 3148485
- 196681 words of memory out of 3000000
- 9336 multiletter control sequences out of 15000+200000
+ 6176 strings out of 494049
+ 92618 string characters out of 3148485
+ 191712 words of memory out of 3000000
+ 9338 multiletter control sequences out of 15000+200000
  14479 words of font info for 56 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 42i,20n,38p,1136b,1450s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,20n,38p,1136b,942s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKT
@@ -626,9 +642,9 @@ gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files
 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmtt12.pfb>
-Output written on infospreading.pdf (17 pages, 404329 bytes).
+Output written on infospreading.pdf (17 pages, 418277 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
+ 134 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

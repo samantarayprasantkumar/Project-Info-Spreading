@@ -1,27 +1,76 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \subsection{Characteristics of the network}
 
 The network we used consists of 384 nodes. The distribution of the number of friends and the local clustering coefficients are shown in Figure \ref{hist1}.
 
 
 \begin{minipage}{0.5\textwidth}
-\includegraphics[scale=0.4]{network_degreehist.png}
+\includegraphics[width=7cm]{network_degreehist.png}
 \end{minipage}
 \begin{minipage}{0.5\textwidth}
-\includegraphics[scale=0.4]{network_clusterhist.png}
+\includegraphics[width=7cm]{network_clusterhist.png}
 \end{minipage}
 \captionof{figure}{Distribution of the number of friends (left) and the local clustering coefficient (right).}
 \label{hist1}
 
 
-\begin{figure}[H!]
-\includegraphics[scale=0.4]{network_centralityhist.png}
-\caption{The distribution of in betweenness centrality values.}
-\label{centrality}
-\end{figure}
+\begin{minipage}{0.5\textwidth}
+The main problem of our network is, that it consists of all the friends of one of the a
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\includegraphics[width=7cm]{network_centralityhist.png}
+\captionof{figure}{Distribution of betweenness centrality.}
+\label{2peaks}
+\end{minipage}
 
 %\begin{minipage}{0.33\textwidth}
 %\includegraphics[scale=0.3]{network_centralityhist.png}
 %\end{minipage}
+
+
+
+\subsection{Differences in the time evolution}
+
+Most of the times, the form of the evolution graph of the system looks very similar in the case of the homogeneous and the inhomogeneous, agent-based model (Figure \ref{evolution1}).
+
+\begin{minipage}{0.5\textwidth}
+\includegraphics[width=7cm]{NICE_SIR}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\includegraphics[width=7cm]{1-local-max}
+\end{minipage}
+\captionof{figure}{Left: Typical evolution of the system in the homogeneous SIR-model. Right: The Evolution in the agent-based model. In most cases, the evolution looks somewhat like this.}
+\label{evolution1}
+
+
+\begin{minipage}{0.5\textwidth}
+But there were also interesting cases where two local maxima occurred, as in Figure \ref{2peaks}. This can never be the case in a homogeneous model. This requires several neighbourhoods in the network (and some luck, since the simulation uses random numbers). This might be a rather obvious insight, but it proofs that a homogeneous model might fail totally. If you would base any decision on a homogeneous model and you recognize that the number of spreaders decreases, you would expect that the spreading comes to an end. But it might be  that it hardly started if you have inhomogeneities.
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\includegraphics[width=7cm]{2-local-max}
+\captionof{figure}{two local maxima, not continuous}
+\label{2peaks}
+\end{minipage}
+
+
+
 
 \subsection{Influence of p$_{forget}$}
 As shown if figures \ref{SIR_ODE} and \ref{Analysis_pforget} the number of ignorants at the end of the simulation increases for higher p$_{forget}$ ($\alpha$)  if p$_{inform}$ ($\lambda$) is kept constant.
@@ -96,17 +145,7 @@ It turns out that our top two influenctials indeed have the highest betweenness 
 
 Figure \ref{Betweenness} shows, that high cumulative infection value implies high betweenness. But as we can also see in figure 3, it doesn't really imply the other direction.
 
-\subsection{Difference between homogeous and agent based model}
 
-\begin{minipage}{0.5\textwidth}
-\includegraphics[width=7cm]{NICE_SIR}
-\caption{sdlhfa}
-\label{NICE_SIR}
 
-\end{minipage}
-\begin{minipage}{0.5\textwidth}
-\includegraphics[width=7cm]{2-local-max}
-\caption{two local maxima, not continuous}
-\label{2-local-max}
-\end{minipage}
+
 

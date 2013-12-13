@@ -1,8 +1,7 @@
 
 \subsection{Getting the network} 
 
-To get the data for our simulation, we used the so-called Facebook Graph API. What does Graph API mean? 
-A Facebook Grpah API is a programming tool designed to support better access to conventions on the Facebook social media platform.\footnote{http://www.techopedia.com/definition/28984/facebook-graph-api} 
+To get the data for our simulation, we used the so-called Facebook Graph API, a programming tool designed to support better access to conventions on the Facebook social media platform.\footnote{http://www.techopedia.com/definition/28984/facebook-graph-api} 
 \\
 Unfortunately, there is no implementation for Matlab, so we programmed the data-fechting in python. For the coding in python we used the facebook sdk\footnote{https://github.com/pythonforfacebook/facebook-sdk}. 
 
@@ -17,7 +16,7 @@ graph = facebook.GraphAPI(token)
 
 \end{lstlisting}
 
-paragraph{Get graph}
+\paragraph{Get graph}
 
 Having enterd a valid token, we can now access all information this token provide us.  For simplicty, we'll only discuss  the non-anonymized case in details. [For more details on the anonymization, look at subsection anonymization]
 
@@ -56,7 +55,15 @@ statuses = graph.get_connections(tfriend, "statuses", fields="updated_time", lim
 This objecct provides us, all information we need (a list of all posts incl. a time stamp when it's been posted) to calculate the above mentioned quotient.
 
 \paragraph{Get coordinates}
-To visualise the network in MatLab, the software "Gephi" was used to determine the x- and y- coordinates of each individual. Therefore, the file "gephi.csv", an edge list of the network, was imported. The nodes were then arranged in communities using the layout method "ForceAtlas2". Finally, normalised node coordinates where exported to "coordinates.gdf". After deleting all headers and all edge data from this file, the coordinates could be easily imported to MatLab.
+To visualise the network in MatLab, the software "Gephi" was used to determine the x- and y- coordinates of each individual. Therefore, the file "gephi.csv", an edge list of the network, was imported. The nodes were then arranged in communities using the layout method "ForceAtlas2". Finally, normalised node coordinates where exported to "coordinates.gdf". After deleting all headers and all edge data from this file, the coordinates could be easily imported to MatLab. The Network is visualized in Figure \ref{Network-Graph}.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=7cm]{Network-Graph}
+\caption{sdlhfa}
+\label{Network-Graph}
+\end{center}
+\end{figure}
 
 \paragraph{Anonymization}
 

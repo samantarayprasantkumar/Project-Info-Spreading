@@ -19,16 +19,17 @@
 \contentsline {paragraph}{Cumulative infections}{7}
 \contentsline {subsection}{\numberline {5.4}Getting the network}{8}
 \contentsline {paragraph}{Get access}{8}
+\contentsline {paragraph}{Get graph}{8}
 \contentsline {paragraph}{Get activity}{9}
 \contentsline {paragraph}{Get coordinates}{9}
-\contentsline {paragraph}{Anonymization}{9}
+\contentsline {paragraph}{Anonymization}{10}
 \contentsline {section}{\numberline {6}Simulation Results and Discussion}{10}
 \contentsline {subsection}{\numberline {6.1}Characteristics of the network}{10}
-\contentsline {subsection}{\numberline {6.2}Influence of p$_{forget}$}{10}
-\contentsline {subsection}{\numberline {6.3}Influentials}{13}
-\contentsline {subsubsection}{\numberline {6.3.1}Existance and importance of influentials}{13}
-\contentsline {subsubsection}{\numberline {6.3.2}Determine influentials}{14}
-\contentsline {subsection}{\numberline {6.4}Difference between homogeous and agent based model}{14}
-\contentsline {section}{\numberline {7}Summary and Outlook}{14}
+\contentsline {subsection}{\numberline {6.2}Differences in the time evolution}{11}
+\contentsline {subsection}{\numberline {6.3}Influence of p$_{forget}$}{11}
+\contentsline {subsection}{\numberline {6.4}Influentials}{14}
+\contentsline {subsubsection}{\numberline {6.4.1}Existance and importance of influentials}{14}
+\contentsline {subsubsection}{\numberline {6.4.2}Determine influentials}{15}
+\contentsline {section}{\numberline {7}Summary and Outlook}{15}
 \contentsline {section}{\numberline {8}Appendix}{15}
 \contentsline {section}{\numberline {9}Additional figures}{15}
