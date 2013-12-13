@@ -1,20 +1,20 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.11.25)  13 DEC 2013 15:19
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.12.11)  13 DEC 2013 15:37
 entering extended mode
 **infospreading.tex
 
-(C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\infospreading.
-tex
-LaTeX2e <2009/09/24>
-Babel <v3.8l> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+(C:\Users\Urs\Documents\GitHub\Project-Info-Spreading\doc\latex\infospreading.t
+ex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
 croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
-vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
-an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
-romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
-sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
-senglishmax, welsh, loaded.
+lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo"
@@ -44,7 +44,7 @@ Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
-Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
@@ -82,10 +82,10 @@ Package graphics Info: Driver file: pdftex.def on input line 91.
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count90
 ))
@@ -93,29 +93,31 @@ Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
 \Gin@req@width=\dimen112
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
-Package: caption 2010/01/09 v3.1m Customizing captions (AR)
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
-Package: caption3 2010/01/14 v3.1m caption3 kernel (AR)
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen113
 \captionmargin@=\dimen114
 \captionwidth=\dimen115
-\caption@indent=\dimen116
-\caption@parindent=\dimen117
-\caption@hangindent=\dimen118
+\caption@tempdima=\dimen116
+\caption@indent=\dimen117
+\caption@parindent=\dimen118
+\caption@hangindent=\dimen119
 )
 \c@ContinuedFloat=\count91
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
-Package: amssymb 2009/06/22 v3.00
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
-Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks16
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.sty"
 Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
@@ -124,19 +126,19 @@ Package: epstopdf 2010/02/09 v2.5 Conversion with epstopdf on the fly (HO)
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
-Package: grfext 2010/08/19 v1.1 Managing graphics extensions (HO)
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
-Package: kvdefinekeys 2011/04/07 v1.3 Defining keys (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
-Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
-Package: kvsetkeys 2011/04/07 v1.13 Key value parser (HO)
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
-Package: etexcmds 2011/02/16 v1.5 Prefix for e-TeX command names (HO)
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
@@ -148,7 +150,8 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2011/04/22 v0.16 Utilities of pdfTeX for LuaTeX (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
@@ -166,41 +169,41 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count92
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsmath.sty"
-Package: amsmath 2000/07/18 v2.13 AMS math features
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip45
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amstext.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsgen.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks17
-\ex@=\dimen119
+\ex@=\dimen120
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsbsy.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen120
+\pmbraise@=\dimen121
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsopn.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count93
-LaTeX Info: Redefining \frac on input line 211.
+LaTeX Info: Redefining \frac on input line 210.
 \uproot@=\count94
 \leftroot@=\count95
-LaTeX Info: Redefining \overline on input line 307.
+LaTeX Info: Redefining \overline on input line 306.
 \classnum@=\count96
 \DOTSCASE@=\count97
-LaTeX Info: Redefining \ldots on input line 379.
-LaTeX Info: Redefining \dots on input line 382.
-LaTeX Info: Redefining \cdots on input line 467.
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
-\big@size=\dimen121
-LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\big@size=\dimen122
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \macc@depth=\count98
 \c@MaxMatrixCols=\count99
 \dotsspace@=\muskip10
@@ -211,34 +214,34 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \column@=\count103
 \maxfields@=\count104
 \andhelp@=\toks19
-\eqnshift@=\dimen122
-\alignsep@=\dimen123
-\tagshift@=\dimen124
-\tagwidth@=\dimen125
-\totwidth@=\dimen126
-\lineht@=\dimen127
+\eqnshift@=\dimen123
+\alignsep@=\dimen124
+\tagshift@=\dimen125
+\tagwidth@=\dimen126
+\totwidth@=\dimen127
+\lineht@=\dimen128
 \@envbody=\toks20
 \multlinegap=\skip46
 \multlinetaggap=\skip47
 \mathdisplay@stack=\toks21
-LaTeX Info: Redefining \[ on input line 2666.
-LaTeX Info: Redefining \] on input line 2667.
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\mh\empheq.sty"
-Package: empheq 2007/12/03 v2.12 Emphasizing equations (MH)
+Package: empheq 2013/02/12 v2.13 Emphasizing equations
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\mh\mhsetup.sty"
 Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\mh\mathtools.sty"
-Package: mathtools 2011/02/12 v1.10 mathematical typesetting tools
+Package: mathtools 2013/02/12 v1.13 mathematical typesetting tools
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count105
 \calc@Bcount=\count106
-\calc@Adimen=\dimen128
-\calc@Bdimen=\dimen129
+\calc@Adimen=\dimen129
+\calc@Bdimen=\dimen130
 \calc@Askip=\skip48
 \calc@Bskip=\skip49
 LaTeX Info: Redefining \setlength on input line 76.
@@ -246,24 +249,30 @@ LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Ccount=\count107
 \calc@Cskip=\skip50
 )
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \g_MT_multlinerow_int=\count108
-\l_MT_multwidth_dim=\dimen130
+\l_MT_multwidth_dim=\dimen131
 \origjot=\skip51
-\l_MT_shortvdotswithinadjustabove_dim=\dimen131
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen132
+\l_MT_shortvdotswithinadjustabove_dim=\dimen132
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen133
+\l_MT_above_intertext_sep=\dimen134
+\l_MT_below_intertext_sep=\dimen135
+\l_MT_above_shortintertext_sep=\dimen136
+\l_MT_below_shortintertext_sep=\dimen137
 )
 \l_EQ_equationtype_int=\count109
 \l_EQ_alignmentmode_int=\count110
-\l_EQ_totalwidth_dim=\dimen133
-\l_EQ_displaywidth_dim=\dimen134
-\l_EQ_temp_linewidth_dim=\dimen135
-\EmphEqdelimitershortfall=\dimen136
+\l_EQ_totalwidth_dim=\dimen138
+\l_EQ_displaywidth_dim=\dimen139
+\l_EQ_temp_linewidth_dim=\dimen140
+\EmphEqdelimitershortfall=\dimen141
 \EmphEqdelimiterfactor=\count111
-\g_EQ_toptag_height_dim=\dimen137
-\g_EQ_bottomtag_depth_dim=\dimen138
-\g_EQ_toprow_height_dim=\dimen139
-\g_EQ_bottomrow_depth_dim=\dimen140
-\g_EQ_widesttag_dim=\dimen141
+\g_EQ_toptag_height_dim=\dimen142
+\g_EQ_bottomtag_depth_dim=\dimen143
+\g_EQ_toprow_height_dim=\dimen144
+\g_EQ_bottomrow_depth_dim=\dimen145
+\g_EQ_widesttag_dim=\dimen146
 \EQ_mathdisplay_box=\box28
 \EQ_tag_box=\box29
 \g_EQ_temprow_int=\count112
@@ -273,14 +282,14 @@ LaTeX Info: Redefining \addtolength on input line 77.
 \lst@gtempboxa=\box30
 \lst@token=\toks22
 \lst@length=\count114
-\lst@currlwidth=\dimen142
+\lst@currlwidth=\dimen147
 \lst@column=\count115
 \lst@pos=\count116
-\lst@lostspace=\dimen143
-\lst@width=\dimen144
+\lst@lostspace=\dimen148
+\lst@width=\dimen149
 \lst@newlines=\count117
 \lst@lineno=\count118
-\lst@maxwidth=\dimen145
+\lst@maxwidth=\dimen150
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
@@ -293,8 +302,8 @@ File: listings.cfg 2007/02/22 1.4 listings configuration
 ))
 Package: listings 2007/02/22 1.4 (Carsten Heinz)
 
-(C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\infospreading.
-aux
+(C:\Users\Urs\Documents\GitHub\Project-Info-Spreading\doc\latex\infospreading.a
+ux
 
 LaTeX Warning: Label `Network-Graph' multiply defined.
 
@@ -349,27 +358,28 @@ LaTeX Font Info:    ... okay on input line 27.
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count121
-\scratchdimen=\dimen146
+\scratchdimen=\dimen151
 \scratchbox=\box32
 \nofMPsegments=\count122
 \nofMParguments=\count123
 \everyMPshowfont=\toks23
 \MPscratchCnt=\count124
-\MPscratchDim=\dimen147
+\MPscratchDim=\dimen152
 \MPnumerator=\count125
+\makeMPintoPDFobject=\count126
 \everyMPtoPDFconversion=\toks24
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\Hy@linkcounter=\count126
-\c@lstlisting=\count127
- (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\cover.tex
+\Hy@linkcounter=\count127
+\c@lstlisting=\count128
+ (C:\Users\Urs\Documents\GitHub\Project-Info-Spreading\doc\latex\cover.tex
 Package epstopdf Info: Source file: <ETHlogo.eps>
-(epstopdf)                    date: 2013-12-03 15:40:40
+(epstopdf)                    date: 2013-12-13 15:28:20
 (epstopdf)                    size: 179075 bytes
 (epstopdf)             Output file: <ETHlogo-eps-converted-to.pdf>
-(epstopdf)                    date: 2013-12-03 15:40:40
+(epstopdf)                    date: 2013-12-13 15:28:20
 (epstopdf)                    size: 14354 bytes
 (epstopdf)             Command: <epstopdf --outfile=ETHlogo-eps-converted-to.pd
 f ETHlogo.eps>
@@ -385,22 +395,22 @@ Package pdftex.def Info: ETHlogo-eps-converted-to.pdf used on input line 5.
 LaTeX Font Info:    Try loading font information for U+msa on input line 34.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 34.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )) [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/User/Documents/G
-itHub/Project-Info-Spreading/doc/latex/ETHlogo-eps-converted-to.pdf>] [2]
-(C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\infospreading.
-toc)
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Urs/Documents/Gi
+tHub/Project-Info-Spreading/doc/latex/ETHlogo-eps-converted-to.pdf>] [2]
+(C:\Users\Urs\Documents\GitHub\Project-Info-Spreading\doc\latex\infospreading.t
+oc)
 \tf@toc=\write3
  [3]
-(C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\introduction.t
-ex
+(C:\Users\Urs\Documents\GitHub\Project-Info-Spreading\doc\latex\introduction.te
+x
 Underfull \hbox (badness 10000) in paragraph at lines 3--9
 
  []
@@ -412,7 +422,7 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 11.
 )
-(C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\model.tex
+(C:\Users\Urs\Documents\GitHub\Project-Info-Spreading\doc\latex\model.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--5
 
  []
@@ -423,23 +433,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--111
  []
 
 [5]
-(C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\implementation
-.tex
+(C:\Users\Urs\Documents\GitHub\Project-Info-Spreading\doc\latex\implementation.
+tex
 Underfull \hbox (badness 10000) in paragraph at lines 13--17
 
  []
 
-[6])
-(C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\python.tex
+[6]) (C:\Users\Urs\Documents\GitHub\Project-Info-Spreading\doc\latex\python.tex
 [7] [8] <Network-Graph.png, id=45, 578.6418pt x 434.1018pt>
 File: Network-Graph.png Graphic file (type png)
 
 <use Network-Graph.png>
 Package pdftex.def Info: Network-Graph.png used on input line 62.
 (pdftex.def)             Requested size: 199.16928pt x 149.42084pt.
- [9 <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/latex/Network-Gr
-aph.png (PNG copy)>])
-(C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\results.tex
+ [9 <C:/Users/Urs/Documents/GitHub/Project-Info-Spreading/doc/latex/Network-Gra
+ph.png (PNG copy)>])
+(C:\Users\Urs\Documents\GitHub\Project-Info-Spreading\doc\latex\results.tex
 <network_degreehist.png, id=49, 578.6418pt x 434.1018pt>
 File: network_degreehist.png Graphic file (type png)
 
@@ -471,13 +480,13 @@ File: network_centralityhist.png Graphic file (type png)
 Package pdftex.def Info: network_centralityhist.png used on input line 38.
 (pdftex.def)             Requested size: 199.16928pt x 149.42084pt.
 
-Overfull \hbox (19.61107pt too wide) in paragraph at lines 34--42
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 34--42
 []$[]$ $[]$ 
  []
 
-[10 <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/latex/network_de
-greehist.png (PNG copy)> <C:/Users/User/Documents/GitHub/Project-Info-Spreading
-/doc/latex/network_clusterhist.png (PNG copy)>]
+[10 <C:/Users/Urs/Documents/GitHub/Project-Info-Spreading/doc/latex/network_deg
+reehist.png (PNG copy)> <C:/Users/Urs/Documents/GitHub/Project-Info-Spreading/d
+oc/latex/network_clusterhist.png (PNG copy)>]
 <NICE_SIR.png, id=55, 578.6418pt x 434.1018pt>
 File: NICE_SIR.png Graphic file (type png)
  <use NICE_SIR.png>
@@ -490,7 +499,7 @@ File: 1-local-max.png Graphic file (type png)
 Package pdftex.def Info: 1-local-max.png used on input line 57.
 (pdftex.def)             Requested size: 199.16928pt x 149.42084pt.
 
-Overfull \hbox (19.61107pt too wide) in paragraph at lines 53--59
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 53--59
 []$[]$ $[]$ 
  []
 
@@ -500,14 +509,14 @@ File: 2-local-max.png Graphic file (type png)
 Package pdftex.def Info: 2-local-max.png used on input line 67.
 (pdftex.def)             Requested size: 199.16928pt x 149.42084pt.
 
-Overfull \hbox (19.61107pt too wide) in paragraph at lines 63--71
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 63--71
 []$[]$ $[]$ 
  []
 
-[11 <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/latex/network_ce
-ntralityhist.png (PNG copy)> <C:/Users/User/Documents/GitHub/Project-Info-Sprea
-ding/doc/latex/NICE_SIR.png (PNG copy)> <C:/Users/User/Documents/GitHub/Project
--Info-Spreading/doc/latex/1-local-max.png (PNG copy)>]
+[11 <C:/Users/Urs/Documents/GitHub/Project-Info-Spreading/doc/latex/network_cen
+tralityhist.png (PNG copy)> <C:/Users/Urs/Documents/GitHub/Project-Info-Spreadi
+ng/doc/latex/NICE_SIR.png (PNG copy)> <C:/Users/Urs/Documents/GitHub/Project-In
+fo-Spreading/doc/latex/1-local-max.png (PNG copy)>]
 <Analysis_pforget.png, id=61, 578.6418pt x 434.1018pt>
 File: Analysis_pforget.png Graphic file (type png)
 
@@ -520,10 +529,10 @@ File: SIR_ODE.png Graphic file (type png)
 <use SIR_ODE.png>
 Package pdftex.def Info: SIR_ODE.png used on input line 87.
 (pdftex.def)             Requested size: 398.33858pt x 298.84169pt.
- [12 <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/latex/2-local-m
-ax.png (PNG copy)>] [13 <C:/Users/User/Documents/GitHub/Project-Info-Spreading/
-doc/latex/Analysis_pforget.png (PNG copy)> <C:/Users/User/Documents/GitHub/Proj
-ect-Info-Spreading/doc/latex/SIR_ODE.png (PNG copy)>]
+ [12 <C:/Users/Urs/Documents/GitHub/Project-Info-Spreading/doc/latex/2-local-ma
+x.png (PNG copy)>] [13 <C:/Users/Urs/Documents/GitHub/Project-Info-Spreading/do
+c/latex/Analysis_pforget.png (PNG copy)> <C:/Users/Urs/Documents/GitHub/Project
+-Info-Spreading/doc/latex/SIR_ODE.png (PNG copy)>]
 <influ2.png, id=70, 560.0925pt x 420.57124pt>
 File: influ2.png Graphic file (type png)
  <use influ2.png>
@@ -571,46 +580,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 136--140
 
 [14
 
- <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/latex/influ2.png (P
-NG copy)>] <influ4.png, id=75, 561.09625pt x 420.57124pt>
+ <C:/Users/Urs/Documents/GitHub/Project-Info-Spreading/doc/latex/influ2.png (PN
+G copy)>] <influ4.png, id=75, 561.09625pt x 420.57124pt>
 File: influ4.png Graphic file (type png)
  <use influ4.png>
 Package pdftex.def Info: influ4.png used on input line 148.
 (pdftex.def)             Requested size: 199.16928pt x 149.2878pt.
 )
-(C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\summary.tex)
-(C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\bib.tex
+(C:\Users\Urs\Documents\GitHub\Project-Info-Spreading\doc\latex\summary.tex)
+(C:\Users\Urs\Documents\GitHub\Project-Info-Spreading\doc\latex\bib.tex
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no © in font cmr12!
 
-[15 <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/latex/influ3.png
- (PNG copy)>] <ImportantCorrelations.png, id=79, 578.6418pt x 434.1018pt>
+[15 <C:/Users/Urs/Documents/GitHub/Project-Info-Spreading/doc/latex/influ3.png 
+(PNG copy)>] <ImportantCorrelations.png, id=79, 578.6418pt x 434.1018pt>
 File: ImportantCorrelations.png Graphic file (type png)
 
 <use ImportantCorrelations.png>
-Package pdftex.def Info: ImportantCorrelations.png used on input line 37.
-(pdftex.def)             Requested size: 199.16928pt x 149.42084pt.
+Package pdftex.def Info: ImportantCorrelations.png used on input line 38.
+(pdftex.def)             Requested size: 455.24408pt x 341.53241pt.
+
+Overfull \hbox (25.23946pt too wide) in paragraph at lines 38--39
+ [] 
+ []
+
 File: Network-Graph.png Graphic file (type png)
- <use Network-Graph.png>
-Package pdftex.def Info: Network-Graph.png used on input line 43.
+<use Network-Graph.png>
+Package pdftex.def Info: Network-Graph.png used on input line 46.
 (pdftex.def)             Requested size: 199.16928pt x 149.42084pt.
-) [16 <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/latex/influ4.p
-ng (PNG copy)>] [17 <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/
-latex/ImportantCorrelations.png (PNG copy)>]
-(C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\infospreading.
-aux)
+) [16 <C:/Users/Urs/Documents/GitHub/Project-Info-Spreading/doc/latex/influ4.pn
+g (PNG copy)>] [17 <C:/Users/Urs/Documents/GitHub/Project-Info-Spreading/doc/la
+tex/ImportantCorrelations.png (PNG copy)>] [18]
+(C:\Users\Urs\Documents\GitHub\Project-Info-Spreading\doc\latex\infospreading.a
+ux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6173 strings out of 494049
- 92590 string characters out of 3148485
- 191736 words of memory out of 3000000
- 9336 multiletter control sequences out of 15000+200000
- 14479 words of font info for 56 fonts, out of 3000000 for 9000
- 715 hyphenation exceptions out of 8191
- 42i,20n,38p,1136b,942s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 6362 strings out of 493921
+ 96457 string characters out of 3147287
+ 191890 words of memory out of 3000000
+ 9530 multiletter control sequences out of 15000+200000
+ 15727 words of font info for 61 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 42i,20n,40p,1136b,942s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKT
@@ -622,12 +636,13 @@ cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmtt12.pfb>
-Output written on infospreading.pdf (17 pages, 413222 bytes).
+2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmtt12.pfb>
+Output written on infospreading.pdf (18 pages, 427383 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
+ 140 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
