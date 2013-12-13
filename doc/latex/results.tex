@@ -53,30 +53,28 @@ But there were also interesting cases where two local maxima occurred, as in Fig
 \end{minipage}
 
 
-
-
 \subsection{Influence of $\alpha$}
-As shown if figures \ref{SIR_ODE} and \ref{Analysis_pforget} the number of ignorants at the end of the simulation increases for higher $\alpha$ ($\lambda$ is kept constant).
 
-SIR: max of spreaders and the number of ignorants at the end are lower for lower pfoerget (lamda always the same).
 
-\begin{figure}[H!]
+In the big simulation conducted $\alpha$ was assigned the value 0.3. This value was chosen because higher values limit the information spreading to a large number of individuals, whereas small numbers increase computing time significantly. In another simulation the influence of $\alpha$ was investigated by simulating the information spreading 25 times for 20 different values of $\alpha$ between 0.05 and 1, while starting always with the same spreader. In figure \ref{Analysis_pforget} the average number of remaining spreaders at the end of the simulation is plotted against $\alpha$. Figure \ref{Analysis_pforget_ODE} shows the number of remaining spreaders vs. $\alpha$ obtained with the homogeneous model. The resemblance of those two figures implies that both models behave similarly with respect to $\alpha$. Even though  it was not investigated, we assume that $\alpha$ does not influence the importance of individuals in the network.
+
+\begin{minipage}{0.5\textwidth}
 \includegraphics[width=7cm]{Analysis_pforget}
-\caption{sdlhfa}
+\captionof{figure}{Influence of $\alpha$ in the \newline agent-based model.}
 \label{Analysis_pforget}
-\end{figure}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\includegraphics[width=7cm]{Analysis_pforget_ODE}
+\captionof{figure}{Influence of $\alpha$ in the \newline homogeneous model.}
+\label{Analysis_pforget_ODE}
+\end{minipage}
 
-\begin{figure}[H!]
-\includegraphics[width=14cm]{SIR_ODE}
-\caption{sdlhfa}
-\label{SIR_ODE}
-\end{figure}
-\clearpage
+
+
+
 \subsection{Influentials}
 
-
-\subsubsection{Existance and importance of influentials}
-
+\subsubsection{Existance and Imprtance of Influentials}
 
 \begin{minipage}{0.5\textwidth}
 \includegraphics[width=7cm]{influ2}
@@ -84,7 +82,7 @@ SIR: max of spreaders and the number of ignorants at the end are lower for lower
 \label{Histo}
 \end{minipage}
 \begin{minipage}{0.5\textwidth}
-Figure \ref{Histo} is a simple histogram, that shows that the vast majority of people has only a small cumulative infection value. However, there are some individuals with a very high value. This an indicator for the existence of influentials.   \\
+Figure \ref{Histo} is a simple histogram that shows that the vast majority of people has only a small cumulative infection value. However, there are some individuals with a very high value. This an indicator for the existence of influentials.   \\
 \end{minipage}
 
 %\begin{figure}[H!]
@@ -109,29 +107,32 @@ Given these results, we get that 94\% of all infections happen in the rounds whe
 \label{importancedist}
 \end{minipage}
 
-\noindent This result seems to proof the existence of influentials in our network, however, one could say that this only shows that the so called influentials are just contributing in rounds where many persons get infected, not that this is caused by the influentials.
+\noindent This result seems to proof the existence of influentials in our network. However, one could say that this only shows that the so called influentials are just contributing in rounds where many persons get infected, not that this is caused by the influentials. But they are also the ones with the most cumulative infections, which shows that they really \textit{cause} a high number of infections.
 
 
 \subsubsection{Determine influentials}
 
-Obviously the next question that comes up, is the following. If we have influetials, how can we determine these in our network. Do they have properties that differs them from the other individuals? \\ 
+
+The next question is, whether it is possible to determine parameters that indicate influentials. e.g. the number of friends or the cluster coefficient.
 \\
-To find these mentioned, we have two possible aproaches: 
-\\
+We were not able to identify a single parameter which clearly predicts the influentials. We recognized that persons with a higher number of friends and a higher activity infect more people directly, they also have a higher number of cumulative infections, but the influentials or the persons with the highest number of cumulative infections are  NOT all following this trend. The best indicator we have is the betweenness centrality: The two persons with the highest number of cumulative infections are the two with the highest betweenness centrality (Figure \ref{Betweenness}). But a higher betweenness centrality does not indicate a higher importance. Persons with a higher betweenness centrality connect different neighbourhoods, so their importance may come from the fact that they are one of the few persons which are able to connect large groups of persons which would be isolated without these linkers.
 
-1) Since our network is indeed a real world example of a Facebook Graph (the one of Patrick's Facebook Account). We can actually identify our, say top two, influetials. Then using this knowledge, we tried to narrow down the properties that might be of interest. 
-It acutally turned out, that the two above mentioned induviduals indeed share very interessting propertiy. Namely, they are linkers of two or more cluster of our graph. 
+ 
 
-2) Taking the results of 1) into consideration, it lead us to a more graph theroretical analysis of our data. Since we were interessted connectivity properties, we calculated the \textit{betweenness coefficent} for every node in our graph. 
-It turns out that our top two influenctials indeed have the highest betweenness values. 
 
-\begin{figure}
-\includegraphics[width=7cm]{influ4}
-\caption{sdlhfa}
+
+
+\begin{minipage}{0.5\textwidth}
+\includegraphics[width=7cm]{clustercVSov_cum_inf}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\includegraphics[width=7cm]{betwVSov_cum_inf}
+\end{minipage}
+\captionof{figure}{Left: Cumulative Infections in all rounds vs. the cluster coefficient. A higher cluster coefficient does obviously not indicate a higher number of cumulative infections. On the contrary, within our model, very clustered persons can become spreaders fast, but they also become stiflers fast, limiting the possibility that the "disease" reaches other neighbourhoods. Right: Cumulative infections vs. betweenness centrality. The two persons with the highest betweenness centrality also have the highest number infections.  }
 \label{Betweenness}
-\end{figure}
 
-Figure \ref{Betweenness} shows, that high cumulative infection value implies high betweenness. But as we can also see in figure 3, it doesn't really imply the other direction.
+
+
 
 
 
