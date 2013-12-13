@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.11.25)  13 DEC 2013 14:36
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.11.25)  13 DEC 2013 15:19
 entering extended mode
 **infospreading.tex
 
@@ -527,61 +527,55 @@ ect-Info-Spreading/doc/latex/SIR_ODE.png (PNG copy)>]
 <influ2.png, id=70, 560.0925pt x 420.57124pt>
 File: influ2.png Graphic file (type png)
  <use influ2.png>
-Package pdftex.def Info: influ2.png used on input line 101.
+Package pdftex.def Info: influ2.png used on input line 99.
 (pdftex.def)             Requested size: 199.16928pt x 149.55731pt.
 
-<influ1.png, id=71, 560.0925pt x 420.57124pt>
-File: influ1.png Graphic file (type png)
- <use influ1.png>
-Package pdftex.def Info: influ1.png used on input line 107.
-(pdftex.def)             Requested size: 199.16928pt x 149.55731pt.
+Underfull \hbox (badness 1789) in paragraph at lines 100--100
+\OT1/cmr/m/n/10.95 fec-tions, summed over all 3840
+ []
 
 
-LaTeX Warning: Reference `sorted' on page 14 undefined on input line 112.
+Underfull \hbox (badness 1577) in paragraph at lines 104--105
+\OT1/cmr/m/n/12 that the vast ma-jor-ity of peo-ple has
+ []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--118
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 98--106
+$[]$ $[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--121
 
  []
 
-<influ3.png, id=72, 560.0925pt x 420.57124pt>
+<influ3.png, id=71, 560.0925pt x 420.57124pt>
 File: influ3.png Graphic file (type png)
  <use influ3.png>
-Package pdftex.def Info: influ3.png used on input line 119.
+Package pdftex.def Info: influ3.png used on input line 123.
 (pdftex.def)             Requested size: 199.16928pt x 149.55731pt.
 
-
-Package natbib Warning: Citation `word2mouth' on page 14 undefined on input lin
-e 122.
-
-
-Overfull \hbox (2.0379pt too wide) in paragraph at lines 122--123
-[]\OT1/cmr/m/n/12 According to Gold-en-berg [\OT1/cmr/bx/n/12 ? \OT1/cmr/m/n/12
- ], the im-por-tance of in-flu-en-tial is of-ten over-estimated.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 129--133
+Underfull \hbox (badness 10000) in paragraph at lines 136--140
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--133
+Underfull \hbox (badness 10000) in paragraph at lines 136--140
 
  []
 
 [14
 
- <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/latex/influ3.png (P
-NG copy)>] <influ4.png, id=76, 561.09625pt x 420.57124pt>
+ <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/latex/influ2.png (P
+NG copy)>] <influ4.png, id=75, 561.09625pt x 420.57124pt>
 File: influ4.png Graphic file (type png)
  <use influ4.png>
-Package pdftex.def Info: influ4.png used on input line 141.
+Package pdftex.def Info: influ4.png used on input line 148.
 (pdftex.def)             Requested size: 199.16928pt x 149.2878pt.
 )
 (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\summary.tex)
@@ -589,39 +583,31 @@ Package pdftex.def Info: influ4.png used on input line 141.
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no © in font cmr12!
 
-<ImportantCorrelations.png, id=77, 578.6418pt x 434.1018pt>
+[15 <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/latex/influ3.png
+ (PNG copy)>] <ImportantCorrelations.png, id=79, 578.6418pt x 434.1018pt>
 File: ImportantCorrelations.png Graphic file (type png)
 
 <use ImportantCorrelations.png>
-Package pdftex.def Info: ImportantCorrelations.png used on input line 25.
+Package pdftex.def Info: ImportantCorrelations.png used on input line 37.
 (pdftex.def)             Requested size: 199.16928pt x 149.42084pt.
 File: Network-Graph.png Graphic file (type png)
  <use Network-Graph.png>
-Package pdftex.def Info: Network-Graph.png used on input line 31.
+Package pdftex.def Info: Network-Graph.png used on input line 43.
 (pdftex.def)             Requested size: 199.16928pt x 149.42084pt.
-)
-
-Package natbib Warning: There were undefined citations.
-
-[15] [16 <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/latex/influ
-2.png (PNG copy)> <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/la
-tex/influ1.png (PNG copy)> <C:/Users/User/Documents/GitHub/Project-Info-Spreadi
-ng/doc/latex/influ4.png (PNG copy)>] [17 <C:/Users/User/Documents/GitHub/Projec
-t-Info-Spreading/doc/latex/ImportantCorrelations.png (PNG copy)>]
+) [16 <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/latex/influ4.p
+ng (PNG copy)>] [17 <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/
+latex/ImportantCorrelations.png (PNG copy)>]
 (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\infospreading.
 aux)
-
-LaTeX Warning: There were undefined references.
-
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6177 strings out of 494049
- 92625 string characters out of 3148485
- 191721 words of memory out of 3000000
- 9339 multiletter control sequences out of 15000+200000
+ 6173 strings out of 494049
+ 92590 string characters out of 3148485
+ 191736 words of memory out of 3000000
+ 9336 multiletter control sequences out of 15000+200000
  14479 words of font info for 56 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  42i,20n,38p,1136b,942s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -639,9 +625,9 @@ gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files
 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmtt12.pfb>
-Output written on infospreading.pdf (17 pages, 418264 bytes).
+Output written on infospreading.pdf (17 pages, 413222 bytes).
 PDF statistics:
- 134 PDF objects out of 1000 (max. 8388607)
+ 133 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
