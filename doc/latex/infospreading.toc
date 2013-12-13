@@ -2,33 +2,33 @@
 \contentsline {section}{\numberline {2}Individual contributions}{5}
 \contentsline {section}{\numberline {3}Introduction and Motivations}{5}
 \contentsline {subsection}{\numberline {3.1}Introduction and fundamental questions}{5}
-\contentsline {subsection}{\numberline {3.2}Motivation}{5}
-\contentsline {section}{\numberline {4}Description of the Model}{5}
+\contentsline {subsection}{\numberline {3.2}Motivation}{6}
+\contentsline {section}{\numberline {4}Description of the Model}{6}
 \contentsline {subsection}{\numberline {4.1}Homogeneous SIR model}{6}
-\contentsline {subsection}{\numberline {4.2}Agent-based model}{6}
+\contentsline {subsection}{\numberline {4.2}Agent-based model}{7}
 \contentsline {section}{\numberline {5}Implementation}{7}
 \contentsline {subsection}{\numberline {5.1}Homogeneous SIR-model}{7}
 \contentsline {subsection}{\numberline {5.2}Agent-based model}{7}
 \contentsline {paragraph}{Initial condition}{7}
-\contentsline {paragraph}{Determine the meetings}{7}
-\contentsline {paragraph}{Status changes in meetings}{7}
+\contentsline {paragraph}{Determine the meetings}{8}
+\contentsline {paragraph}{Status changes in meetings}{8}
 \contentsline {paragraph}{Exit condition}{8}
 \contentsline {paragraph}{Running the simulation}{8}
 \contentsline {subsection}{\numberline {5.3}Importance of an individual}{8}
-\contentsline {paragraph}{Determine Cumulative infections}{8}
-\contentsline {subsection}{\numberline {5.4}Getting the network}{9}
+\contentsline {paragraph}{Determine cumulative infections}{9}
+\contentsline {subsection}{\numberline {5.4}Get the network}{9}
 \contentsline {paragraph}{Get access}{9}
 \contentsline {paragraph}{Get graph}{9}
 \contentsline {paragraph}{Get activity}{10}
 \contentsline {paragraph}{Get coordinates}{10}
-\contentsline {paragraph}{Anonymization}{11}
+\contentsline {paragraph}{Anonymisation}{10}
 \contentsline {section}{\numberline {6}Simulation Results and Discussion}{11}
 \contentsline {subsection}{\numberline {6.1}Characteristics of the network}{11}
-\contentsline {subsection}{\numberline {6.2}Differences in the time evolution}{12}
+\contentsline {subsection}{\numberline {6.2}Differences in time evolution}{12}
 \contentsline {subsection}{\numberline {6.3}Influence of $\alpha $}{13}
-\contentsline {subsection}{\numberline {6.4}Influentials}{14}
-\contentsline {subsubsection}{\numberline {6.4.1}Existance and Imprtance of Influentials}{14}
-\contentsline {subsubsection}{\numberline {6.4.2}Determine influentials}{15}
+\contentsline {subsection}{\numberline {6.4}Influentials}{13}
+\contentsline {subsubsection}{\numberline {6.4.1}Existance and Importance of Influentials}{13}
+\contentsline {subsubsection}{\numberline {6.4.2}Determine influentials}{14}
 \contentsline {section}{\numberline {7}Summary and Outlook}{16}
-\contentsline {section}{\numberline {8}Appendix}{16}
+\contentsline {section}{\numberline {8}Appendix}{17}
 \contentsline {subsection}{\numberline {8.1}Additional figures}{17}

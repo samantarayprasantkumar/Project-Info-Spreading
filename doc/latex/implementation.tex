@@ -1,6 +1,6 @@
 \subsection{Homogeneous SIR-model}
 
-The system of ordinary differential equations described in section ..... was solved in MatLab using ode45. The simulation was carried four times using $\alpha$ to $\lambda$ ratios between 0.1 and 10. The starting conditions were always S = 383, I = 1 and R = 0.
+The system of ordinary differential equations described in section 4 was solved in MATLAB using ode45. The simulation was carried out four times using $\alpha$ to $\lambda$ ratios between 0.1 and 10. The starting conditions were always S = 383, I = 1 and R = 0.
 
 \subsection{Agent-based model}
 
@@ -9,35 +9,30 @@ The system of ordinary differential equations described in section ..... was sol
 At the beginning of each simulation, all agents are ignorant but one, which is a spreader. In the biggest performed simulation, every one of the 384 nodes was the first spreader 10 times. 
 
 \paragraph{Determine the meetings}
-
-(See \texttt{talkstep.m} for details.)
-\newline
-\newline
-In order to determine who meets who, the program goes through the vector of agents (1:N) randomly . With a probability corresponding to the activity of that agent, he may meet somebody . The person he meets is determined randomly and must be one he knows and one which is not already meeting another agent in this time step. Agents with more friends also have more meetings(If you don't take the activity into account). 
+In order to determine who meets whom, the program goes through the vector of agents (1:N) randomly. With a probability corresponding to the activity of that agent, he may meet somebody. The person he meets is determined randomly and must be one he knows and one which is not already meeting another agent in this time step. See \texttt{talkstep.m} for details.
 
 \paragraph{Status changes in meetings}
 
-After the meetings are determined, the status of each agent has to change according to the model. In order to be able to determine who infected whom, and how many where infected, a list \texttt{infecpath} was created in each round containing the directed edges of infections.
+After the meetings are determined, the status of each agent has to change according to the model. In order to be able to determine who infected whom, and how many were infected, a list \texttt{infecpath} was created in each round containing directed edges of infections.
 
 
 
 
 \paragraph{Exit condition}
 
-The  was terminated if further spreading was not possible. This is the case when all current spreaders and all their friends have an activity of zero, including the obvious case that the number of spreaders is zero. For stability, not more than 5000 steps of meeting and status updates were performed in each initiated round.
+The current simulation round was terminated if further spreading was not possible. This is the case when all current spreaders and all their friends have an activity of zero, including the obvious case that the number of spreaders is zero. For stability, not more than 5000 steps of meeting and status updates were performed in each initiated round.
 
 \paragraph{Running the simulation}
-3840 rounds were initiated. For every round the first infected person, the number of meetings, the number of direct infections and the number of cumulative infections were saved for further analysis.
-
+3840 rounds were initiated. For every round the first infected person, the number of meetings, the number of direct infections and the number of cumulative infections were saved for further analysis. A separate simulation was carried out to investigate the influence of $\alpha$. 
 
 
 \subsection{Importance of an individual}
 
-One of our main questions was, if there are persons which are more important to the spreading of the information. The definition of importance in this context isn't trivial. The nearest quantitative variable which might indicate the importance is the number of \textit{direct infections}, which means the sum of all meetings of an infected person which resulted in the infection of his meeting partner. But in our opinion, a better variable are the \textit{cumulative infections}, which means the number of direct infections of a person plus the number of direct infections of all other agents infected by that person and so on. Watts \cite{influentials} defines a similar value, namely the size of a \textit{cascade}. A cascade is just the sequence of infections initiated by an individual. The size of a cascade is just the number of infections in this cascade. So the value of cumulative infections and the size of the cascade are the same if you look at the person which was infected first (our initial condition). But cumulative infections are in a sense more general. 
+One of our main questions was, if there are individuals which are more important to the spreading of the information. The definition of importance in this context is not trivial. The nearest quantitative variable that might indicate the importance is the number of \textit{direct infections}, meaning the sum of all meetings of an infected person which resulted in the infection of his meeting partner. But in our opinion, a better variable is \textit{cumulative infections}. This is defined as the number of direct infections of a person plus the number of direct infections of all other agents infected by that person and so on (the whole subtree). Watts \cite{influentials} defines a similar value, namely the size of a \textit{cascade}. A cascade is the sequence of infections initiated by an individual. The size of a cascade is the number of infections in this cascade. So the value of cumulative infections and the size of the cascade are the same if only considering the person which was infected first (our initial condition). Cumulative infections are in a sense more general. 
 
-\paragraph{Determine Cumulative infections}
+\paragraph{Determine cumulative infections}
 
-With a given \texttt{infecpath}, with the directed edges of infections, it is obviously easy to obtain the number of direct infections of every node and also relatively easy to get the number of "cumulative infections", which is the whole subtree of infections of each node (see Details later). The ladder was obtained in a recursive manner in the following way:
+With a given \texttt{infecpath}, containing the directed edges of infections, it is easy to obtain the number of direct infections of every node. It is also straight-forward to get the number of cumulative infections. The ladder was obtained in a recursive manner in the following way:
 
 \begin{lstlisting} 
    L=length(infectpath(:,1));
