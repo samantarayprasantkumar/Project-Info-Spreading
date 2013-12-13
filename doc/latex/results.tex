@@ -18,7 +18,7 @@
 
 \subsection{Characteristics of the network}
 
-The network we used consists of 384 nodes. The distribution of the number of friends and the local clustering coefficients are shown in Figure \ref{hist1}.
+The network we used consists of 384 nodes. The distribution of the number of friends and the local clustering coefficients are shown in Figure \ref{hist1}. The one of the betweenness centrality in Figure \ref{hist2}.
 
 
 \begin{minipage}{0.5\textwidth}
@@ -32,12 +32,12 @@ The network we used consists of 384 nodes. The distribution of the number of fri
 
 
 \begin{minipage}{0.5\textwidth}
-The main problem of our network is, that it consists of all the friends of one of the a
+The main problem of our network is, that it consists of all the friends of one of the authors, with the author removed. The probability of infecting another person was dependent on the mutual friends, so it's possible that two individuals have a lot of common friends in reality, but it appears that they don't because the author doesnn't know these common friends.
 \end{minipage}
 \begin{minipage}{0.5\textwidth}
 \includegraphics[width=7cm]{network_centralityhist.png}
 \captionof{figure}{Distribution of betweenness centrality.}
-\label{2peaks}
+\label{hist2}
 \end{minipage}
 
 %\begin{minipage}{0.33\textwidth}
@@ -48,7 +48,7 @@ The main problem of our network is, that it consists of all the friends of one o
 
 \subsection{Differences in the time evolution}
 
-Most of the times, the form of the evolution graph of the system looks very similar in the case of the homogeneous and the inhomogeneous, agent-based model (Figure \ref{evolution1}).
+Most of the time, the form of the evolution graph of the system looks very similar in the case of the homogeneous and the inhomogeneous, agent-based model (Figure \ref{evolution1}).
 
 \begin{minipage}{0.5\textwidth}
 \includegraphics[width=7cm]{NICE_SIR}
@@ -56,7 +56,7 @@ Most of the times, the form of the evolution graph of the system looks very simi
 \begin{minipage}{0.5\textwidth}
 \includegraphics[width=7cm]{1-local-max}
 \end{minipage}
-\captionof{figure}{Left: Typical evolution of the system in the homogeneous SIR-model. Right: The Evolution in the agent-based model. In most cases, the evolution looks somewhat like this.}
+\captionof{figure}{Left: Typical evolution of the system in the homogeneous SIR-model. Right: The Evolution in the agent-based model. In most cases, the evolution looks somewhat like this.\newline}
 \label{evolution1}
 
 
@@ -72,8 +72,8 @@ But there were also interesting cases where two local maxima occurred, as in Fig
 
 
 
-\subsection{Influence of p$_{forget}$}
-As shown if figures \ref{SIR_ODE} and \ref{Analysis_pforget} the number of ignorants at the end of the simulation increases for higher p$_{forget}$ ($\alpha$)  if p$_{inform}$ ($\lambda$) is kept constant.
+\subsection{Influence of $\alpha$}
+As shown if figures \ref{SIR_ODE} and \ref{Analysis_pforget} the number of ignorants at the end of the simulation increases for higher $\alpha$ ($\lambda$ is kept constant).
 
 SIR: max of spreaders and the number of ignorants at the end are lower for lower pfoerget (lamda always the same).
 

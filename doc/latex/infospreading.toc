@@ -26,7 +26,7 @@
 \contentsline {section}{\numberline {6}Simulation Results and Discussion}{10}
 \contentsline {subsection}{\numberline {6.1}Characteristics of the network}{10}
 \contentsline {subsection}{\numberline {6.2}Differences in the time evolution}{11}
-\contentsline {subsection}{\numberline {6.3}Influence of p$_{forget}$}{11}
+\contentsline {subsection}{\numberline {6.3}Influence of $\alpha $}{12}
 \contentsline {subsection}{\numberline {6.4}Influentials}{14}
 \contentsline {subsubsection}{\numberline {6.4.1}Existance and importance of influentials}{14}
 \contentsline {subsubsection}{\numberline {6.4.2}Determine influentials}{15}

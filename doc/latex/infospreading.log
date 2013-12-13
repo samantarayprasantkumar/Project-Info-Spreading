@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.11.25)  13 DEC 2013 14:24
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.11.25)  13 DEC 2013 14:36
 entering extended mode
 **infospreading.tex
 
@@ -296,9 +296,6 @@ Package: listings 2007/02/22 1.4 (Carsten Heinz)
 (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\infospreading.
 aux
 
-LaTeX Warning: Label `2peaks' multiply defined.
-
-
 LaTeX Warning: Label `Network-Graph' multiply defined.
 
 )
@@ -480,8 +477,7 @@ Overfull \hbox (19.61107pt too wide) in paragraph at lines 34--42
 
 [10 <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/latex/network_de
 greehist.png (PNG copy)> <C:/Users/User/Documents/GitHub/Project-Info-Spreading
-/doc/latex/network_clusterhist.png (PNG copy)> <C:/Users/User/Documents/GitHub/
-Project-Info-Spreading/doc/latex/network_centralityhist.png (PNG copy)>]
+/doc/latex/network_clusterhist.png (PNG copy)>]
 <NICE_SIR.png, id=55, 578.6418pt x 434.1018pt>
 File: NICE_SIR.png Graphic file (type png)
  <use NICE_SIR.png>
@@ -508,34 +504,35 @@ Overfull \hbox (19.61107pt too wide) in paragraph at lines 63--71
 []$[]$ $[]$ 
  []
 
-<Analysis_pforget.png, id=58, 578.6418pt x 434.1018pt>
+[11 <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/latex/network_ce
+ntralityhist.png (PNG copy)> <C:/Users/User/Documents/GitHub/Project-Info-Sprea
+ding/doc/latex/NICE_SIR.png (PNG copy)> <C:/Users/User/Documents/GitHub/Project
+-Info-Spreading/doc/latex/1-local-max.png (PNG copy)>]
+<Analysis_pforget.png, id=61, 578.6418pt x 434.1018pt>
 File: Analysis_pforget.png Graphic file (type png)
 
 <use Analysis_pforget.png>
 Package pdftex.def Info: Analysis_pforget.png used on input line 81.
 (pdftex.def)             Requested size: 199.16928pt x 149.42084pt.
- [11 <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/latex/NICE_SIR.
-png (PNG copy)> <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/late
-x/1-local-max.png (PNG copy)> <C:/Users/User/Documents/GitHub/Project-Info-Spre
-ading/doc/latex/2-local-max.png (PNG copy)>]
-<SIR_ODE.png, id=62, 578.6418pt x 434.1018pt>
+ <SIR_ODE.png, id=62, 578.6418pt x 434.1018pt>
 File: SIR_ODE.png Graphic file (type png)
- <use SIR_ODE.png>
+
+<use SIR_ODE.png>
 Package pdftex.def Info: SIR_ODE.png used on input line 87.
 (pdftex.def)             Requested size: 398.33858pt x 298.84169pt.
- [12] [13 <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/latex/Anal
-ysis_pforget.png (PNG copy)> <C:/Users/User/Documents/GitHub/Project-Info-Sprea
-ding/doc/latex/SIR_ODE.png (PNG copy)>] <influ2.png, id=70, 560.0925pt x 420.57
-124pt>
+ [12 <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/latex/2-local-m
+ax.png (PNG copy)>] [13 <C:/Users/User/Documents/GitHub/Project-Info-Spreading/
+doc/latex/Analysis_pforget.png (PNG copy)> <C:/Users/User/Documents/GitHub/Proj
+ect-Info-Spreading/doc/latex/SIR_ODE.png (PNG copy)>]
+<influ2.png, id=70, 560.0925pt x 420.57124pt>
 File: influ2.png Graphic file (type png)
-
-<use influ2.png>
+ <use influ2.png>
 Package pdftex.def Info: influ2.png used on input line 101.
 (pdftex.def)             Requested size: 199.16928pt x 149.55731pt.
- <influ1.png, id=71, 560.0925pt x 420.57124pt>
-File: influ1.png Graphic file (type png)
 
-<use influ1.png>
+<influ1.png, id=71, 560.0925pt x 420.57124pt>
+File: influ1.png Graphic file (type png)
+ <use influ1.png>
 Package pdftex.def Info: influ1.png used on input line 107.
 (pdftex.def)             Requested size: 199.16928pt x 149.55731pt.
 
@@ -621,10 +618,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6176 strings out of 494049
- 92618 string characters out of 3148485
- 191712 words of memory out of 3000000
- 9338 multiletter control sequences out of 15000+200000
+ 6177 strings out of 494049
+ 92625 string characters out of 3148485
+ 191721 words of memory out of 3000000
+ 9339 multiletter control sequences out of 15000+200000
  14479 words of font info for 56 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  42i,20n,38p,1136b,942s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -642,7 +639,7 @@ gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files
 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmtt12.pfb>
-Output written on infospreading.pdf (17 pages, 418277 bytes).
+Output written on infospreading.pdf (17 pages, 418264 bytes).
 PDF statistics:
  134 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
