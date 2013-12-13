@@ -29,7 +29,7 @@
 \contentsline {subsection}{\numberline {6.3}Influence of $\alpha $}{12}
 \contentsline {subsection}{\numberline {6.4}Influentials}{14}
 \contentsline {subsubsection}{\numberline {6.4.1}Existance and importance of influentials}{14}
-\contentsline {subsubsection}{\numberline {6.4.2}Determine influentials}{15}
-\contentsline {section}{\numberline {7}Summary and Outlook}{15}
-\contentsline {section}{\numberline {8}Appendix}{16}
-\contentsline {section}{\numberline {9}Additional figures}{16}
+\contentsline {subsubsection}{\numberline {6.4.2}Determine influentials}{16}
+\contentsline {section}{\numberline {7}Summary and Outlook}{16}
+\contentsline {section}{\numberline {8}Appendix}{17}
+\contentsline {section}{\numberline {9}Additional figures}{17}

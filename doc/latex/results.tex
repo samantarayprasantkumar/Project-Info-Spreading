@@ -112,24 +112,24 @@ Figure \ref{Histo} is a simple histogram, that shows that the vast majority of p
 
 
 
-\noindent One can even go one step further and try to estimate the importance of those influentials on all infections that occurred in total. In order to do so, the persons are sorted according to their value of cumulative infections. Then, for each person m, we sum up all the infections that occurred in rounds where m itself did NOT infect anybody. Let's call this function f(m). Figure
-
-We then calculate the amout of infections conditioned that only the m least important person have been involved in the spreading process (1 $\le$ m $\le$ 384).\\
-For instance, $m=384$ implies all infections that occured, when only the last (therefore most important) person has been excluded.\\
+\noindent One can even go one step further and try to estimate the importance of those influentials on all infections that occurred in total. In order to do so, the persons are sorted according to their value of cumulative infections. Then, for each person m, we sum up all the infections that occurred in rounds where m itself did NOT infect anybody. Let's call this function f(m). Figure \ref{importancedist} shows the value of $$g(m)=\sum_{i=1}^m f(i) $$
+This can be interpreted as the number of infections that occurred in rounds where all persons more or equally important than m did NOT infect anybody. So $g(1)=0$ and $g_{max}=$total infections.
 \\
-Given these results, we get that 94\% of all infections, happen in the runs where the 1\%-quantile of the most important people (in our case 4) have contributed (ie. were not excluced). This again indicates their importance.
+Given these results, we get that 94\% of all infections happen in the rounds where the 1\%-quantile of the most important people were not excluded. 
 
-\begin{figure}
+
+\begin{minipage}{0.5\textwidth}
 \includegraphics[width=7cm]{influ3}
-\caption{blub}
-\end{figure}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\caption{ g(m) (see above for details). The bottom dashed line indicated the number of all infections in rounds where the four most important individuals did not infect anybody(6\% of all infections). The top dashed line shows the total number of infections in all 3840 rounds in the simulation.}
+\label{importancedist}
+\end{minipage}
+
+This result seems to proof the existence of influential in our network, however, the
 
 
-
-According to Goldenberg \cite{word2mouth}, the importance of influential is often over-estimated. Our simulation strongly contradicts this statement. 
-
-Reasons might be, that our networt is a) of relative small size and b) due to its construction we might overwighted some individuals (in particular, those with high number of mutualfriends)
-
+\clearpage
 
 \subsubsection{Determine influentials}
 

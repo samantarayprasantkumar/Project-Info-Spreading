@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.11.25)  13 DEC 2013 15:19
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.11.25)  13 DEC 2013 15:55
 entering extended mode
 **infospreading.tex
 
@@ -92,19 +92,33 @@ Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen111
 \Gin@req@width=\dimen112
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\sidecap\sidecap.sty"
+Package: sidecap 2003/06/06 v1.6f SideCap Package (RN/HjG)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\SC@BOXWD=\dimen113
+\SC@CAPWD=\dimen114
+\SC@tempdima=\dimen115
+\SC@tempdimb=\dimen116
+\c@SC@C=\count91
+\SC@BOX=\box26
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
 Package: caption 2010/01/09 v3.1m Customizing captions (AR)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
 Package: caption3 2010/01/14 v3.1m caption3 kernel (AR)
-\captionmargin=\dimen113
-\captionmargin@=\dimen114
-\captionwidth=\dimen115
-\caption@indent=\dimen116
-\caption@parindent=\dimen117
-\caption@hangindent=\dimen118
+\captionmargin=\dimen117
+\captionmargin@=\dimen118
+\captionwidth=\dimen119
+\caption@indent=\dimen120
+\caption@parindent=\dimen121
+\caption@hangindent=\dimen122
 )
-\c@ContinuedFloat=\count91
+\c@ContinuedFloat=\count92
+Package caption Info: sidecap package is loaded.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2009/06/22 v3.00
@@ -164,7 +178,7 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip43
 \bibsep=\skip44
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count92
+\c@NAT@ctr=\count93
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsmath.sty"
 Package: amsmath 2000/07/18 v2.13 AMS math features
@@ -177,46 +191,46 @@ Package: amstext 2000/06/29 v2.01
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks17
-\ex@=\dimen119
+\ex@=\dimen123
 ))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen120
+\pmbraise@=\dimen124
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\ams\math\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count93
+\inf@bad=\count94
 LaTeX Info: Redefining \frac on input line 211.
-\uproot@=\count94
-\leftroot@=\count95
+\uproot@=\count95
+\leftroot@=\count96
 LaTeX Info: Redefining \overline on input line 307.
-\classnum@=\count96
-\DOTSCASE@=\count97
+\classnum@=\count97
+\DOTSCASE@=\count98
 LaTeX Info: Redefining \ldots on input line 379.
 LaTeX Info: Redefining \dots on input line 382.
 LaTeX Info: Redefining \cdots on input line 467.
-\Mathstrutbox@=\box26
-\strutbox@=\box27
-\big@size=\dimen121
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen125
 LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
-\macc@depth=\count98
-\c@MaxMatrixCols=\count99
+\macc@depth=\count99
+\c@MaxMatrixCols=\count100
 \dotsspace@=\muskip10
-\c@parentequation=\count100
-\dspbrk@lvl=\count101
+\c@parentequation=\count101
+\dspbrk@lvl=\count102
 \tag@help=\toks18
-\row@=\count102
-\column@=\count103
-\maxfields@=\count104
+\row@=\count103
+\column@=\count104
+\maxfields@=\count105
 \andhelp@=\toks19
-\eqnshift@=\dimen122
-\alignsep@=\dimen123
-\tagshift@=\dimen124
-\tagwidth@=\dimen125
-\totwidth@=\dimen126
-\lineht@=\dimen127
+\eqnshift@=\dimen126
+\alignsep@=\dimen127
+\tagshift@=\dimen128
+\tagwidth@=\dimen129
+\totwidth@=\dimen130
+\lineht@=\dimen131
 \@envbody=\toks20
 \multlinegap=\skip46
 \multlinetaggap=\skip47
@@ -235,58 +249,58 @@ Package: mathtools 2011/02/12 v1.10 mathematical typesetting tools
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count105
-\calc@Bcount=\count106
-\calc@Adimen=\dimen128
-\calc@Bdimen=\dimen129
+\calc@Acount=\count106
+\calc@Bcount=\count107
+\calc@Adimen=\dimen132
+\calc@Bdimen=\dimen133
 \calc@Askip=\skip48
 \calc@Bskip=\skip49
 LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
-\calc@Ccount=\count107
+\calc@Ccount=\count108
 \calc@Cskip=\skip50
 )
-\g_MT_multlinerow_int=\count108
-\l_MT_multwidth_dim=\dimen130
+\g_MT_multlinerow_int=\count109
+\l_MT_multwidth_dim=\dimen134
 \origjot=\skip51
-\l_MT_shortvdotswithinadjustabove_dim=\dimen131
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen132
+\l_MT_shortvdotswithinadjustabove_dim=\dimen135
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen136
 )
-\l_EQ_equationtype_int=\count109
-\l_EQ_alignmentmode_int=\count110
-\l_EQ_totalwidth_dim=\dimen133
-\l_EQ_displaywidth_dim=\dimen134
-\l_EQ_temp_linewidth_dim=\dimen135
-\EmphEqdelimitershortfall=\dimen136
-\EmphEqdelimiterfactor=\count111
-\g_EQ_toptag_height_dim=\dimen137
-\g_EQ_bottomtag_depth_dim=\dimen138
-\g_EQ_toprow_height_dim=\dimen139
-\g_EQ_bottomrow_depth_dim=\dimen140
-\g_EQ_widesttag_dim=\dimen141
-\EQ_mathdisplay_box=\box28
-\EQ_tag_box=\box29
-\g_EQ_temprow_int=\count112
+\l_EQ_equationtype_int=\count110
+\l_EQ_alignmentmode_int=\count111
+\l_EQ_totalwidth_dim=\dimen137
+\l_EQ_displaywidth_dim=\dimen138
+\l_EQ_temp_linewidth_dim=\dimen139
+\EmphEqdelimitershortfall=\dimen140
+\EmphEqdelimiterfactor=\count112
+\g_EQ_toptag_height_dim=\dimen141
+\g_EQ_bottomtag_depth_dim=\dimen142
+\g_EQ_toprow_height_dim=\dimen143
+\g_EQ_bottomrow_depth_dim=\dimen144
+\g_EQ_widesttag_dim=\dimen145
+\EQ_mathdisplay_box=\box29
+\EQ_tag_box=\box30
+\g_EQ_temprow_int=\count113
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
-\lst@mode=\count113
-\lst@gtempboxa=\box30
+\lst@mode=\count114
+\lst@gtempboxa=\box31
 \lst@token=\toks22
-\lst@length=\count114
-\lst@currlwidth=\dimen142
-\lst@column=\count115
-\lst@pos=\count116
-\lst@lostspace=\dimen143
-\lst@width=\dimen144
-\lst@newlines=\count117
-\lst@lineno=\count118
-\lst@maxwidth=\dimen145
+\lst@length=\count115
+\lst@currlwidth=\dimen146
+\lst@column=\count116
+\lst@pos=\count117
+\lst@lostspace=\dimen147
+\lst@width=\dimen148
+\lst@newlines=\count118
+\lst@lineno=\count119
+\lst@maxwidth=\dimen149
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
-\c@lstnumber=\count119
-\lst@skipnumbers=\count120
-\lst@framebox=\box31
+\c@lstnumber=\count120
+\lst@skipnumbers=\count121
+\lst@framebox=\box32
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
 File: listings.cfg 2007/02/22 1.4 listings configuration
@@ -299,18 +313,18 @@ aux
 LaTeX Warning: Label `Network-Graph' multiply defined.
 
 )
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -348,23 +362,45 @@ LaTeX Font Info:    ... okay on input line 27.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count121
-\scratchdimen=\dimen146
-\scratchbox=\box32
-\nofMPsegments=\count122
-\nofMParguments=\count123
+\scratchcounter=\count122
+\scratchdimen=\dimen150
+\scratchbox=\box33
+\nofMPsegments=\count123
+\nofMParguments=\count124
 \everyMPshowfont=\toks23
-\MPscratchCnt=\count124
-\MPscratchDim=\dimen147
-\MPnumerator=\count125
+\MPscratchCnt=\count125
+\MPscratchDim=\dimen151
+\MPnumerator=\count126
 \everyMPtoPDFconversion=\toks24
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\ms\ragged2e.sty"
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\ms\everysel.sty"
+Package: everysel 2009/05/30 v1.1 EverySelectfont Package (MS)
+LaTeX Info: Redefining \selectfont on input line 117.
+)
+\CenteringLeftskip=\skip52
+\RaggedLeftLeftskip=\skip53
+\RaggedRightLeftskip=\skip54
+\CenteringRightskip=\skip55
+\RaggedLeftRightskip=\skip56
+\RaggedRightRightskip=\skip57
+\CenteringParfillskip=\skip58
+\RaggedLeftParfillskip=\skip59
+\RaggedRightParfillskip=\skip60
+\JustifyingParfillskip=\skip61
+\CenteringParindent=\skip62
+\RaggedLeftParindent=\skip63
+\RaggedRightParindent=\skip64
+\JustifyingParindent=\skip65
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\Hy@linkcounter=\count126
-\c@lstlisting=\count127
- (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\cover.tex
+\Hy@linkcounter=\count127
+\c@lstlisting=\count128
+
+(C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\cover.tex
 Package epstopdf Info: Source file: <ETHlogo.eps>
 (epstopdf)                    date: 2013-12-03 15:40:40
 (epstopdf)                    size: 179075 bytes
@@ -418,7 +454,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--5
  []
 
 [4])
-Underfull \hbox (badness 10000) in paragraph at lines 29--111
+Underfull \hbox (badness 10000) in paragraph at lines 29--112
 
  []
 
@@ -549,33 +585,44 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 98--106
 $[]$ $[]$ 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--121
-
- []
-
 <influ3.png, id=71, 560.0925pt x 420.57124pt>
 File: influ3.png Graphic file (type png)
  <use influ3.png>
-Package pdftex.def Info: influ3.png used on input line 123.
+Package pdftex.def Info: influ3.png used on input line 122.
 (pdftex.def)             Requested size: 199.16928pt x 149.55731pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--140
-
+Underfull \hbox (badness 1701) in paragraph at lines 125--125
+\OT1/cmr/m/n/10.95 where the four most im-por-tant
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 136--140
+Underfull \hbox (badness 2818) in paragraph at lines 125--125
+\OT1/cmr/m/n/10.95 in-di-vid-u-als did not in-fect any-
+ []
 
+
+Overfull \hbox (19.61107pt too wide) in paragraph at lines 121--128
+[]$[]$ $[]$ 
  []
 
 [14
 
  <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/latex/influ2.png (P
-NG copy)>] <influ4.png, id=75, 561.09625pt x 420.57124pt>
+NG copy)>] [15 <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/latex
+/influ3.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 139--143
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--143
+
+ []
+
+<influ4.png, id=78, 561.09625pt x 420.57124pt>
 File: influ4.png Graphic file (type png)
  <use influ4.png>
-Package pdftex.def Info: influ4.png used on input line 148.
+Package pdftex.def Info: influ4.png used on input line 151.
 (pdftex.def)             Requested size: 199.16928pt x 149.2878pt.
 )
 (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\summary.tex)
@@ -583,8 +630,10 @@ Package pdftex.def Info: influ4.png used on input line 148.
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no © in font cmr12!
 
-[15 <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/latex/influ3.png
- (PNG copy)>] <ImportantCorrelations.png, id=79, 578.6418pt x 434.1018pt>
+[16
+
+ <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/latex/influ4.png (P
+NG copy)>] <ImportantCorrelations.png, id=82, 578.6418pt x 434.1018pt>
 File: ImportantCorrelations.png Graphic file (type png)
 
 <use ImportantCorrelations.png>
@@ -594,9 +643,8 @@ File: Network-Graph.png Graphic file (type png)
  <use Network-Graph.png>
 Package pdftex.def Info: Network-Graph.png used on input line 43.
 (pdftex.def)             Requested size: 199.16928pt x 149.42084pt.
-) [16 <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/latex/influ4.p
-ng (PNG copy)>] [17 <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/
-latex/ImportantCorrelations.png (PNG copy)>]
+) [17 <C:/Users/User/Documents/GitHub/Project-Info-Spreading/doc/latex/Importan
+tCorrelations.png (PNG copy)>] [18]
 (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\infospreading.
 aux)
 
@@ -604,10 +652,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6173 strings out of 494049
- 92590 string characters out of 3148485
- 191736 words of memory out of 3000000
- 9336 multiletter control sequences out of 15000+200000
+ 6370 strings out of 494049
+ 95642 string characters out of 3148485
+ 195614 words of memory out of 3000000
+ 9519 multiletter control sequences out of 15000+200000
  14479 words of font info for 56 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  42i,20n,38p,1136b,942s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -625,9 +673,9 @@ gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files
 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmtt12.pfb>
-Output written on infospreading.pdf (17 pages, 413222 bytes).
+Output written on infospreading.pdf (18 pages, 416870 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
+ 136 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
