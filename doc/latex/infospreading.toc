@@ -19,10 +19,9 @@
 \contentsline {paragraph}{Cumulative infections}{7}
 \contentsline {subsection}{\numberline {5.4}Getting the network}{8}
 \contentsline {paragraph}{Get access}{8}
-\contentsline {subsubsection}{\numberline {5.4.1}Get graph}{8}
-\contentsline {subsubsection}{\numberline {5.4.2}Get activity}{9}
-\contentsline {subsubsection}{\numberline {5.4.3}Get coordinates}{9}
-\contentsline {subsection}{\numberline {5.5}Anonymization}{9}
+\contentsline {paragraph}{Get activity}{9}
+\contentsline {paragraph}{Get coordinates}{9}
+\contentsline {paragraph}{Anonymization}{9}
 \contentsline {section}{\numberline {6}Simulation Results and Discussion}{10}
 \contentsline {subsection}{\numberline {6.1}Characteristics of the network}{10}
 \contentsline {subsection}{\numberline {6.2}Influence of p$_{forget}$}{10}

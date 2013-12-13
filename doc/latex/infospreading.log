@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.11.25)  13 DEC 2013 13:25
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.11.25)  13 DEC 2013 13:26
 entering extended mode
 **infospreading.tex
 
@@ -431,9 +431,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--17
 
 [6] [7])
 (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\python.tex
-[8]) [9]
+[8])
 (C:\Users\User\Documents\GitHub\Project-Info-Spreading\doc\latex\results.tex
-<network_degreehist.png, id=48, 578.6418pt x 434.1018pt>
+[9] <network_degreehist.png, id=48, 578.6418pt x 434.1018pt>
 File: network_degreehist.png Graphic file (type png)
 
 <use network_degreehist.png>
@@ -626,7 +626,7 @@ gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files
 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmtt12.pfb>
-Output written on infospreading.pdf (17 pages, 404297 bytes).
+Output written on infospreading.pdf (17 pages, 404329 bytes).
 PDF statistics:
  133 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

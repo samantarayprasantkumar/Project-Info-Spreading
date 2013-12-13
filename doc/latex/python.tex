@@ -17,7 +17,7 @@ graph = facebook.GraphAPI(token)
 
 \end{lstlisting}
 
-\subsubsection{Get graph}
+paragraph{Get graph}
 
 Having enterd a valid token, we can now access all information this token provide us.  For simplicty, we'll only discuss  the non-anonymized case in details. [For more details on the anonymization, look at subsection anonymization]
 
@@ -43,7 +43,7 @@ The object mutualfriends provides us a list with all mutualfriends of ''me'' and
 
 Repeat this proceedure for all friends, and we'll get exatly what we're looking for - a graph of all connection between our friends.
 
-\subsubsection{Get activity}
+\paragraph{Get activity}
 
 How did we define the parameter activity? We simply determine for each friend how many posts he makes on average per day. This gives us an indicator, how active a certain person is on facebook. 
 
@@ -55,10 +55,10 @@ statuses = graph.get_connections(tfriend, "statuses", fields="updated_time", lim
 
 This objecct provides us, all information we need (a list of all posts incl. a time stamp when it's been posted) to calculate the above mentioned quotient.
 
-\subsubsection{Get coordinates}
+\paragraph{Get coordinates}
 To visualise the network in MatLab, the software "Gephi" was used to determine the x- and y- coordinates of each individual. Therefore, the file "gephi.csv", an edge list of the network, was imported. The nodes were then arranged in communities using the layout method "ForceAtlas2". Finally, normalised node coordinates where exported to "coordinates.gdf". After deleting all headers and all edge data from this file, the coordinates could be easily imported to MatLab.
 
-\subsection{Anonymization}
+\paragraph{Anonymization}
 
 The anonymization is acutally only a pseudo-anonymization. First all id's get arranged in order of size. Secondly, we create a list from 1 to n (number of friends). We then define a bijection between the two sets, such that the i-th element of the first set, maps to the i-th element of the second set. 
 
