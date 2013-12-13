@@ -57,3 +57,18 @@ xlabel('Step')
 ylabel('Population')
 axis([t_out_5(1) 1000 0 400])
 saveas(figure(2),'NICE_SIR.png')
+
+%%
+alpha=0.05:0.05:1;
+for i=1:length(alpha)
+    [t_out_6,state_out_6]=ode45(@(t,state)ode_SIR(t,state,[.095,alpha(i)]),t_span,[383;1;0]);
+    ignorants_end(i)=state_out_6(end,1);
+end
+%%
+close all;
+figure(3)
+plot(alpha,ignorants_end,'.-k')
+xlabel('\alpha')
+ylabel('Nr. of ignorants after simulation')
+axis([0 1.05 100 350])
+saveas(figure(3),'Analysis_pforget_ODE.png')

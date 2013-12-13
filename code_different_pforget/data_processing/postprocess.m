@@ -18,7 +18,7 @@ conf_rem_ign=tq(0.975,24)*std_rem_ign/sqrt(25);
 
 figure(1)
 errorbar(pforget_short,avg_rem_ign,conf_rem_ign,'-k')
-xlabel('p_{forget}')
+xlabel('\alpha')
 ylabel('Nr. of ignorants after simulation')
 axis([0 1.05 100 350])
 saveas(figure(1),'Analysis_pforget.png')
