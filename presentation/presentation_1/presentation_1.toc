@@ -1,0 +1,15 @@
+\beamer@endinputifotherversion {3.10pt}
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Social Networks}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Fundamental Questions}{4}{0}{1}
+\beamer@sectionintoc {2}{The Model}{5}{0}{2}
+\beamer@subsectionintoc {2}{1}{Homogeneous SIR Model}{5}{0}{2}
+\beamer@subsectionintoc {2}{2}{Inhomogeneous Agent-Based Model}{6}{0}{2}
+\beamer@sectionintoc {3}{Simulation}{7}{0}{3}
+\beamer@subsectionintoc {3}{1}{Characteristics}{7}{0}{3}
+\beamer@subsectionintoc {3}{2}{Visualization}{8}{0}{3}
+\beamer@subsectionintoc {3}{3}{Variables for Analysis}{9}{0}{3}
+\beamer@sectionintoc {4}{Results}{10}{0}{4}
+\beamer@subsectionintoc {4}{1}{Time Evolution}{10}{0}{4}
+\beamer@subsectionintoc {4}{2}{Influentials}{11}{0}{4}
+\beamer@sectionintoc {5}{Summary}{12}{0}{5}
