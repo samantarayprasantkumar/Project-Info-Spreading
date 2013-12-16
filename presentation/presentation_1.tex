@@ -78,6 +78,7 @@
 
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{amsmath}
 
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
@@ -141,15 +142,49 @@ Facebook, Twitter, Instagramm, Tumblr, Google+ ....
 %------------------------------------------------
 
 
+\subsection{Reaction Equations}
+
+\begin{frame}
+\frametitle{Reaction Equations}
+
+In the SIR-model as well as in the Agent-based model, the following set of ``reaction equations'' was used\\(I: Ignorant, S: Spreader, R: Stifler):\\
+\vspace{1cm}
+
+
+
+\begin{align}
+& I + S \xrightarrow{\lambda} 2 S \\
+& S + R \xrightarrow{\alpha} 2 R \\
+& S + S \xrightarrow{\alpha} S + R 
+\end{align}
+
+
+\end{frame}
+
+
+
 \subsection{Homogeneous SIR Model}
 \begin{frame}
 \frametitle{Homogeneous SIR Model}
+Mathematically this can be expressed as a set of differential equations:\\
+
+
+\begin{align}
+& \frac{\text{d}i(t)}{\text{d}t} = -\lambda \cdot s(t)i(t)\\
+& \frac{\text{d}s(t)}{\text{d}t} = \lambda \cdot s(t)i(t) - \alpha \cdot s(t)[s(t)+r(t)]\\
+&\frac{\text{d}r(t)}{\text{d}t} = \alpha \cdot s(t)[s(t)+r(t)]
+\end{align}
+
+
 \end{frame}
 
 
 \subsection{Inhomogeneous Agent-Based Model}
 \begin{frame}
 \frametitle{Agent-Based Model}
+
+Flowchart??
+
 \end{frame}
 
 
@@ -159,18 +194,58 @@ Facebook, Twitter, Instagramm, Tumblr, Google+ ....
 \subsection{Characteristics}
 \begin{frame}
 \frametitle{Characteristics}
+
+\begin{itemize}
+
+\item Real facebook network
+\vspace{1cm}
+\item 384 Induviduals
+
+
+
+\end{itemize}
+
 \end{frame}
 
 \subsection{Visualization}
 \begin{frame}
 \begin{center}
 \huge{Video}
+
+inklusive plot Spreader, stifler etc?
+
 \end{center}
 \end{frame}
 
 \subsection{Variables for Analysis}
-\begin{frame}
-\frametitle{Variables for Analysis}
+\begin{frame}[fragile]
+\frametitle{Cumulative Infections}
+
+Tree  \hspace{2.55cm} Infectpath 
+
+\begin{columns}[c]
+
+\column{0.33\textwidth}
+\begin{figure}
+\includegraphics[scale=0.5]{tree}
+\end{figure}
+
+\column{0.33\textwidth}
+\begin{tabular}{l r}
+ 6 & 5 \\
+ 5 & 4 \\
+ 4 & 1 \\
+ 4 & 2 \\
+ 4 & 3 \\
+\end{tabular}
+
+\column{0.3\textwidth}
+\begin{verbatim}
+cum_infections=
+[0 0 0 3 4 5];
+\end{verbatim}
+
+\end{columns}
 \end{frame}
 
 %------------------------------------------------
@@ -178,14 +253,68 @@ Facebook, Twitter, Instagramm, Tumblr, Google+ ....
 %------------------------------------------------
 
 \subsection{Time Evolution}
+
 \begin{frame}
 \frametitle{Differences in Time Evolution}
+\begin{center}
+SIR-Model
+\end{center}
+\begin{center}
+\includegraphics[width=9cm]{NICE_SIR}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+Agent-based Model similar as SIR
+\end{center}
+\begin{center}
+\includegraphics[width=9cm]{1-local-max}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+Agent-based Model shows significant difference (two local max)
+\end{center}
+\begin{center}
+\includegraphics[width=9cm]{2-local-max}
+\end{center}
 \end{frame}
 
 \subsection{Influentials}
 \begin{frame}
 \frametitle{Influentials}
+
+Do influentials exist?
+
+\begin{figure}
+\includegraphics[width=7cm]{influ2}
+\label{Histo}
+\end{figure}
+
+
 \end{frame}
+
+
+\begin{frame}
+\frametitle{Influentials}
+
+Can we determine influentials from the characteristics of our network? (Clustercoefficient, Betweenness centrality)
+\begin{columns}[c]
+
+\column{0.48\textwidth}
+\begin{figure}
+\includegraphics[width=6cm]{clustercVSov_cum_inf}
+\end{figure}
+\column{0.48\textwidth}
+\begin{figure}
+\includegraphics[width=6cm]{betwVSov_cum_inf}
+\end{figure}
+\end{columns}
+
+\end{frame}
+
 
 %------------------------------------------------
 \section{Summary} % 
@@ -193,6 +322,17 @@ Facebook, Twitter, Instagramm, Tumblr, Google+ ....
 
 \begin{frame}
 \frametitle{Summary}
+
+\begin{itemize}
+
+\item Under certain circumstances the population profiles of the agent-based model differs significantly from those of the homogeneous model.
+
+\vspace{1cm}
+\item Individuals being more important for information spreading, in terms of cumulative infections, were found. The betweenness centrality might be used to roughly predict those especially influential individuals.
+
+
+\end{itemize}
+
 \end{frame}
 
 

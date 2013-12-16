@@ -1,0 +1,27 @@
+\frametitle {Cumulative Infections}
+
+Tree  \hspace{2.55cm} Infectpath
+
+\begin{columns}[c]
+
+\column{0.33\textwidth}
+\begin{figure}
+\includegraphics[scale=0.5]{tree}
+\end{figure}
+
+\column{0.33\textwidth}
+\begin{tabular}{l r}
+ 6 & 5 \\
+ 5 & 4 \\
+ 4 & 1 \\
+ 4 & 2 \\
+ 4 & 3 \\
+\end{tabular}
+
+\column{0.3\textwidth}
+\begin{verbatim}
+cum_infections=
+[0 0 0 3 4 5];
+\end{verbatim}
+
+\end{columns}
